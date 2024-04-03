@@ -2,6 +2,7 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/simpleiso3166.svg)](https://pypi.org/project/simpleiso3166)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/simpleiso3166.svg)](https://pypi.org/project/simpleiso3166)
+[![codecov](https://codecov.io/github/stumpylog/simpleiso3166/graph/badge.svg?token=vEIsys5kmZ)](https://codecov.io/github/stumpylog/simpleiso3166)
 
 ---
 
