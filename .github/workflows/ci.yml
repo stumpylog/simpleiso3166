@@ -37,7 +37,7 @@ jobs:
       -
         name: Lint project
         run: |
-          hatch run lint:all
+          hatch fmt --check
       -
         name: Check files with pre-commit
         uses: pre-commit/action@v3.0.1
