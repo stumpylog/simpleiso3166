@@ -11,7 +11,7 @@ from functools import lru_cache
 from typing import TYPE_CHECKING
 from typing import get_args
 
-from simpleiso3166.countries.types import CountryCodeAlpha2Type
+from simpleiso3166.countries.data.types import CountryCodeAlpha2Type
 
 if TYPE_CHECKING:
     from collections.abc import Generator

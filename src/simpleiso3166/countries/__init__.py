@@ -16,8 +16,8 @@ from simpleiso3166.subdivisions import Subdivision
 if TYPE_CHECKING:
     from collections.abc import Generator
 
-    from simpleiso3166.countries.types import CountryCodeAlpha2Type
-    from simpleiso3166.countries.types import CountryCodeAlpha3Type
+    from simpleiso3166.countries.data.types import CountryCodeAlpha2Type
+    from simpleiso3166.countries.data.types import CountryCodeAlpha3Type
     from simpleiso3166.subdivisions.types import SubdivisionCodeType
 
 logger = logging.getLogger(__name__)
@@ -109,7 +109,7 @@ class Country:
         """
         Constructs a Country object from an alpha-2 code, if the code is valid.
         """
-        from simpleiso3166.countries.data import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.countries.data.mapping import ALPHA2_CODE_TO_COUNTRIES
 
         return ALPHA2_CODE_TO_COUNTRIES.get(alpha2)
 
@@ -118,7 +118,7 @@ class Country:
         """
         Constructs a Country object from an alpha-2 code, if the code is valid.
         """
-        from simpleiso3166.countries.data import ALPHA3_CODE_TO_COUNTRIES
+        from simpleiso3166.countries.data.mapping import ALPHA3_CODE_TO_COUNTRIES
 
         return ALPHA3_CODE_TO_COUNTRIES.get(alpha3)
 
@@ -127,7 +127,7 @@ class Country:
         """
         Constructs a Country object from an name, if the name is valid.
         """
-        from simpleiso3166.countries.data import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.countries.data.mapping import ALPHA2_CODE_TO_COUNTRIES
 
         for country in ALPHA2_CODE_TO_COUNTRIES.values():
             if (
@@ -140,7 +140,7 @@ class Country:
 
     @staticmethod
     def is_valid_code(code: str) -> bool:
-        from simpleiso3166.countries.data import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.countries.data.mapping import ALPHA2_CODE_TO_COUNTRIES
 
         return code in ALPHA2_CODE_TO_COUNTRIES
 
@@ -180,7 +180,7 @@ class Country:
         from rapidfuzz import utils
 
         from simpleiso3166.aliases import COUNTRY_ALIAS_TO_CODE
-        from simpleiso3166.countries.data import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.countries.data.mapping import ALPHA2_CODE_TO_COUNTRIES
 
         # Empty input handling
         if not country_name or not country_name.strip():
