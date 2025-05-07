@@ -67,7 +67,7 @@ parallel = true
 randomize = true
 extra-dependencies = [
   "pytest-sugar",
-  "pytest-memray; sys_platform == 'linux'",
+  "pytest-memray;sys_platform == 'linux' and platform_python_implementation == 'CPython'",
   "rapidfuzz",
 
 ]
