@@ -69,7 +69,7 @@ jobs:
         pip install --upgrade hatch
     -
       name: Run tests
-      run: hatch run cov
+      run: hatch test --cover
     -
       name: Upload coverage to Codecov
       if: matrix.python-version == '3.11'
