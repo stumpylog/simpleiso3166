@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Togolese Republic"
+COUNTRY_NAME: Final[str] = "Togo"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TG-C", "Centrale"),
-    Subdivision("TG-K", "Kara"),
-    Subdivision("TG-M", "Maritime (Région)"),
-    Subdivision("TG-P", "Plateaux"),
-    Subdivision("TG-S", "Savanes"),
+    Subdivision(code="TG-C", name="Centrale", type_="Region"),
+    Subdivision(code="TG-K", name="Kara", type_="Region"),
+    Subdivision(code="TG-M", name="Maritime (Région)", type_="Region"),
+    Subdivision(code="TG-P", name="Plateaux", type_="Region"),
+    Subdivision(code="TG-S", name="Savanes", type_="Region"),
 ]

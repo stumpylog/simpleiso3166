@@ -1,7 +1,7 @@
 from typing import Literal
 
 SubdivisionCodeType = Literal[
-    # Principality of Andorra
+    # Andorra
     "AD-02",  # Canillo
     "AD-03",  # Encamp
     "AD-04",  # La Massana
@@ -17,7 +17,7 @@ SubdivisionCodeType = Literal[
     "AE-RK",  # Ra’s al Khaymah
     "AE-SH",  # Ash Shāriqah
     "AE-UQ",  # Umm al Qaywayn
-    # Islamic Republic of Afghanistan
+    # Afghanistan
     "AF-BAL",  # Balkh
     "AF-BAM",  # Bāmyān
     "AF-BDG",  # Bādghīs
@@ -63,7 +63,7 @@ SubdivisionCodeType = Literal[
     "AG-11",  # Redonda
     # Anguilla
     # (no subdivisions)
-    # Republic of Albania
+    # Albania
     "AL-01",  # Berat
     "AL-02",  # Durrës
     "AL-03",  # Elbasan
@@ -76,7 +76,7 @@ SubdivisionCodeType = Literal[
     "AL-10",  # Shkodër
     "AL-11",  # Tiranë
     "AL-12",  # Vlorë
-    # Republic of Armenia
+    # Armenia
     "AM-AG",  # Aragac̣otn
     "AM-AR",  # Ararat
     "AM-AV",  # Armavir
@@ -88,7 +88,7 @@ SubdivisionCodeType = Literal[
     "AM-SU",  # Syunik'
     "AM-TV",  # Tavuš
     "AM-VD",  # Vayoć Jor
-    # Republic of Angola
+    # Angola
     "AO-BGO",  # Bengo
     "AO-BGU",  # Benguela
     "AO-BIE",  # Bié
@@ -109,7 +109,7 @@ SubdivisionCodeType = Literal[
     "AO-ZAI",  # Zaire
     # Antarctica
     # (no subdivisions)
-    # Argentine Republic
+    # Argentina
     "AR-A",  # Salta
     "AR-B",  # Buenos Aires
     "AR-C",  # Ciudad Autónoma de Buenos Aires
@@ -136,7 +136,7 @@ SubdivisionCodeType = Literal[
     "AR-Z",  # Santa Cruz
     # American Samoa
     # (no subdivisions)
-    # Republic of Austria
+    # Austria
     "AT-1",  # Burgenland
     "AT-2",  # Kärnten
     "AT-3",  # Niederösterreich
@@ -159,7 +159,7 @@ SubdivisionCodeType = Literal[
     # (no subdivisions)
     # Åland Islands
     # (no subdivisions)
-    # Republic of Azerbaijan
+    # Azerbaijan
     "AZ-ABS",  # Abşeron
     "AZ-AGA",  # Ağstafa
     "AZ-AGC",  # Ağcabədi
@@ -238,7 +238,7 @@ SubdivisionCodeType = Literal[
     "AZ-ZAN",  # Zəngilan
     "AZ-ZAQ",  # Zaqatala
     "AZ-ZAR",  # Zərdab
-    # Republic of Bosnia and Herzegovina
+    # Bosnia and Herzegovina
     "BA-BIH",  # Federacija Bosne i Hercegovine
     "BA-BRC",  # Brčko distrikt
     "BA-SRP",  # Republika Srpska
@@ -254,7 +254,7 @@ SubdivisionCodeType = Literal[
     "BB-09",  # Saint Peter
     "BB-10",  # Saint Philip
     "BB-11",  # Saint Thomas
-    # People's Republic of Bangladesh
+    # Bangladesh
     "BD-01",  # Bandarban
     "BD-02",  # Barguna
     "BD-03",  # Bogura
@@ -327,7 +327,7 @@ SubdivisionCodeType = Literal[
     "BD-F",  # Rangpur
     "BD-G",  # Sylhet
     "BD-H",  # Mymensingh
-    # Kingdom of Belgium
+    # Belgium
     "BE-BRU",  # Bruxelles-Capitale, Région de
     "BE-VAN",  # Antwerpen
     "BE-VBR",  # Vlaams-Brabant
@@ -400,7 +400,7 @@ SubdivisionCodeType = Literal[
     "BF-ZIR",  # Ziro
     "BF-ZON",  # Zondoma
     "BF-ZOU",  # Zoundwéogo
-    # Republic of Bulgaria
+    # Bulgaria
     "BG-01",  # Blagoevgrad
     "BG-02",  # Burgas
     "BG-03",  # Varna
@@ -429,12 +429,12 @@ SubdivisionCodeType = Literal[
     "BG-26",  # Haskovo
     "BG-27",  # Shumen
     "BG-28",  # Yambol
-    # Kingdom of Bahrain
+    # Bahrain
     "BH-13",  # Al ‘Āşimah
     "BH-14",  # Al Janūbīyah
     "BH-15",  # Al Muḩarraq
     "BH-17",  # Ash Shamālīyah
-    # Republic of Burundi
+    # Burundi
     "BI-BB",  # Bubanza
     "BI-BL",  # Bujumbura Rural
     "BI-BM",  # Bujumbura Mairie
@@ -453,7 +453,7 @@ SubdivisionCodeType = Literal[
     "BI-RM",  # Rumonge
     "BI-RT",  # Rutana
     "BI-RY",  # Ruyigi
-    # Republic of Benin
+    # Benin
     "BJ-AK",  # Atacora
     "BJ-AL",  # Alibori
     "BJ-AQ",  # Atlantique
@@ -475,7 +475,7 @@ SubdivisionCodeType = Literal[
     "BN-BM",  # Brunei-Muara
     "BN-TE",  # Temburong
     "BN-TU",  # Tutong
-    # Plurinational State of Bolivia
+    # Bolivia, Plurinational State of
     "BO-B",  # El Beni
     "BO-C",  # Cochabamba
     "BO-H",  # Chuquisaca
@@ -489,7 +489,7 @@ SubdivisionCodeType = Literal[
     "BQ-BO",  # Bonaire
     "BQ-SA",  # Saba
     "BQ-SE",  # Sint Eustatius
-    # Federative Republic of Brazil
+    # Brazil
     "BR-AC",  # Acre
     "BR-AL",  # Alagoas
     "BR-AM",  # Amazonas
@@ -517,7 +517,7 @@ SubdivisionCodeType = Literal[
     "BR-SE",  # Sergipe
     "BR-SP",  # São Paulo
     "BR-TO",  # Tocantins
-    # Commonwealth of the Bahamas
+    # Bahamas
     "BS-AK",  # Acklins
     "BS-BI",  # Bimini
     "BS-BP",  # Black Point
@@ -550,7 +550,7 @@ SubdivisionCodeType = Literal[
     "BS-SS",  # San Salvador
     "BS-SW",  # Spanish Wells
     "BS-WG",  # West Grand Bahama
-    # Kingdom of Bhutan
+    # Bhutan
     "BT-11",  # Paro
     "BT-12",  # Chhukha
     "BT-13",  # Haa
@@ -573,7 +573,7 @@ SubdivisionCodeType = Literal[
     "BT-TY",  # Trashi Yangtse
     # Bouvet Island
     # (no subdivisions)
-    # Republic of Botswana
+    # Botswana
     "BW-CE",  # Central
     "BW-CH",  # Chobe
     "BW-FR",  # Francistown
@@ -590,7 +590,7 @@ SubdivisionCodeType = Literal[
     "BW-SO",  # Southern
     "BW-SP",  # Selibe Phikwe
     "BW-ST",  # Sowa Town
-    # Republic of Belarus
+    # Belarus
     "BY-BR",  # Bresckaja voblasć
     "BY-HM",  # Gorod Minsk
     "BY-HO",  # Gomel'skaja oblast'
@@ -666,7 +666,7 @@ SubdivisionCodeType = Literal[
     "CF-SE",  # Sangha
     "CF-UK",  # Ouaka
     "CF-VK",  # Vakaga
-    # Republic of the Congo
+    # Congo
     "CG-11",  # Bouenza
     "CG-12",  # Pool
     "CG-13",  # Sangha
@@ -679,7 +679,7 @@ SubdivisionCodeType = Literal[
     "CG-8",  # Cuvette
     "CG-9",  # Niari
     "CG-BZV",  # Brazzaville
-    # Swiss Confederation
+    # Switzerland
     "CH-AG",  # Aargau
     "CH-AI",  # Appenzell Innerrhoden
     "CH-AR",  # Appenzell Ausserrhoden
@@ -706,7 +706,7 @@ SubdivisionCodeType = Literal[
     "CH-VS",  # Valais
     "CH-ZG",  # Zug
     "CH-ZH",  # Zürich
-    # Republic of Côte d'Ivoire
+    # Côte d'Ivoire
     "CI-AB",  # Abidjan
     "CI-BS",  # Bas-Sassandra
     "CI-CM",  # Comoé
@@ -723,7 +723,7 @@ SubdivisionCodeType = Literal[
     "CI-ZZ",  # Zanzan
     # Cook Islands
     # (no subdivisions)
-    # Republic of Chile
+    # Chile
     "CL-AI",  # Aisén del General Carlos Ibañez del Campo
     "CL-AN",  # Antofagasta
     "CL-AP",  # Arica y Parinacota
@@ -740,7 +740,7 @@ SubdivisionCodeType = Literal[
     "CL-RM",  # Región Metropolitana de Santiago
     "CL-TA",  # Tarapacá
     "CL-VS",  # Valparaíso
-    # Republic of Cameroon
+    # Cameroon
     "CM-AD",  # Adamaoua
     "CM-CE",  # Centre
     "CM-EN",  # Far North
@@ -751,7 +751,7 @@ SubdivisionCodeType = Literal[
     "CM-OU",  # West
     "CM-SU",  # South
     "CM-SW",  # South-West
-    # People's Republic of China
+    # China
     "CN-AH",  # Anhui Sheng
     "CN-BJ",  # Beijing Shi
     "CN-CQ",  # Chongqing Shi
@@ -786,7 +786,7 @@ SubdivisionCodeType = Literal[
     "CN-XZ",  # Xizang Zizhiqu
     "CN-YN",  # Yunnan Sheng
     "CN-ZJ",  # Zhejiang Sheng
-    # Republic of Colombia
+    # Colombia
     "CO-AMA",  # Amazonas
     "CO-ANT",  # Antioquia
     "CO-ARA",  # Arauca
@@ -820,7 +820,7 @@ SubdivisionCodeType = Literal[
     "CO-VAC",  # Valle del Cauca
     "CO-VAU",  # Vaupés
     "CO-VID",  # Vichada
-    # Republic of Costa Rica
+    # Costa Rica
     "CR-A",  # Alajuela
     "CR-C",  # Cartago
     "CR-G",  # Guanacaste
@@ -828,7 +828,7 @@ SubdivisionCodeType = Literal[
     "CR-L",  # Limón
     "CR-P",  # Puntarenas
     "CR-SJ",  # San José
-    # Republic of Cuba
+    # Cuba
     "CU-01",  # Pinar del Río
     "CU-03",  # La Habana
     "CU-04",  # Matanzas
@@ -845,7 +845,7 @@ SubdivisionCodeType = Literal[
     "CU-15",  # Artemisa
     "CU-16",  # Mayabeque
     "CU-99",  # Isla de la Juventud
-    # Republic of Cabo Verde
+    # Cabo Verde
     "CV-B",  # Ilhas de Barlavento
     "CV-BR",  # Brava
     "CV-BV",  # Boa Vista
@@ -874,14 +874,14 @@ SubdivisionCodeType = Literal[
     # (no subdivisions)
     # Christmas Island
     # (no subdivisions)
-    # Republic of Cyprus
+    # Cyprus
     "CY-01",  # Lefkosia
     "CY-02",  # Lemesos
     "CY-03",  # Larnaka
     "CY-04",  # Ammochostos
     "CY-05",  # Baf
     "CY-06",  # Girne
-    # Czech Republic
+    # Czechia
     "CZ-10",  # Praha, Hlavní město
     "CZ-20",  # Středočeský kraj
     "CZ-201",  # Benešov
@@ -972,7 +972,7 @@ SubdivisionCodeType = Literal[
     "CZ-804",  # Nový Jičín
     "CZ-805",  # Opava
     "CZ-806",  # Ostrava-město
-    # Federal Republic of Germany
+    # Germany
     "DE-BB",  # Brandenburg
     "DE-BE",  # Berlin
     "DE-BW",  # Baden-Württemberg
@@ -989,20 +989,20 @@ SubdivisionCodeType = Literal[
     "DE-SN",  # Sachsen
     "DE-ST",  # Sachsen-Anhalt
     "DE-TH",  # Thüringen
-    # Republic of Djibouti
+    # Djibouti
     "DJ-AR",  # Arta
     "DJ-AS",  # Ali Sabieh
     "DJ-DI",  # Dikhil
     "DJ-DJ",  # Djibouti
     "DJ-OB",  # Obock
     "DJ-TA",  # Tadjourah
-    # Kingdom of Denmark
+    # Denmark
     "DK-81",  # Nordjylland
     "DK-82",  # Midtjylland
     "DK-83",  # Syddanmark
     "DK-84",  # Hovedstaden
     "DK-85",  # Sjælland
-    # Commonwealth of Dominica
+    # Dominica
     "DM-02",  # Saint Andrew
     "DM-03",  # Saint David
     "DM-04",  # Saint George
@@ -1056,7 +1056,7 @@ SubdivisionCodeType = Literal[
     "DO-40",  # Ozama
     "DO-41",  # Valdesia
     "DO-42",  # Yuma
-    # People's Democratic Republic of Algeria
+    # Algeria
     "DZ-01",  # Adrar
     "DZ-02",  # Chlef
     "DZ-03",  # Laghouat
@@ -1115,7 +1115,7 @@ SubdivisionCodeType = Literal[
     "DZ-56",  # Djanet
     "DZ-57",  # El Meghaier
     "DZ-58",  # El Meniaa
-    # Republic of Ecuador
+    # Ecuador
     "EC-A",  # Azuay
     "EC-B",  # Bolívar
     "EC-C",  # Carchi
@@ -1140,7 +1140,7 @@ SubdivisionCodeType = Literal[
     "EC-X",  # Cotopaxi
     "EC-Y",  # Pastaza
     "EC-Z",  # Zamora Chinchipe
-    # Republic of Estonia
+    # Estonia
     "EE-130",  # Alutaguse
     "EE-141",  # Anija
     "EE-142",  # Antsla
@@ -1235,7 +1235,7 @@ SubdivisionCodeType = Literal[
     "EE-917",  # Võru
     "EE-919",  # Võru
     "EE-928",  # Väike-Maarja
-    # Arab Republic of Egypt
+    # Egypt
     "EG-ALX",  # Al Iskandarīyah
     "EG-ASN",  # Aswān
     "EG-AST",  # Asyūţ
@@ -1265,14 +1265,14 @@ SubdivisionCodeType = Literal[
     "EG-WAD",  # Al Wādī al Jadīd
     # Western Sahara
     # (no subdivisions)
-    # the State of Eritrea
+    # Eritrea
     "ER-AN",  # Ansabā
     "ER-DK",  # Debubawi K’eyyĭḥ Baḥri
     "ER-DU",  # Al Janūbī
     "ER-GB",  # Gash-Barka
     "ER-MA",  # Al Awsaţ
     "ER-SK",  # Semienawi K’eyyĭḥ Baḥri
-    # Kingdom of Spain
+    # Spain
     "ES-A",  # Alacant*
     "ES-AB",  # Albacete
     "ES-AL",  # Almería
@@ -1342,7 +1342,7 @@ SubdivisionCodeType = Literal[
     "ES-VI",  # Araba*
     "ES-Z",  # Zaragoza
     "ES-ZA",  # Zamora
-    # Federal Democratic Republic of Ethiopia
+    # Ethiopia
     "ET-AA",  # Addis Ababa
     "ET-AF",  # Afar
     "ET-AM",  # Amara
@@ -1356,7 +1356,7 @@ SubdivisionCodeType = Literal[
     "ET-SO",  # Somali
     "ET-SW",  # Southwest Ethiopia Peoples
     "ET-TI",  # Tigrai
-    # Republic of Finland
+    # Finland
     "FI-01",  # Landskapet Åland
     "FI-02",  # Etelä-Karjala
     "FI-03",  # Etelä-Pohjanmaa
@@ -1376,7 +1376,7 @@ SubdivisionCodeType = Literal[
     "FI-17",  # Satakunta
     "FI-18",  # Uusimaa
     "FI-19",  # Varsinais-Suomi
-    # Republic of Fiji
+    # Fiji
     "FJ-01",  # Ba
     "FJ-02",  # Bua
     "FJ-03",  # Cakaudrove
@@ -1398,14 +1398,14 @@ SubdivisionCodeType = Literal[
     "FJ-W",  # Western
     # Falkland Islands (Malvinas)
     # (no subdivisions)
-    # Federated States of Micronesia
+    # Micronesia, Federated States of
     "FM-KSA",  # Kosrae
     "FM-PNI",  # Pohnpei
     "FM-TRK",  # Chuuk
     "FM-YAP",  # Yap
     # Faroe Islands
     # (no subdivisions)
-    # French Republic
+    # France
     "FR-01",  # Ain
     "FR-02",  # Aisne
     "FR-03",  # Allier
@@ -1530,7 +1530,7 @@ SubdivisionCodeType = Literal[
     "FR-PM",  # Saint-Pierre-et-Miquelon
     "FR-TF",  # Terres australes françaises
     "FR-WF",  # Wallis-et-Futuna
-    # Gabonese Republic
+    # Gabon
     "GA-1",  # Estuaire
     "GA-2",  # Haut-Ogooué
     "GA-3",  # Moyen-Ogooué
@@ -1540,7 +1540,7 @@ SubdivisionCodeType = Literal[
     "GA-7",  # Ogooué-Lolo
     "GA-8",  # Ogooué-Maritime
     "GA-9",  # Woleu-Ntem
-    # United Kingdom of Great Britain and Northern Ireland
+    # United Kingdom
     "GB-ABC",  # Armagh City, Banbridge and Craigavon
     "GB-ABD",  # Aberdeenshire
     "GB-ABE",  # Aberdeen City
@@ -1787,7 +1787,7 @@ SubdivisionCodeType = Literal[
     # (no subdivisions)
     # Guernsey
     # (no subdivisions)
-    # Republic of Ghana
+    # Ghana
     "GH-AA",  # Greater Accra
     "GH-AF",  # Ahafo
     "GH-AH",  # Ashanti
@@ -1812,14 +1812,14 @@ SubdivisionCodeType = Literal[
     "GL-QE",  # Qeqqata Kommunia
     "GL-QT",  # Kommune Qeqertalik
     "GL-SM",  # Kommuneqarfik Sermersooq
-    # Republic of the Gambia
+    # Gambia
     "GM-B",  # Banjul
     "GM-L",  # Lower River
     "GM-M",  # Central River
     "GM-N",  # North Bank
     "GM-U",  # Upper River
     "GM-W",  # Western
-    # Republic of Guinea
+    # Guinea
     "GN-B",  # Boké
     "GN-BE",  # Beyla
     "GN-BF",  # Boffa
@@ -1863,7 +1863,7 @@ SubdivisionCodeType = Literal[
     "GN-YO",  # Yomou
     # Guadeloupe
     # (no subdivisions)
-    # Republic of Equatorial Guinea
+    # Equatorial Guinea
     "GQ-AN",  # Annobon
     "GQ-BN",  # Bioko Nord
     "GQ-BS",  # Bioko Sud
@@ -1874,7 +1874,7 @@ SubdivisionCodeType = Literal[
     "GQ-KN",  # Kié-Ntem
     "GQ-LI",  # Littoral
     "GQ-WN",  # Wele-Nzas
-    # Hellenic Republic
+    # Greece
     "GR-69",  # Ágion Óros
     "GR-A",  # Anatolikí Makedonía kai Thráki
     "GR-B",  # Kentrikí Makedonía
@@ -1891,7 +1891,7 @@ SubdivisionCodeType = Literal[
     "GR-M",  # Kríti
     # South Georgia and the South Sandwich Islands
     # (no subdivisions)
-    # Republic of Guatemala
+    # Guatemala
     "GT-01",  # Guatemala
     "GT-02",  # El Progreso
     "GT-03",  # Sacatepéquez
@@ -1916,7 +1916,7 @@ SubdivisionCodeType = Literal[
     "GT-22",  # Jutiapa
     # Guam
     # (no subdivisions)
-    # Republic of Guinea-Bissau
+    # Guinea-Bissau
     "GW-BA",  # Bafatá
     "GW-BL",  # Bolama / Bijagós
     "GW-BM",  # Biombo
@@ -1929,7 +1929,7 @@ SubdivisionCodeType = Literal[
     "GW-QU",  # Quinara
     "GW-S",  # Sul
     "GW-TO",  # Tombali
-    # Republic of Guyana
+    # Guyana
     "GY-BA",  # Barima-Waini
     "GY-CU",  # Cuyuni-Mazaruni
     "GY-DE",  # Demerara-Mahaica
@@ -1940,11 +1940,11 @@ SubdivisionCodeType = Literal[
     "GY-PT",  # Potaro-Siparuni
     "GY-UD",  # Upper Demerara-Berbice
     "GY-UT",  # Upper Takutu-Upper Essequibo
-    # Hong Kong Special Administrative Region of China
+    # Hong Kong
     # (no subdivisions)
     # Heard Island and McDonald Islands
     # (no subdivisions)
-    # Republic of Honduras
+    # Honduras
     "HN-AT",  # Atlántida
     "HN-CH",  # Choluteca
     "HN-CL",  # Colón
@@ -1963,7 +1963,7 @@ SubdivisionCodeType = Literal[
     "HN-SB",  # Santa Bárbara
     "HN-VA",  # Valle
     "HN-YO",  # Yoro
-    # Republic of Croatia
+    # Croatia
     "HR-01",  # Zagrebačka županija
     "HR-02",  # Krapinsko-zagorska županija
     "HR-03",  # Sisačko-moslavačka županija
@@ -1985,7 +1985,7 @@ SubdivisionCodeType = Literal[
     "HR-19",  # Dubrovačko-neretvanska županija
     "HR-20",  # Međimurska županija
     "HR-21",  # Grad Zagreb
-    # Republic of Haiti
+    # Haiti
     "HT-AR",  # Artibonite
     "HT-CE",  # Centre
     "HT-GA",  # Grande’Anse
@@ -2040,7 +2040,7 @@ SubdivisionCodeType = Literal[
     "HU-VM",  # Veszprém
     "HU-ZA",  # Zala
     "HU-ZE",  # Zalaegerszeg
-    # Republic of Indonesia
+    # Indonesia
     "ID-AC",  # Aceh
     "ID-BA",  # Bali
     "ID-BB",  # Kepulauan Bangka Belitung
@@ -2117,7 +2117,7 @@ SubdivisionCodeType = Literal[
     "IE-WH",  # Westmeath
     "IE-WW",  # Wicklow
     "IE-WX",  # Wexford
-    # State of Israel
+    # Israel
     "IL-D",  # Al Janūbī
     "IL-HA",  # H̱efa
     "IL-JM",  # Al Quds
@@ -2126,7 +2126,7 @@ SubdivisionCodeType = Literal[
     "IL-Z",  # Ash Shamālī
     # Isle of Man
     # (no subdivisions)
-    # Republic of India
+    # India
     "IN-AN",  # Andaman and Nicobar Islands
     "IN-AP",  # Andhra Pradesh
     "IN-AR",  # Arunāchal Pradesh
@@ -2165,7 +2165,7 @@ SubdivisionCodeType = Literal[
     "IN-WB",  # West Bengal
     # British Indian Ocean Territory
     # (no subdivisions)
-    # Republic of Iraq
+    # Iraq
     "IQ-AN",  # Al Anbār
     "IQ-AR",  # Arbīl
     "IQ-BA",  # Al Başrah
@@ -2185,7 +2185,7 @@ SubdivisionCodeType = Literal[
     "IQ-SD",  # Şalāḩ ad Dīn
     "IQ-SU",  # As Sulaymānīyah
     "IQ-WA",  # Wāsiţ
-    # Islamic Republic of Iran
+    # Iran, Islamic Republic of
     "IR-00",  # Markazī
     "IR-01",  # Gīlān
     "IR-02",  # Māzandarān
@@ -2217,7 +2217,7 @@ SubdivisionCodeType = Literal[
     "IR-28",  # Khorāsān-e Shomālī
     "IR-29",  # Khorāsān-e Jonūbī
     "IR-30",  # Alborz
-    # Republic of Iceland
+    # Iceland
     "IS-1",  # Höfuðborgarsvæði
     "IS-2",  # Suðurnes
     "IS-3",  # Vesturland
@@ -2290,7 +2290,7 @@ SubdivisionCodeType = Literal[
     "IS-VEM",  # Vestmannaeyjabær
     "IS-VER",  # Vesturbyggð
     "IS-VOP",  # Vopnafjarðarhreppur
-    # Italian Republic
+    # Italy
     "IT-21",  # Piemonte
     "IT-23",  # Val d'Aoste
     "IT-25",  # Lombardia
@@ -2434,7 +2434,7 @@ SubdivisionCodeType = Literal[
     "JM-12",  # Manchester
     "JM-13",  # Clarendon
     "JM-14",  # Saint Catherine
-    # Hashemite Kingdom of Jordan
+    # Jordan
     "JO-AJ",  # ‘Ajlūn
     "JO-AM",  # Al ‘A̅şimah
     "JO-AQ",  # Al ‘Aqabah
@@ -2495,7 +2495,7 @@ SubdivisionCodeType = Literal[
     "JP-45",  # Miyazaki
     "JP-46",  # Kagoshima
     "JP-47",  # Okinawa
-    # Republic of Kenya
+    # Kenya
     "KE-01",  # Baringo
     "KE-02",  # Bomet
     "KE-03",  # Bungoma
@@ -2543,7 +2543,7 @@ SubdivisionCodeType = Literal[
     "KE-45",  # Vihiga
     "KE-46",  # Wajir
     "KE-47",  # West Pokot
-    # Kyrgyz Republic
+    # Kyrgyzstan
     "KG-B",  # Batken
     "KG-C",  # Chuyskaya oblast'
     "KG-GB",  # Bishkek Shaary
@@ -2553,7 +2553,7 @@ SubdivisionCodeType = Literal[
     "KG-O",  # Osh
     "KG-T",  # Talas
     "KG-Y",  # Issyk-Kul'skaja oblast'
-    # Kingdom of Cambodia
+    # Cambodia
     "KH-1",  # Banteay Mean Choăy
     "KH-10",  # Kracheh
     "KH-11",  # Mondol Kiri
@@ -2579,11 +2579,11 @@ SubdivisionCodeType = Literal[
     "KH-7",  # Kampot
     "KH-8",  # Kandaal
     "KH-9",  # Kaoh Kong
-    # Republic of Kiribati
+    # Kiribati
     "KI-G",  # Gilbert Islands
     "KI-L",  # Line Islands
     "KI-P",  # Phoenix Islands
-    # Union of the Comoros
+    # Comoros
     "KM-A",  # Anjouan
     "KM-G",  # Grande Comore
     "KM-M",  # Mohéli
@@ -2604,7 +2604,7 @@ SubdivisionCodeType = Literal[
     "KN-15",  # Trinity Palmetto Point
     "KN-K",  # Saint Kitts
     "KN-N",  # Nevis
-    # Democratic People's Republic of Korea
+    # Korea, Democratic People's Republic of
     "KP-01",  # P'yǒngyang
     "KP-02",  # P'yǒngan-namdo
     "KP-03",  # P'yǒngan-bukto
@@ -2618,7 +2618,7 @@ SubdivisionCodeType = Literal[
     "KP-13",  # Raseon
     "KP-14",  # Nampho
     "KP-15",  # Kaeseong
-    # Republic of Korea
+    # Korea, Republic of
     "KR-11",  # Seoul-teukbyeolsi
     "KR-26",  # Busan-gwangyeoksi
     "KR-27",  # Daegu-gwangyeoksi
@@ -2636,7 +2636,7 @@ SubdivisionCodeType = Literal[
     "KR-48",  # Gyeongsangnam-do
     "KR-49",  # Jeju-teukbyeoljachido
     "KR-50",  # Sejong
-    # State of Kuwait
+    # Kuwait
     "KW-AH",  # Al Aḩmadī
     "KW-FA",  # Al Farwānīyah
     "KW-HA",  # Ḩawallī
@@ -2645,7 +2645,7 @@ SubdivisionCodeType = Literal[
     "KW-MU",  # Mubārak al Kabīr
     # Cayman Islands
     # (no subdivisions)
-    # Republic of Kazakhstan
+    # Kazakhstan
     "KZ-10",  # Abajskaja oblast’
     "KZ-11",  # Akmolinskaja oblast'
     "KZ-15",  # Aktjubinskaja oblast'
@@ -2685,7 +2685,7 @@ SubdivisionCodeType = Literal[
     "LA-XE",  # Xékong
     "LA-XI",  # Xiangkhouang
     "LA-XS",  # Xaisômboun
-    # Lebanese Republic
+    # Lebanon
     "LB-AK",  # Aakkâr
     "LB-AS",  # Ash Shimāl
     "LB-BA",  # Bayrūt
@@ -2705,7 +2705,7 @@ SubdivisionCodeType = Literal[
     "LC-10",  # Soufrière
     "LC-11",  # Vieux Fort
     "LC-12",  # Canaries
-    # Principality of Liechtenstein
+    # Liechtenstein
     "LI-01",  # Balzers
     "LI-02",  # Eschen
     "LI-03",  # Gamprin
@@ -2717,7 +2717,7 @@ SubdivisionCodeType = Literal[
     "LI-09",  # Triesen
     "LI-10",  # Triesenberg
     "LI-11",  # Vaduz
-    # Democratic Socialist Republic of Sri Lanka
+    # Sri Lanka
     "LK-1",  # Western Province
     "LK-11",  # Colombo
     "LK-12",  # Gampaha
@@ -2752,7 +2752,7 @@ SubdivisionCodeType = Literal[
     "LK-9",  # Sabaragamuwa Province
     "LK-91",  # Ratnapura
     "LK-92",  # Kegalla
-    # Republic of Liberia
+    # Liberia
     "LR-BG",  # Bong
     "LR-BM",  # Bomi
     "LR-CM",  # Grand Cape Mount
@@ -2768,7 +2768,7 @@ SubdivisionCodeType = Literal[
     "LR-RG",  # River Gee
     "LR-RI",  # River Cess
     "LR-SI",  # Sinoe
-    # Kingdom of Lesotho
+    # Lesotho
     "LS-A",  # Maseru
     "LS-B",  # Botha-Bothe
     "LS-C",  # Leribe
@@ -2779,7 +2779,7 @@ SubdivisionCodeType = Literal[
     "LS-H",  # Qacha's Nek
     "LS-J",  # Mokhotlong
     "LS-K",  # Thaba-Tseka
-    # Republic of Lithuania
+    # Lithuania
     "LT-01",  # Akmenė
     "LT-02",  # Alytaus miestas
     "LT-03",  # Alytus
@@ -2850,7 +2850,7 @@ SubdivisionCodeType = Literal[
     "LT-TE",  # Telšių apskritis
     "LT-UT",  # Utenos apskritis
     "LT-VL",  # Vilniaus apskritis
-    # Grand Duchy of Luxembourg
+    # Luxembourg
     "LU-CA",  # Capellen
     "LU-CL",  # Clervaux
     "LU-DI",  # Diekirch
@@ -2863,7 +2863,7 @@ SubdivisionCodeType = Literal[
     "LU-RM",  # Remich
     "LU-VD",  # Vianden
     "LU-WI",  # Wiltz
-    # Republic of Latvia
+    # Latvia
     "LV-002",  # Aizkraukles novads
     "LV-007",  # Alūksnes novads
     "LV-011",  # Ādažu novads
@@ -2930,7 +2930,7 @@ SubdivisionCodeType = Literal[
     "LY-WD",  # Wādī al Ḩayāt
     "LY-WS",  # Wādī ash Shāţi’
     "LY-ZA",  # Az Zāwiyah
-    # Kingdom of Morocco
+    # Morocco
     "MA-01",  # Tanger-Tétouan-Al Hoceïma
     "MA-02",  # L'Oriental
     "MA-03",  # Fès-Meknès
@@ -3018,7 +3018,7 @@ SubdivisionCodeType = Literal[
     "MA-TNT",  # Tan-Tan (EH-partial)
     "MA-YUS",  # Youssoufia
     "MA-ZAG",  # Zagora
-    # Principality of Monaco
+    # Monaco
     "MC-CL",  # La Colle
     "MC-CO",  # La Condamine
     "MC-FO",  # Fontvieille
@@ -3036,7 +3036,7 @@ SubdivisionCodeType = Literal[
     "MC-SP",  # Spélugues
     "MC-SR",  # Saint-Roman
     "MC-VR",  # Vallon de la Rousse
-    # Republic of Moldova
+    # Moldova, Republic of
     "MD-AN",  # Anenii Noi
     "MD-BA",  # Bălți
     "MD-BD",  # Bender [Tighina]
@@ -3102,14 +3102,14 @@ SubdivisionCodeType = Literal[
     "ME-25",  # Zeta
     # Saint Martin (French part)
     # (no subdivisions)
-    # Republic of Madagascar
+    # Madagascar
     "MG-A",  # Toamasina
     "MG-D",  # Antsiranana
     "MG-F",  # Fianarantsoa
     "MG-M",  # Mahajanga
     "MG-T",  # Antananarivo
     "MG-U",  # Toliara
-    # Republic of the Marshall Islands
+    # Marshall Islands
     "MH-ALK",  # Ailuk
     "MH-ALL",  # Ailinglaplap
     "MH-ARN",  # Arno
@@ -3136,7 +3136,7 @@ SubdivisionCodeType = Literal[
     "MH-UTI",  # Utrik
     "MH-WTH",  # Wotho
     "MH-WTJ",  # Wotje
-    # Republic of North Macedonia
+    # North Macedonia
     "MK-101",  # Veles
     "MK-102",  # Gradsko
     "MK-103",  # Demir Kapija
@@ -3217,7 +3217,7 @@ SubdivisionCodeType = Literal[
     "MK-815",  # Čair †
     "MK-816",  # Čučer-Sandevo
     "MK-817",  # Šuto Orizari †
-    # Republic of Mali
+    # Mali
     "ML-1",  # Kayes
     "ML-10",  # Taoudénit
     "ML-2",  # Koulikoro
@@ -3229,7 +3229,7 @@ SubdivisionCodeType = Literal[
     "ML-8",  # Kidal
     "ML-9",  # Ménaka
     "ML-BKO",  # Bamako
-    # Republic of Myanmar
+    # Myanmar
     "MM-01",  # Sagaing
     "MM-02",  # Bago
     "MM-03",  # Magway
@@ -3268,13 +3268,13 @@ SubdivisionCodeType = Literal[
     "MN-071",  # Bayan-Ölgiy
     "MN-073",  # Arhangay
     "MN-1",  # Ulaanbaatar
-    # Macao Special Administrative Region of China
+    # Macao
     # (no subdivisions)
-    # Commonwealth of the Northern Mariana Islands
+    # Northern Mariana Islands
     # (no subdivisions)
     # Martinique
     # (no subdivisions)
-    # Islamic Republic of Mauritania
+    # Mauritania
     "MR-01",  # Hodh ech Chargui
     "MR-02",  # Hodh el Gharbi
     "MR-03",  # Assaba
@@ -3292,7 +3292,7 @@ SubdivisionCodeType = Literal[
     "MR-15",  # Nouakchott Sud
     # Montserrat
     # (no subdivisions)
-    # Republic of Malta
+    # Malta
     "MT-01",  # Attard
     "MT-02",  # Balzan
     "MT-03",  # Birgu
@@ -3361,7 +3361,7 @@ SubdivisionCodeType = Literal[
     "MT-66",  # Żebbuġ Malta
     "MT-67",  # Żejtun
     "MT-68",  # Żurrieq
-    # Republic of Mauritius
+    # Mauritius
     "MU-AG",  # Agalega Islands
     "MU-BL",  # Black River
     "MU-CC",  # Cargados Carajos Shoals
@@ -3374,7 +3374,7 @@ SubdivisionCodeType = Literal[
     "MU-RO",  # Rodrigues Island
     "MU-RR",  # Rivière du Rempart
     "MU-SA",  # Savanne
-    # Republic of Maldives
+    # Maldives
     "MV-00",  # South Ari Atoll
     "MV-01",  # Addu City
     "MV-02",  # North Ari Atoll
@@ -3396,7 +3396,7 @@ SubdivisionCodeType = Literal[
     "MV-28",  # South Huvadhu Atoll
     "MV-29",  # Fuvammulah
     "MV-MLE",  # Male
-    # Republic of Malawi
+    # Malawi
     "MW-BA",  # Balaka
     "MW-BL",  # Blantyre
     "MW-C",  # Central Region
@@ -3428,7 +3428,7 @@ SubdivisionCodeType = Literal[
     "MW-SA",  # Salima
     "MW-TH",  # Thyolo
     "MW-ZO",  # Zomba
-    # United Mexican States
+    # Mexico
     "MX-AGU",  # Aguascalientes
     "MX-BCN",  # Baja California
     "MX-BCS",  # Baja California Sur
@@ -3478,7 +3478,7 @@ SubdivisionCodeType = Literal[
     "MY-14",  # Wilayah Persekutuan Kuala Lumpur
     "MY-15",  # Wilayah Persekutuan Labuan
     "MY-16",  # Wilayah Persekutuan Putrajaya
-    # Republic of Mozambique
+    # Mozambique
     "MZ-A",  # Niassa
     "MZ-B",  # Manica
     "MZ-G",  # Gaza
@@ -3490,7 +3490,7 @@ SubdivisionCodeType = Literal[
     "MZ-Q",  # Zambézia
     "MZ-S",  # Sofala
     "MZ-T",  # Tete
-    # Republic of Namibia
+    # Namibia
     "NA-CA",  # Zambezi
     "NA-ER",  # Erongo
     "NA-HA",  # Hardap
@@ -3507,7 +3507,7 @@ SubdivisionCodeType = Literal[
     "NA-OW",  # Ohangwena
     # New Caledonia
     # (no subdivisions)
-    # Republic of the Niger
+    # Niger
     "NE-1",  # Agadez
     "NE-2",  # Diffa
     "NE-3",  # Dosso
@@ -3518,7 +3518,7 @@ SubdivisionCodeType = Literal[
     "NE-8",  # Niamey
     # Norfolk Island
     # (no subdivisions)
-    # Federal Republic of Nigeria
+    # Nigeria
     "NG-AB",  # Abia
     "NG-AD",  # Adamawa
     "NG-AK",  # Akwa Ibom
@@ -3556,7 +3556,7 @@ SubdivisionCodeType = Literal[
     "NG-TA",  # Taraba
     "NG-YO",  # Yobe
     "NG-ZA",  # Zamfara
-    # Republic of Nicaragua
+    # Nicaragua
     "NI-AN",  # Costa Caribe Norte
     "NI-AS",  # Costa Caribe Sur
     "NI-BO",  # Boaco
@@ -3574,7 +3574,7 @@ SubdivisionCodeType = Literal[
     "NI-NS",  # Nueva Segovia
     "NI-RI",  # Rivas
     "NI-SJ",  # Río San Juan
-    # Kingdom of the Netherlands
+    # Netherlands
     "NL-AW",  # Aruba
     "NL-BQ1",  # Bonaire
     "NL-BQ2",  # Saba
@@ -3593,7 +3593,7 @@ SubdivisionCodeType = Literal[
     "NL-UT",  # Utrecht
     "NL-ZE",  # Zeeland
     "NL-ZH",  # Zuid-Holland
-    # Kingdom of Norway
+    # Norway
     "NO-03",  # Oslo
     "NO-11",  # Rogaland
     "NO-15",  # Møre og Romsdal
@@ -3607,7 +3607,7 @@ SubdivisionCodeType = Literal[
     "NO-46",  # Vestland
     "NO-50",  # Trööndelage
     "NO-54",  # Romssa ja Finnmárkku
-    # Federal Democratic Republic of Nepal
+    # Nepal
     "NP-P1",  # Koshi
     "NP-P2",  # Madhesh
     "NP-P3",  # Bagmati
@@ -3615,7 +3615,7 @@ SubdivisionCodeType = Literal[
     "NP-P5",  # Lumbini
     "NP-P6",  # Karnali
     "NP-P7",  # Sudurpashchim
-    # Republic of Nauru
+    # Nauru
     "NR-01",  # Aiwo
     "NR-02",  # Anabar
     "NR-03",  # Anetan
@@ -3650,7 +3650,7 @@ SubdivisionCodeType = Literal[
     "NZ-WGN",  # Greater Wellington
     "NZ-WKO",  # Waikato
     "NZ-WTC",  # West Coast
-    # Sultanate of Oman
+    # Oman
     "OM-BJ",  # Janūb al Bāţinah
     "OM-BS",  # Shamāl al Bāţinah
     "OM-BU",  # Al Buraymī
@@ -3662,7 +3662,7 @@ SubdivisionCodeType = Literal[
     "OM-WU",  # Al Wusţá
     "OM-ZA",  # Az̧ Z̧āhirah
     "OM-ZU",  # Z̧ufār
-    # Republic of Panama
+    # Panama
     "PA-1",  # Bocas del Toro
     "PA-10",  # Panamá Oeste
     "PA-2",  # Coclé
@@ -3677,7 +3677,7 @@ SubdivisionCodeType = Literal[
     "PA-KY",  # Guna Yala
     "PA-NB",  # Ngäbe-Buglé
     "PA-NT",  # Naso Tjër Di
-    # Republic of Peru
+    # Peru
     "PE-AMA",  # Amarumayu
     "PE-ANC",  # Ancash
     "PE-APU",  # Apurimaq
@@ -3706,7 +3706,7 @@ SubdivisionCodeType = Literal[
     "PE-UCA",  # Ucayali
     # French Polynesia
     # (no subdivisions)
-    # Independent State of Papua New Guinea
+    # Papua New Guinea
     "PG-CPK",  # Chimbu
     "PG-CPM",  # Central
     "PG-EBR",  # East New Britain
@@ -3729,7 +3729,7 @@ SubdivisionCodeType = Literal[
     "PG-WBK",  # West New Britain
     "PG-WHM",  # Western Highlands
     "PG-WPD",  # Western
-    # Republic of the Philippines
+    # Philippines
     "PH-00",  # National Capital Region
     "PH-01",  # Ilocos (Region I)
     "PH-02",  # Cagayan Valley (Region II)
@@ -3829,7 +3829,7 @@ SubdivisionCodeType = Literal[
     "PH-ZAS",  # Zamboanga del Sur
     "PH-ZMB",  # Zambales
     "PH-ZSI",  # Zamboanga Sibugay
-    # Islamic Republic of Pakistan
+    # Pakistan
     "PK-BA",  # Balochistan
     "PK-GB",  # Gilgit-Baltistan
     "PK-IS",  # Islamabad
@@ -3837,7 +3837,7 @@ SubdivisionCodeType = Literal[
     "PK-KP",  # Khyber Pakhtunkhwa
     "PK-PB",  # Punjab
     "PK-SD",  # Sindh
-    # Republic of Poland
+    # Poland
     "PL-02",  # Dolnośląskie
     "PL-04",  # Kujawsko-Pomorskie
     "PL-06",  # Lubelskie
@@ -3860,7 +3860,7 @@ SubdivisionCodeType = Literal[
     # (no subdivisions)
     # Puerto Rico
     # (no subdivisions)
-    # the State of Palestine
+    # Palestine, State of
     "PS-BTH",  # Bethlehem
     "PS-DEB",  # Deir El Balah
     "PS-GZA",  # Gaza
@@ -3877,7 +3877,7 @@ SubdivisionCodeType = Literal[
     "PS-SLT",  # Salfit
     "PS-TBS",  # Tubas
     "PS-TKM",  # Tulkarm
-    # Portuguese Republic
+    # Portugal
     "PT-01",  # Aveiro
     "PT-02",  # Beja
     "PT-03",  # Braga
@@ -3898,7 +3898,7 @@ SubdivisionCodeType = Literal[
     "PT-18",  # Viseu
     "PT-20",  # Região Autónoma dos Açores
     "PT-30",  # Região Autónoma da Madeira
-    # Republic of Palau
+    # Palau
     "PW-002",  # Aimeliik
     "PW-004",  # Airai
     "PW-010",  # Angaur
@@ -3915,7 +3915,7 @@ SubdivisionCodeType = Literal[
     "PW-228",  # Ngiwal
     "PW-350",  # Peleliu
     "PW-370",  # Sonsorol
-    # Republic of Paraguay
+    # Paraguay
     "PY-1",  # Concepción
     "PY-10",  # Alto Paraná
     "PY-11",  # Central
@@ -3934,7 +3934,7 @@ SubdivisionCodeType = Literal[
     "PY-8",  # Misiones
     "PY-9",  # Paraguarí
     "PY-ASU",  # Asunción
-    # State of Qatar
+    # Qatar
     "QA-DA",  # Ad Dawḩah
     "QA-KH",  # Al Khawr wa adh Dhakhīrah
     "QA-MS",  # Ash Shamāl
@@ -3988,7 +3988,7 @@ SubdivisionCodeType = Literal[
     "RO-VL",  # Vâlcea
     "RO-VN",  # Vrancea
     "RO-VS",  # Vaslui
-    # Republic of Serbia
+    # Serbia
     "RS-00",  # Beograd
     "RS-01",  # Severnobački okrug
     "RS-02",  # Srednjebanatski okrug
@@ -4105,13 +4105,13 @@ SubdivisionCodeType = Literal[
     "RU-YAR",  # Jaroslavskaja oblast'
     "RU-YEV",  # Evrejskaja avtonomnaja oblast'
     "RU-ZAB",  # Zabajkal'skij kraj
-    # Rwandese Republic
+    # Rwanda
     "RW-01",  # City of Kigali
     "RW-02",  # Eastern
     "RW-03",  # Northern
     "RW-04",  # Western
     "RW-05",  # Southern
-    # Kingdom of Saudi Arabia
+    # Saudi Arabia
     "SA-01",  # Ar Riyāḑ
     "SA-02",  # Makkah al Mukarramah
     "SA-03",  # Al Madīnah al Munawwarah
@@ -4136,7 +4136,7 @@ SubdivisionCodeType = Literal[
     "SB-RB",  # Rennell and Bellona
     "SB-TE",  # Temotu
     "SB-WE",  # Western
-    # Republic of Seychelles
+    # Seychelles
     "SC-01",  # Anse aux Pins
     "SC-02",  # Anse Boileau
     "SC-03",  # Anse Etoile
@@ -4164,7 +4164,7 @@ SubdivisionCodeType = Literal[
     "SC-25",  # Roche Caiman
     "SC-26",  # Ile Perseverance I
     "SC-27",  # Ile Perseverance II
-    # Republic of the Sudan
+    # Sudan
     "SD-DC",  # Central Darfur
     "SD-DE",  # East Darfur
     "SD-DN",  # North Darfur
@@ -4183,7 +4183,7 @@ SubdivisionCodeType = Literal[
     "SD-NW",  # White Nile
     "SD-RS",  # Red Sea
     "SD-SI",  # Sennar
-    # Kingdom of Sweden
+    # Sweden
     "SE-AB",  # Stockholms län [SE-01]
     "SE-AC",  # Västerbottens län [SE-24]
     "SE-BD",  # Norrbottens län [SE-25]
@@ -4205,7 +4205,7 @@ SubdivisionCodeType = Literal[
     "SE-X",  # Gävleborgs län [SE-21]
     "SE-Y",  # Västernorrlands län [SE-22]
     "SE-Z",  # Jämtlands län [SE-23]
-    # Republic of Singapore
+    # Singapore
     "SG-01",  # Central Singapore
     "SG-02",  # North East
     "SG-03",  # North West
@@ -4215,7 +4215,7 @@ SubdivisionCodeType = Literal[
     "SH-AC",  # Ascension
     "SH-HL",  # Saint Helena
     "SH-TA",  # Tristan da Cunha
-    # Republic of Slovenia
+    # Slovenia
     "SI-001",  # Ajdovščina
     "SI-002",  # Beltinci
     "SI-003",  # Bled
@@ -4430,7 +4430,7 @@ SubdivisionCodeType = Literal[
     "SI-213",  # Ankaran
     # Svalbard and Jan Mayen
     # (no subdivisions)
-    # Slovak Republic
+    # Slovakia
     "SK-BC",  # Banskobystrický kraj
     "SK-BL",  # Bratislavský kraj
     "SK-KI",  # Košický kraj
@@ -4439,13 +4439,13 @@ SubdivisionCodeType = Literal[
     "SK-TA",  # Trnavský kraj
     "SK-TC",  # Trenčiansky kraj
     "SK-ZI",  # Žilinský kraj
-    # Republic of Sierra Leone
+    # Sierra Leone
     "SL-E",  # Eastern
     "SL-N",  # Northern
     "SL-NW",  # North Western
     "SL-S",  # Southern
     "SL-W",  # Western Area (Freetown)
-    # Republic of San Marino
+    # San Marino
     "SM-01",  # Acquaviva
     "SM-02",  # Chiesanuova
     "SM-03",  # Domagnano
@@ -4455,7 +4455,7 @@ SubdivisionCodeType = Literal[
     "SM-07",  # Città di San Marino
     "SM-08",  # Montegiardino
     "SM-09",  # Serravalle
-    # Republic of Senegal
+    # Senegal
     "SN-DB",  # Diourbel
     "SN-DK",  # Dakar
     "SN-FK",  # Fatick
@@ -4470,7 +4470,7 @@ SubdivisionCodeType = Literal[
     "SN-TC",  # Tambacounda
     "SN-TH",  # Thiès
     "SN-ZG",  # Ziguinchor
-    # Federal Republic of Somalia
+    # Somalia
     "SO-AW",  # Awdal
     "SO-BK",  # Bakool
     "SO-BN",  # Banaadir
@@ -4489,7 +4489,7 @@ SubdivisionCodeType = Literal[
     "SO-SO",  # Sool
     "SO-TO",  # Togdheer
     "SO-WO",  # Woqooyi Galbeed
-    # Republic of Suriname
+    # Suriname
     "SR-BR",  # Brokopondo
     "SR-CM",  # Commewijne
     "SR-CR",  # Coronie
@@ -4500,7 +4500,7 @@ SubdivisionCodeType = Literal[
     "SR-SA",  # Saramacca
     "SR-SI",  # Sipaliwini
     "SR-WA",  # Wanica
-    # Republic of South Sudan
+    # South Sudan
     "SS-BN",  # Northern Bahr el Ghazal
     "SS-BW",  # Western Bahr el Ghazal
     "SS-EC",  # Central Equatoria
@@ -4511,7 +4511,7 @@ SubdivisionCodeType = Literal[
     "SS-NU",  # Upper Nile
     "SS-UY",  # Unity
     "SS-WR",  # Warrap
-    # Democratic Republic of Sao Tome and Principe
+    # Sao Tome and Principe
     "ST-01",  # Água Grande
     "ST-02",  # Cantagalo
     "ST-03",  # Caué
@@ -4519,7 +4519,7 @@ SubdivisionCodeType = Literal[
     "ST-05",  # Lobata
     "ST-06",  # Mé-Zóchi
     "ST-P",  # Príncipe
-    # Republic of El Salvador
+    # El Salvador
     "SV-AH",  # Ahuachapán
     "SV-CA",  # Cabañas
     "SV-CH",  # Chalatenango
@@ -4551,14 +4551,14 @@ SubdivisionCodeType = Literal[
     "SY-RD",  # Rīf Dimashq
     "SY-SU",  # As Suwaydā'
     "SY-TA",  # Ţarţūs
-    # Kingdom of Eswatini
+    # Eswatini
     "SZ-HH",  # Hhohho
     "SZ-LU",  # Lubombo
     "SZ-MA",  # Manzini
     "SZ-SH",  # Shiselweni
     # Turks and Caicos Islands
     # (no subdivisions)
-    # Republic of Chad
+    # Chad
     "TD-BA",  # Batha
     "TD-BG",  # Bahr el Ghazal
     "TD-BO",  # Borkou
@@ -4584,13 +4584,13 @@ SubdivisionCodeType = Literal[
     "TD-WF",  # Wadi Fira
     # French Southern Territories
     # (no subdivisions)
-    # Togolese Republic
+    # Togo
     "TG-C",  # Centrale
     "TG-K",  # Kara
     "TG-M",  # Maritime (Région)
     "TG-P",  # Plateaux
     "TG-S",  # Savanes
-    # Kingdom of Thailand
+    # Thailand
     "TH-10",  # Krung Thep Maha Nakhon
     "TH-11",  # Samut Prakan
     "TH-12",  # Nonthaburi
@@ -4669,7 +4669,7 @@ SubdivisionCodeType = Literal[
     "TH-95",  # Yala
     "TH-96",  # Narathiwat
     "TH-S",  # Phatthaya
-    # Republic of Tajikistan
+    # Tajikistan
     "TJ-DU",  # Dushanbe
     "TJ-GB",  # Kŭhistoni Badakhshon
     "TJ-KT",  # Khatlon
@@ -4677,7 +4677,7 @@ SubdivisionCodeType = Literal[
     "TJ-SU",  # Sughd
     # Tokelau
     # (no subdivisions)
-    # Democratic Republic of Timor-Leste
+    # Timor-Leste
     "TL-AL",  # Aileu
     "TL-AN",  # Ainaro
     "TL-BA",  # Baucau
@@ -4698,7 +4698,7 @@ SubdivisionCodeType = Literal[
     "TM-L",  # Lebap
     "TM-M",  # Mary
     "TM-S",  # Aşgabat
-    # Republic of Tunisia
+    # Tunisia
     "TN-11",  # Tunis
     "TN-12",  # L'Ariana
     "TN-13",  # Ben Arous
@@ -4723,13 +4723,13 @@ SubdivisionCodeType = Literal[
     "TN-81",  # Gabès
     "TN-82",  # Médenine
     "TN-83",  # Tataouine
-    # Kingdom of Tonga
+    # Tonga
     "TO-01",  # 'Eua
     "TO-02",  # Ha'apai
     "TO-03",  # Niuas
     "TO-04",  # Tongatapu
     "TO-05",  # Vava'u
-    # Republic of Türkiye
+    # Türkiye
     "TR-01",  # Adana
     "TR-02",  # Adıyaman
     "TR-03",  # Afyonkarahisar
@@ -4811,7 +4811,7 @@ SubdivisionCodeType = Literal[
     "TR-79",  # Kilis
     "TR-80",  # Osmaniye
     "TR-81",  # Düzce
-    # Republic of Trinidad and Tobago
+    # Trinidad and Tobago
     "TT-ARI",  # Arima
     "TT-CHA",  # Chaguanas
     "TT-CTT",  # Couva-Tabaquite-Talparo
@@ -4859,7 +4859,7 @@ SubdivisionCodeType = Literal[
     "TW-TTT",  # Taitung
     "TW-TXG",  # Taichung
     "TW-YUN",  # Yunlin
-    # United Republic of Tanzania
+    # Tanzania, United Republic of
     "TZ-01",  # Arusha
     "TZ-02",  # Dar es Salaam
     "TZ-03",  # Dodoma
@@ -4919,7 +4919,7 @@ SubdivisionCodeType = Literal[
     "UA-71",  # Cherkaska oblast
     "UA-74",  # Chernihivska oblast
     "UA-77",  # Chernivetska oblast
-    # Republic of Uganda
+    # Uganda
     "UG-101",  # Kalangala
     "UG-102",  # Kampala
     "UG-103",  # Kiboga
@@ -5069,7 +5069,7 @@ SubdivisionCodeType = Literal[
     "UM-86",  # Jarvis Island
     "UM-89",  # Kingman Reef
     "UM-95",  # Palmyra Atoll
-    # United States of America
+    # United States
     "US-AK",  # Alaska
     "US-AL",  # Alabama
     "US-AR",  # Arkansas
@@ -5127,7 +5127,7 @@ SubdivisionCodeType = Literal[
     "US-WI",  # Wisconsin
     "US-WV",  # West Virginia
     "US-WY",  # Wyoming
-    # Eastern Republic of Uruguay
+    # Uruguay
     "UY-AR",  # Artigas
     "UY-CA",  # Canelones
     "UY-CL",  # Cerro Largo
@@ -5147,7 +5147,7 @@ SubdivisionCodeType = Literal[
     "UY-SO",  # Soriano
     "UY-TA",  # Tacuarembó
     "UY-TT",  # Treinta y Tres
-    # Republic of Uzbekistan
+    # Uzbekistan
     "UZ-AN",  # Andijon
     "UZ-BU",  # Buxoro
     "UZ-FA",  # Farg‘ona
@@ -5171,7 +5171,7 @@ SubdivisionCodeType = Literal[
     "VC-04",  # Saint George
     "VC-05",  # Saint Patrick
     "VC-06",  # Grenadines
-    # Bolivarian Republic of Venezuela
+    # Venezuela, Bolivarian Republic of
     "VE-A",  # Distrito Capital
     "VE-B",  # Anzoátegui
     "VE-C",  # Apure
@@ -5197,11 +5197,11 @@ SubdivisionCodeType = Literal[
     "VE-X",  # La Guaira
     "VE-Y",  # Delta Amacuro
     "VE-Z",  # Amazonas
-    # British Virgin Islands
+    # Virgin Islands, British
     # (no subdivisions)
-    # Virgin Islands of the United States
+    # Virgin Islands, U.S.
     # (no subdivisions)
-    # Socialist Republic of Viet Nam
+    # Viet Nam
     "VN-01",  # Lai Châu
     "VN-02",  # Lào Cai
     "VN-03",  # Hà Giang
@@ -5265,7 +5265,7 @@ SubdivisionCodeType = Literal[
     "VN-HN",  # Hà Nội
     "VN-HP",  # Hải Phòng
     "VN-SG",  # Hồ Chí Minh
-    # Republic of Vanuatu
+    # Vanuatu
     "VU-MAP",  # Malampa
     "VU-PAM",  # Pénama
     "VU-SAM",  # Sanma
@@ -5276,7 +5276,7 @@ SubdivisionCodeType = Literal[
     "WF-AL",  # Alo
     "WF-SG",  # Sigave
     "WF-UV",  # Uvea
-    # Independent State of Samoa
+    # Samoa
     "WS-AA",  # A'ana
     "WS-AL",  # Aiga-i-le-Tai
     "WS-AT",  # Atua
@@ -5288,7 +5288,7 @@ SubdivisionCodeType = Literal[
     "WS-TU",  # Tuamasaga
     "WS-VF",  # Va'a-o-Fonoti
     "WS-VS",  # Vaisigano
-    # Republic of Yemen
+    # Yemen
     "YE-AB",  # Abyan
     "YE-AD",  # ‘Adan
     "YE-AM",  # ‘Amrān
@@ -5313,7 +5313,7 @@ SubdivisionCodeType = Literal[
     "YE-TA",  # Tāʻizz
     # Mayotte
     # (no subdivisions)
-    # Republic of South Africa
+    # South Africa
     "ZA-EC",  # Eastern Cape
     "ZA-FS",  # Free State
     "ZA-GP",  # Gauteng
@@ -5323,7 +5323,7 @@ SubdivisionCodeType = Literal[
     "ZA-NC",  # Northern Cape
     "ZA-NW",  # North-West
     "ZA-WC",  # Western Cape
-    # Republic of Zambia
+    # Zambia
     "ZM-01",  # Western
     "ZM-02",  # Central
     "ZM-03",  # Eastern
@@ -5334,7 +5334,7 @@ SubdivisionCodeType = Literal[
     "ZM-08",  # Copperbelt
     "ZM-09",  # Lusaka
     "ZM-10",  # Muchinga
-    # Republic of Zimbabwe
+    # Zimbabwe
     "ZW-BU",  # Bulawayo
     "ZW-HA",  # Harare
     "ZW-MA",  # Manicaland
@@ -5345,4 +5345,115 @@ SubdivisionCodeType = Literal[
     "ZW-MS",  # Matabeleland South
     "ZW-MV",  # Masvingo
     "ZW-MW",  # Mashonaland West
+]
+SubdivisionType = Literal[
+    "Administration",
+    "Administrative atoll",
+    "Administrative precinct",
+    "Administrative region",
+    "Administrative territory",
+    "Arctic region",
+    "Area",
+    "Autonomous city",
+    "Autonomous city in north africa",
+    "Autonomous community",
+    "Autonomous district",
+    "Autonomous municipality",
+    "Autonomous province",
+    "Autonomous region",
+    "Autonomous republic",
+    "Autonomous sector",
+    "Autonomous territorial unit",
+    "Borough",
+    "Canton",
+    "Capital",
+    "Capital city",
+    "Capital district",
+    "Capital territory",
+    "Chain (of islands)",
+    "City",
+    "City corporation",
+    "City municipality",
+    "City with county rights",
+    "Commune",
+    "Council area",
+    "Country",
+    "County",
+    "Decentralized regional entity",
+    "Department",
+    "Dependency",
+    "District",
+    "District municipality",
+    "District with special status",
+    "Districts under republic administration",
+    "Division",
+    "Economic prefecture",
+    "Emirate",
+    "Entity",
+    "European collectivity",
+    "Federal capital territory",
+    "Federal dependency",
+    "Federal district",
+    "Federal entity",
+    "Federal territory",
+    "Free municipal consortium",
+    "Geographical entity",
+    "Geographical region",
+    "Geographical unit",
+    "Governorate",
+    "Group of islands (20 inhabited islands)",
+    "Indigenous region",
+    "Island",
+    "Island council",
+    "Islands, groups of islands",
+    "Land",
+    "Local council",
+    "London borough",
+    "Metropolitan administration",
+    "Metropolitan city",
+    "Metropolitan collectivity with special status",
+    "Metropolitan department",
+    "Metropolitan district",
+    "Metropolitan region",
+    "Municipality",
+    "Oblast",
+    "Outlying area",
+    "Overseas collectivity",
+    "Overseas collectivity with special status",
+    "Overseas departmental collectivity",
+    "Overseas territory",
+    "Overseas unique territorial collectivity",
+    "Pakistan administered area",
+    "Parish",
+    "Popularate",
+    "Prefecture",
+    "Province",
+    "Quarter",
+    "Rayon",
+    "Region",
+    "Regional state",
+    "Republic",
+    "Rural municipality",
+    "Self-governed part",
+    "Special administrative city",
+    "Special administrative region",
+    "Special city",
+    "Special island authority",
+    "Special municipality",
+    "Special region",
+    "Special self-governing city",
+    "Special self-governing province",
+    "State",
+    "State city",
+    "Territorial unit",
+    "Territory",
+    "Town",
+    "Town council",
+    "Two-tier county",
+    "Union territory",
+    "Unitary authority",
+    "Urban community",
+    "Urban municipality",
+    "Voivodship",
+    "Ward",
 ]

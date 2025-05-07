@@ -6,15 +6,15 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Lebanese Republic"
+COUNTRY_NAME: Final[str] = "Lebanon"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("LB-AK", "Aakkâr"),
-    Subdivision("LB-AS", "Ash Shimāl"),
-    Subdivision("LB-BA", "Bayrūt"),
-    Subdivision("LB-BH", "Baalbek-Hermel"),
-    Subdivision("LB-BI", "Al Biqā‘"),
-    Subdivision("LB-JA", "Al Janūb"),
-    Subdivision("LB-JL", "Jabal Lubnān"),
-    Subdivision("LB-NA", "An Nabaţīyah"),
+    Subdivision(code="LB-AK", name="Aakkâr", type_="Governorate"),
+    Subdivision(code="LB-AS", name="Ash Shimāl", type_="Governorate"),
+    Subdivision(code="LB-BA", name="Bayrūt", type_="Governorate"),
+    Subdivision(code="LB-BH", name="Baalbek-Hermel", type_="Governorate"),
+    Subdivision(code="LB-BI", name="Al Biqā‘", type_="Governorate"),
+    Subdivision(code="LB-JA", name="Al Janūb", type_="Governorate"),
+    Subdivision(code="LB-JL", name="Jabal Lubnān", type_="Governorate"),
+    Subdivision(code="LB-NA", name="An Nabaţīyah", type_="Governorate"),
 ]

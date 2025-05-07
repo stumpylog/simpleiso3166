@@ -6,18 +6,18 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Sultanate of Oman"
+COUNTRY_NAME: Final[str] = "Oman"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("OM-BJ", "Janūb al Bāţinah"),
-    Subdivision("OM-BS", "Shamāl al Bāţinah"),
-    Subdivision("OM-BU", "Al Buraymī"),
-    Subdivision("OM-DA", "Ad Dākhilīyah"),
-    Subdivision("OM-MA", "Masqaţ"),
-    Subdivision("OM-MU", "Musandam"),
-    Subdivision("OM-SJ", "Janūb ash Sharqīyah"),
-    Subdivision("OM-SS", "Shamāl ash Sharqīyah"),
-    Subdivision("OM-WU", "Al Wusţá"),
-    Subdivision("OM-ZA", "Az̧ Z̧āhirah"),
-    Subdivision("OM-ZU", "Z̧ufār"),
+    Subdivision(code="OM-BJ", name="Janūb al Bāţinah", type_="Governorate"),
+    Subdivision(code="OM-BS", name="Shamāl al Bāţinah", type_="Governorate"),
+    Subdivision(code="OM-BU", name="Al Buraymī", type_="Governorate"),
+    Subdivision(code="OM-DA", name="Ad Dākhilīyah", type_="Governorate"),
+    Subdivision(code="OM-MA", name="Masqaţ", type_="Governorate"),
+    Subdivision(code="OM-MU", name="Musandam", type_="Governorate"),
+    Subdivision(code="OM-SJ", name="Janūb ash Sharqīyah", type_="Governorate"),
+    Subdivision(code="OM-SS", name="Shamāl ash Sharqīyah", type_="Governorate"),
+    Subdivision(code="OM-WU", name="Al Wusţá", type_="Governorate"),
+    Subdivision(code="OM-ZA", name="Az̧ Z̧āhirah", type_="Governorate"),
+    Subdivision(code="OM-ZU", name="Z̧ufār", type_="Governorate"),
 ]

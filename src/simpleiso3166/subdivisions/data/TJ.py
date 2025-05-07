@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Tajikistan"
+COUNTRY_NAME: Final[str] = "Tajikistan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TJ-DU", "Dushanbe"),
-    Subdivision("TJ-GB", "Kŭhistoni Badakhshon"),
-    Subdivision("TJ-KT", "Khatlon"),
-    Subdivision("TJ-RA", "nohiyahoi tobei jumhurí"),
-    Subdivision("TJ-SU", "Sughd"),
+    Subdivision(code="TJ-DU", name="Dushanbe", type_="Capital territory"),
+    Subdivision(code="TJ-GB", name="Kŭhistoni Badakhshon", type_="Autonomous region"),
+    Subdivision(code="TJ-KT", name="Khatlon", type_="Region"),
+    Subdivision(code="TJ-RA", name="nohiyahoi tobei jumhurí", type_="Districts under republic administration"),
+    Subdivision(code="TJ-SU", name="Sughd", type_="Region"),
 ]

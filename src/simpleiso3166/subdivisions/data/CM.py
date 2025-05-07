@@ -6,17 +6,17 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Cameroon"
+COUNTRY_NAME: Final[str] = "Cameroon"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("CM-AD", "Adamaoua"),
-    Subdivision("CM-CE", "Centre"),
-    Subdivision("CM-EN", "Far North"),
-    Subdivision("CM-ES", "East"),
-    Subdivision("CM-LT", "Littoral"),
-    Subdivision("CM-NO", "North"),
-    Subdivision("CM-NW", "North-West"),
-    Subdivision("CM-OU", "West"),
-    Subdivision("CM-SU", "South"),
-    Subdivision("CM-SW", "South-West"),
+    Subdivision(code="CM-AD", name="Adamaoua", type_="Region"),
+    Subdivision(code="CM-CE", name="Centre", type_="Region"),
+    Subdivision(code="CM-EN", name="Far North", type_="Region"),
+    Subdivision(code="CM-ES", name="East", type_="Region"),
+    Subdivision(code="CM-LT", name="Littoral", type_="Region"),
+    Subdivision(code="CM-NO", name="North", type_="Region"),
+    Subdivision(code="CM-NW", name="North-West", type_="Region"),
+    Subdivision(code="CM-OU", name="West", type_="Region"),
+    Subdivision(code="CM-SU", name="South", type_="Region"),
+    Subdivision(code="CM-SW", name="South-West", type_="Region"),
 ]

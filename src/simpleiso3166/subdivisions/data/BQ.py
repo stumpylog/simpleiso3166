@@ -9,7 +9,7 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Bonaire, Sint Eustatius and Saba"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BQ-BO", "Bonaire"),
-    Subdivision("BQ-SA", "Saba"),
-    Subdivision("BQ-SE", "Sint Eustatius"),
+    Subdivision(code="BQ-BO", name="Bonaire", type_="Special municipality"),
+    Subdivision(code="BQ-SA", name="Saba", type_="Special municipality"),
+    Subdivision(code="BQ-SE", name="Sint Eustatius", type_="Special municipality"),
 ]

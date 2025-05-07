@@ -9,11 +9,11 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "United Arab Emirates"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AE-AJ", "‘Ajmān"),
-    Subdivision("AE-AZ", "Abū Z̧aby"),
-    Subdivision("AE-DU", "Dubayy"),
-    Subdivision("AE-FU", "Al Fujayrah"),
-    Subdivision("AE-RK", "Ra’s al Khaymah"),
-    Subdivision("AE-SH", "Ash Shāriqah"),
-    Subdivision("AE-UQ", "Umm al Qaywayn"),
+    Subdivision(code="AE-AJ", name="‘Ajmān", type_="Emirate"),
+    Subdivision(code="AE-AZ", name="Abū Z̧aby", type_="Emirate"),
+    Subdivision(code="AE-DU", name="Dubayy", type_="Emirate"),
+    Subdivision(code="AE-FU", name="Al Fujayrah", type_="Emirate"),
+    Subdivision(code="AE-RK", name="Ra’s al Khaymah", type_="Emirate"),
+    Subdivision(code="AE-SH", name="Ash Shāriqah", type_="Emirate"),
+    Subdivision(code="AE-UQ", name="Umm al Qaywayn", type_="Emirate"),
 ]

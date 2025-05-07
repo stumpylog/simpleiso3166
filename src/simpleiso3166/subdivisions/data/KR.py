@@ -6,24 +6,24 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Korea"
+COUNTRY_NAME: Final[str] = "Korea, Republic of"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("KR-11", "Seoul-teukbyeolsi"),
-    Subdivision("KR-26", "Busan-gwangyeoksi"),
-    Subdivision("KR-27", "Daegu-gwangyeoksi"),
-    Subdivision("KR-28", "Incheon-gwangyeoksi"),
-    Subdivision("KR-29", "Gwangju-gwangyeoksi"),
-    Subdivision("KR-30", "Daejeon-gwangyeoksi"),
-    Subdivision("KR-31", "Ulsan-gwangyeoksi"),
-    Subdivision("KR-41", "Gyeonggi-do"),
-    Subdivision("KR-42", "Gangwon-teukbyeoljachido"),
-    Subdivision("KR-43", "Chungcheongbuk-do"),
-    Subdivision("KR-44", "Chungcheongnam-do"),
-    Subdivision("KR-45", "Jeollabuk-do"),
-    Subdivision("KR-46", "Jeollanam-do"),
-    Subdivision("KR-47", "Gyeongsangbuk-do"),
-    Subdivision("KR-48", "Gyeongsangnam-do"),
-    Subdivision("KR-49", "Jeju-teukbyeoljachido"),
-    Subdivision("KR-50", "Sejong"),
+    Subdivision(code="KR-11", name="Seoul-teukbyeolsi", type_="Special city"),
+    Subdivision(code="KR-26", name="Busan-gwangyeoksi", type_="Metropolitan city"),
+    Subdivision(code="KR-27", name="Daegu-gwangyeoksi", type_="Metropolitan city"),
+    Subdivision(code="KR-28", name="Incheon-gwangyeoksi", type_="Metropolitan city"),
+    Subdivision(code="KR-29", name="Gwangju-gwangyeoksi", type_="Metropolitan city"),
+    Subdivision(code="KR-30", name="Daejeon-gwangyeoksi", type_="Metropolitan city"),
+    Subdivision(code="KR-31", name="Ulsan-gwangyeoksi", type_="Metropolitan city"),
+    Subdivision(code="KR-41", name="Gyeonggi-do", type_="Province"),
+    Subdivision(code="KR-42", name="Gangwon-teukbyeoljachido", type_="Special self-governing province"),
+    Subdivision(code="KR-43", name="Chungcheongbuk-do", type_="Province"),
+    Subdivision(code="KR-44", name="Chungcheongnam-do", type_="Province"),
+    Subdivision(code="KR-45", name="Jeollabuk-do", type_="Province"),
+    Subdivision(code="KR-46", name="Jeollanam-do", type_="Province"),
+    Subdivision(code="KR-47", name="Gyeongsangbuk-do", type_="Province"),
+    Subdivision(code="KR-48", name="Gyeongsangnam-do", type_="Province"),
+    Subdivision(code="KR-49", name="Jeju-teukbyeoljachido", type_="Special self-governing province"),
+    Subdivision(code="KR-50", name="Sejong", type_="Special self-governing city"),
 ]

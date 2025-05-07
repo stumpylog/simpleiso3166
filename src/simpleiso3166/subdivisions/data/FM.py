@@ -6,11 +6,11 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Federated States of Micronesia"
+COUNTRY_NAME: Final[str] = "Micronesia, Federated States of"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("FM-KSA", "Kosrae"),
-    Subdivision("FM-PNI", "Pohnpei"),
-    Subdivision("FM-TRK", "Chuuk"),
-    Subdivision("FM-YAP", "Yap"),
+    Subdivision(code="FM-KSA", name="Kosrae", type_="State"),
+    Subdivision(code="FM-PNI", name="Pohnpei", type_="State"),
+    Subdivision(code="FM-TRK", name="Chuuk", type_="State"),
+    Subdivision(code="FM-YAP", name="Yap", type_="State"),
 ]

@@ -9,15 +9,15 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Barbados"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BB-01", "Christ Church"),
-    Subdivision("BB-02", "Saint Andrew"),
-    Subdivision("BB-03", "Saint George"),
-    Subdivision("BB-04", "Saint James"),
-    Subdivision("BB-05", "Saint John"),
-    Subdivision("BB-06", "Saint Joseph"),
-    Subdivision("BB-07", "Saint Lucy"),
-    Subdivision("BB-08", "Saint Michael"),
-    Subdivision("BB-09", "Saint Peter"),
-    Subdivision("BB-10", "Saint Philip"),
-    Subdivision("BB-11", "Saint Thomas"),
+    Subdivision(code="BB-01", name="Christ Church", type_="Parish"),
+    Subdivision(code="BB-02", name="Saint Andrew", type_="Parish"),
+    Subdivision(code="BB-03", name="Saint George", type_="Parish"),
+    Subdivision(code="BB-04", name="Saint James", type_="Parish"),
+    Subdivision(code="BB-05", name="Saint John", type_="Parish"),
+    Subdivision(code="BB-06", name="Saint Joseph", type_="Parish"),
+    Subdivision(code="BB-07", name="Saint Lucy", type_="Parish"),
+    Subdivision(code="BB-08", name="Saint Michael", type_="Parish"),
+    Subdivision(code="BB-09", name="Saint Peter", type_="Parish"),
+    Subdivision(code="BB-10", name="Saint Philip", type_="Parish"),
+    Subdivision(code="BB-11", name="Saint Thomas", type_="Parish"),
 ]

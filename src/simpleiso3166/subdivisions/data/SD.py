@@ -6,25 +6,25 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of the Sudan"
+COUNTRY_NAME: Final[str] = "Sudan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SD-DC", "Central Darfur"),
-    Subdivision("SD-DE", "East Darfur"),
-    Subdivision("SD-DN", "North Darfur"),
-    Subdivision("SD-DS", "South Darfur"),
-    Subdivision("SD-DW", "West Darfur"),
-    Subdivision("SD-GD", "Gedaref"),
-    Subdivision("SD-GK", "West Kordofan"),
-    Subdivision("SD-GZ", "Gezira"),
-    Subdivision("SD-KA", "Kassala"),
-    Subdivision("SD-KH", "Khartoum"),
-    Subdivision("SD-KN", "North Kordofan"),
-    Subdivision("SD-KS", "South Kordofan"),
-    Subdivision("SD-NB", "Blue Nile"),
-    Subdivision("SD-NO", "Northern"),
-    Subdivision("SD-NR", "River Nile"),
-    Subdivision("SD-NW", "White Nile"),
-    Subdivision("SD-RS", "Red Sea"),
-    Subdivision("SD-SI", "Sennar"),
+    Subdivision(code="SD-DC", name="Central Darfur", type_="State"),
+    Subdivision(code="SD-DE", name="East Darfur", type_="State"),
+    Subdivision(code="SD-DN", name="North Darfur", type_="State"),
+    Subdivision(code="SD-DS", name="South Darfur", type_="State"),
+    Subdivision(code="SD-DW", name="West Darfur", type_="State"),
+    Subdivision(code="SD-GD", name="Gedaref", type_="State"),
+    Subdivision(code="SD-GK", name="West Kordofan", type_="State"),
+    Subdivision(code="SD-GZ", name="Gezira", type_="State"),
+    Subdivision(code="SD-KA", name="Kassala", type_="State"),
+    Subdivision(code="SD-KH", name="Khartoum", type_="State"),
+    Subdivision(code="SD-KN", name="North Kordofan", type_="State"),
+    Subdivision(code="SD-KS", name="South Kordofan", type_="State"),
+    Subdivision(code="SD-NB", name="Blue Nile", type_="State"),
+    Subdivision(code="SD-NO", name="Northern", type_="State"),
+    Subdivision(code="SD-NR", name="River Nile", type_="State"),
+    Subdivision(code="SD-NW", name="White Nile", type_="State"),
+    Subdivision(code="SD-RS", name="Red Sea", type_="State"),
+    Subdivision(code="SD-SI", name="Sennar", type_="State"),
 ]

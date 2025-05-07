@@ -9,7 +9,7 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Wallis and Futuna"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("WF-AL", "Alo"),
-    Subdivision("WF-SG", "Sigave"),
-    Subdivision("WF-UV", "Uvea"),
+    Subdivision(code="WF-AL", name="Alo", type_="Administrative precinct"),
+    Subdivision(code="WF-SG", name="Sigave", type_="Administrative precinct"),
+    Subdivision(code="WF-UV", name="Uvea", type_="Administrative precinct"),
 ]

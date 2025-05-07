@@ -6,22 +6,22 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Trinidad and Tobago"
+COUNTRY_NAME: Final[str] = "Trinidad and Tobago"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TT-ARI", "Arima"),
-    Subdivision("TT-CHA", "Chaguanas"),
-    Subdivision("TT-CTT", "Couva-Tabaquite-Talparo"),
-    Subdivision("TT-DMN", "Diego Martin"),
-    Subdivision("TT-MRC", "Mayaro-Rio Claro"),
-    Subdivision("TT-PED", "Penal-Debe"),
-    Subdivision("TT-POS", "Port of Spain"),
-    Subdivision("TT-PRT", "Princes Town"),
-    Subdivision("TT-PTF", "Point Fortin"),
-    Subdivision("TT-SFO", "San Fernando"),
-    Subdivision("TT-SGE", "Sangre Grande"),
-    Subdivision("TT-SIP", "Siparia"),
-    Subdivision("TT-SJL", "San Juan-Laventille"),
-    Subdivision("TT-TOB", "Tobago"),
-    Subdivision("TT-TUP", "Tunapuna-Piarco"),
+    Subdivision(code="TT-ARI", name="Arima", type_="Borough"),
+    Subdivision(code="TT-CHA", name="Chaguanas", type_="Borough"),
+    Subdivision(code="TT-CTT", name="Couva-Tabaquite-Talparo", type_="Region"),
+    Subdivision(code="TT-DMN", name="Diego Martin", type_="Region"),
+    Subdivision(code="TT-MRC", name="Mayaro-Rio Claro", type_="Region"),
+    Subdivision(code="TT-PED", name="Penal-Debe", type_="Region"),
+    Subdivision(code="TT-POS", name="Port of Spain", type_="City"),
+    Subdivision(code="TT-PRT", name="Princes Town", type_="Region"),
+    Subdivision(code="TT-PTF", name="Point Fortin", type_="Borough"),
+    Subdivision(code="TT-SFO", name="San Fernando", type_="City"),
+    Subdivision(code="TT-SGE", name="Sangre Grande", type_="Region"),
+    Subdivision(code="TT-SIP", name="Siparia", type_="Region"),
+    Subdivision(code="TT-SJL", name="San Juan-Laventille", type_="Region"),
+    Subdivision(code="TT-TOB", name="Tobago", type_="Ward"),
+    Subdivision(code="TT-TUP", name="Tunapuna-Piarco", type_="Region"),
 ]

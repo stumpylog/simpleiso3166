@@ -9,13 +9,13 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "United States Minor Outlying Islands"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("UM-67", "Johnston Atoll"),
-    Subdivision("UM-71", "Midway Islands"),
-    Subdivision("UM-76", "Navassa Island"),
-    Subdivision("UM-79", "Wake Island"),
-    Subdivision("UM-81", "Baker Island"),
-    Subdivision("UM-84", "Howland Island"),
-    Subdivision("UM-86", "Jarvis Island"),
-    Subdivision("UM-89", "Kingman Reef"),
-    Subdivision("UM-95", "Palmyra Atoll"),
+    Subdivision(code="UM-67", name="Johnston Atoll", type_="Islands, groups of islands"),
+    Subdivision(code="UM-71", name="Midway Islands", type_="Islands, groups of islands"),
+    Subdivision(code="UM-76", name="Navassa Island", type_="Islands, groups of islands"),
+    Subdivision(code="UM-79", name="Wake Island", type_="Islands, groups of islands"),
+    Subdivision(code="UM-81", name="Baker Island", type_="Islands, groups of islands"),
+    Subdivision(code="UM-84", name="Howland Island", type_="Islands, groups of islands"),
+    Subdivision(code="UM-86", name="Jarvis Island", type_="Islands, groups of islands"),
+    Subdivision(code="UM-89", name="Kingman Reef", type_="Islands, groups of islands"),
+    Subdivision(code="UM-95", name="Palmyra Atoll", type_="Islands, groups of islands"),
 ]

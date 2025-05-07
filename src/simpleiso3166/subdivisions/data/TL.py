@@ -6,20 +6,20 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Democratic Republic of Timor-Leste"
+COUNTRY_NAME: Final[str] = "Timor-Leste"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TL-AL", "Aileu"),
-    Subdivision("TL-AN", "Ainaro"),
-    Subdivision("TL-BA", "Baucau"),
-    Subdivision("TL-BO", "Bobonaro"),
-    Subdivision("TL-CO", "Cova Lima"),
-    Subdivision("TL-DI", "Díli"),
-    Subdivision("TL-ER", "Ermera"),
-    Subdivision("TL-LA", "Lautein"),
-    Subdivision("TL-LI", "Likisá"),
-    Subdivision("TL-MF", "Manufahi"),
-    Subdivision("TL-MT", "Manatuto"),
-    Subdivision("TL-OE", "Oekusi-Ambenu"),
-    Subdivision("TL-VI", "Vikeke"),
+    Subdivision(code="TL-AL", name="Aileu", type_="Municipality"),
+    Subdivision(code="TL-AN", name="Ainaro", type_="Municipality"),
+    Subdivision(code="TL-BA", name="Baucau", type_="Municipality"),
+    Subdivision(code="TL-BO", name="Bobonaro", type_="Municipality"),
+    Subdivision(code="TL-CO", name="Cova Lima", type_="Municipality"),
+    Subdivision(code="TL-DI", name="Díli", type_="Municipality"),
+    Subdivision(code="TL-ER", name="Ermera", type_="Municipality"),
+    Subdivision(code="TL-LA", name="Lautein", type_="Municipality"),
+    Subdivision(code="TL-LI", name="Likisá", type_="Municipality"),
+    Subdivision(code="TL-MF", name="Manufahi", type_="Municipality"),
+    Subdivision(code="TL-MT", name="Manatuto", type_="Municipality"),
+    Subdivision(code="TL-OE", name="Oekusi-Ambenu", type_="Special administrative region"),
+    Subdivision(code="TL-VI", name="Vikeke", type_="Municipality"),
 ]

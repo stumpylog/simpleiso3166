@@ -6,15 +6,15 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "State of Qatar"
+COUNTRY_NAME: Final[str] = "Qatar"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("QA-DA", "Ad Dawḩah"),
-    Subdivision("QA-KH", "Al Khawr wa adh Dhakhīrah"),
-    Subdivision("QA-MS", "Ash Shamāl"),
-    Subdivision("QA-RA", "Ar Rayyān"),
-    Subdivision("QA-SH", "Ash Shīḩānīyah"),
-    Subdivision("QA-US", "Umm Şalāl"),
-    Subdivision("QA-WA", "Al Wakrah"),
-    Subdivision("QA-ZA", "Az̧ Z̧a‘āyin"),
+    Subdivision(code="QA-DA", name="Ad Dawḩah", type_="Municipality"),
+    Subdivision(code="QA-KH", name="Al Khawr wa adh Dhakhīrah", type_="Municipality"),
+    Subdivision(code="QA-MS", name="Ash Shamāl", type_="Municipality"),
+    Subdivision(code="QA-RA", name="Ar Rayyān", type_="Municipality"),
+    Subdivision(code="QA-SH", name="Ash Shīḩānīyah", type_="Municipality"),
+    Subdivision(code="QA-US", name="Umm Şalāl", type_="Municipality"),
+    Subdivision(code="QA-WA", name="Al Wakrah", type_="Municipality"),
+    Subdivision(code="QA-ZA", name="Az̧ Z̧a‘āyin", type_="Municipality"),
 ]

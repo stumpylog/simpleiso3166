@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Singapore"
+COUNTRY_NAME: Final[str] = "Singapore"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SG-01", "Central Singapore"),
-    Subdivision("SG-02", "North East"),
-    Subdivision("SG-03", "North West"),
-    Subdivision("SG-04", "South East"),
-    Subdivision("SG-05", "South West"),
+    Subdivision(code="SG-01", name="Central Singapore", type_="District"),
+    Subdivision(code="SG-02", name="North East", type_="District"),
+    Subdivision(code="SG-03", name="North West", type_="District"),
+    Subdivision(code="SG-04", name="South East", type_="District"),
+    Subdivision(code="SG-05", name="South West", type_="District"),
 ]

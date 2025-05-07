@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "the State of Eritrea"
+COUNTRY_NAME: Final[str] = "Eritrea"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("ER-AN", "Ansabā"),
-    Subdivision("ER-DK", "Debubawi K’eyyĭḥ Baḥri"),
-    Subdivision("ER-DU", "Al Janūbī"),
-    Subdivision("ER-GB", "Gash-Barka"),
-    Subdivision("ER-MA", "Al Awsaţ"),
-    Subdivision("ER-SK", "Semienawi K’eyyĭḥ Baḥri"),
+    Subdivision(code="ER-AN", name="Ansabā", type_="Region"),
+    Subdivision(code="ER-DK", name="Debubawi K’eyyĭḥ Baḥri", type_="Region"),
+    Subdivision(code="ER-DU", name="Al Janūbī", type_="Region"),
+    Subdivision(code="ER-GB", name="Gash-Barka", type_="Region"),
+    Subdivision(code="ER-MA", name="Al Awsaţ", type_="Region"),
+    Subdivision(code="ER-SK", name="Semienawi K’eyyĭḥ Baḥri", type_="Region"),
 ]

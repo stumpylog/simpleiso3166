@@ -6,14 +6,14 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Islamic Republic of Pakistan"
+COUNTRY_NAME: Final[str] = "Pakistan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("PK-BA", "Balochistan"),
-    Subdivision("PK-GB", "Gilgit-Baltistan"),
-    Subdivision("PK-IS", "Islamabad"),
-    Subdivision("PK-JK", "Azad Jammu and Kashmir"),
-    Subdivision("PK-KP", "Khyber Pakhtunkhwa"),
-    Subdivision("PK-PB", "Punjab"),
-    Subdivision("PK-SD", "Sindh"),
+    Subdivision(code="PK-BA", name="Balochistan", type_="Province"),
+    Subdivision(code="PK-GB", name="Gilgit-Baltistan", type_="Pakistan administered area"),
+    Subdivision(code="PK-IS", name="Islamabad", type_="Federal capital territory"),
+    Subdivision(code="PK-JK", name="Azad Jammu and Kashmir", type_="Pakistan administered area"),
+    Subdivision(code="PK-KP", name="Khyber Pakhtunkhwa", type_="Province"),
+    Subdivision(code="PK-PB", name="Punjab", type_="Province"),
+    Subdivision(code="PK-SD", name="Sindh", type_="Province"),
 ]

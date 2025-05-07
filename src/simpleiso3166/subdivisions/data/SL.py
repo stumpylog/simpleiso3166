@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Sierra Leone"
+COUNTRY_NAME: Final[str] = "Sierra Leone"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SL-E", "Eastern"),
-    Subdivision("SL-N", "Northern"),
-    Subdivision("SL-NW", "North Western"),
-    Subdivision("SL-S", "Southern"),
-    Subdivision("SL-W", "Western Area (Freetown)"),
+    Subdivision(code="SL-E", name="Eastern", type_="Province"),
+    Subdivision(code="SL-N", name="Northern", type_="Province"),
+    Subdivision(code="SL-NW", name="North Western", type_="Province"),
+    Subdivision(code="SL-S", name="Southern", type_="Province"),
+    Subdivision(code="SL-W", name="Western Area (Freetown)", type_="Area"),
 ]

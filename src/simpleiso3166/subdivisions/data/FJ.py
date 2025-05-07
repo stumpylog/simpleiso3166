@@ -6,26 +6,26 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Fiji"
+COUNTRY_NAME: Final[str] = "Fiji"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("FJ-01", "Ba"),
-    Subdivision("FJ-02", "Bua"),
-    Subdivision("FJ-03", "Cakaudrove"),
-    Subdivision("FJ-04", "Kadavu"),
-    Subdivision("FJ-05", "Lau"),
-    Subdivision("FJ-06", "Lomaiviti"),
-    Subdivision("FJ-07", "Macuata"),
-    Subdivision("FJ-08", "Nadroga and Navosa"),
-    Subdivision("FJ-09", "Naitasiri"),
-    Subdivision("FJ-10", "Namosi"),
-    Subdivision("FJ-11", "Ra"),
-    Subdivision("FJ-12", "Rewa"),
-    Subdivision("FJ-13", "Serua"),
-    Subdivision("FJ-14", "Tailevu"),
-    Subdivision("FJ-C", "Central"),
-    Subdivision("FJ-E", "Eastern"),
-    Subdivision("FJ-N", "Northern"),
-    Subdivision("FJ-R", "Rotuma"),
-    Subdivision("FJ-W", "Western"),
+    Subdivision(code="FJ-01", name="Ba", type_="Province"),
+    Subdivision(code="FJ-02", name="Bua", type_="Province"),
+    Subdivision(code="FJ-03", name="Cakaudrove", type_="Province"),
+    Subdivision(code="FJ-04", name="Kadavu", type_="Province"),
+    Subdivision(code="FJ-05", name="Lau", type_="Province"),
+    Subdivision(code="FJ-06", name="Lomaiviti", type_="Province"),
+    Subdivision(code="FJ-07", name="Macuata", type_="Province"),
+    Subdivision(code="FJ-08", name="Nadroga and Navosa", type_="Province"),
+    Subdivision(code="FJ-09", name="Naitasiri", type_="Province"),
+    Subdivision(code="FJ-10", name="Namosi", type_="Province"),
+    Subdivision(code="FJ-11", name="Ra", type_="Province"),
+    Subdivision(code="FJ-12", name="Rewa", type_="Province"),
+    Subdivision(code="FJ-13", name="Serua", type_="Province"),
+    Subdivision(code="FJ-14", name="Tailevu", type_="Province"),
+    Subdivision(code="FJ-C", name="Central", type_="Division"),
+    Subdivision(code="FJ-E", name="Eastern", type_="Division"),
+    Subdivision(code="FJ-N", name="Northern", type_="Division"),
+    Subdivision(code="FJ-R", name="Rotuma", type_="Dependency"),
+    Subdivision(code="FJ-W", name="Western", type_="Division"),
 ]

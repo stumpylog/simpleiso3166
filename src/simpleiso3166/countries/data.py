@@ -6,353 +6,1450 @@ from typing import Final
 
 from simpleiso3166.countries import Country
 from simpleiso3166.countries.types import CountryCodeAlpha2Type
+from simpleiso3166.countries.types import CountryCodeAlpha3Type
 
-AD: Final[Country] = Country("AD", "Principality of Andorra", "Andorra")
-AE: Final[Country] = Country("AE", "United Arab Emirates", None)
-AF: Final[Country] = Country("AF", "Islamic Republic of Afghanistan", "Afghanistan")
-AG: Final[Country] = Country("AG", "Antigua and Barbuda", None)
-AI: Final[Country] = Country("AI", "Anguilla", None)
-AL: Final[Country] = Country("AL", "Republic of Albania", "Albania")
-AM: Final[Country] = Country("AM", "Republic of Armenia", "Armenia")
-AO: Final[Country] = Country("AO", "Republic of Angola", "Angola")
-AQ: Final[Country] = Country("AQ", "Antarctica", None)
-AR: Final[Country] = Country("AR", "Argentine Republic", "Argentina")
-AS: Final[Country] = Country("AS", "American Samoa", None)
-AT: Final[Country] = Country("AT", "Republic of Austria", "Austria")
-AU: Final[Country] = Country("AU", "Australia", None)
-AW: Final[Country] = Country("AW", "Aruba", None)
-AX: Final[Country] = Country("AX", "Åland Islands", None)
-AZ: Final[Country] = Country("AZ", "Republic of Azerbaijan", "Azerbaijan")
-BA: Final[Country] = Country("BA", "Republic of Bosnia and Herzegovina", "Bosnia and Herzegovina")
-BB: Final[Country] = Country("BB", "Barbados", None)
-BD: Final[Country] = Country("BD", "People's Republic of Bangladesh", "Bangladesh")
-BE: Final[Country] = Country("BE", "Kingdom of Belgium", "Belgium")
-BF: Final[Country] = Country("BF", "Burkina Faso", None)
-BG: Final[Country] = Country("BG", "Republic of Bulgaria", "Bulgaria")
-BH: Final[Country] = Country("BH", "Kingdom of Bahrain", "Bahrain")
-BI: Final[Country] = Country("BI", "Republic of Burundi", "Burundi")
-BJ: Final[Country] = Country("BJ", "Republic of Benin", "Benin")
-BL: Final[Country] = Country("BL", "Saint Barthélemy", None)
-BM: Final[Country] = Country("BM", "Bermuda", None)
-BN: Final[Country] = Country("BN", "Brunei Darussalam", None)
-BO: Final[Country] = Country("BO", "Plurinational State of Bolivia", "Bolivia")
-BQ: Final[Country] = Country("BQ", "Bonaire, Sint Eustatius and Saba", "Bonaire, Sint Eustatius and Saba")
-BR: Final[Country] = Country("BR", "Federative Republic of Brazil", "Brazil")
-BS: Final[Country] = Country("BS", "Commonwealth of the Bahamas", "Bahamas")
-BT: Final[Country] = Country("BT", "Kingdom of Bhutan", "Bhutan")
-BV: Final[Country] = Country("BV", "Bouvet Island", None)
-BW: Final[Country] = Country("BW", "Republic of Botswana", "Botswana")
-BY: Final[Country] = Country("BY", "Republic of Belarus", "Belarus")
-BZ: Final[Country] = Country("BZ", "Belize", None)
-CA: Final[Country] = Country("CA", "Canada", None)
-CC: Final[Country] = Country("CC", "Cocos (Keeling) Islands", None)
-CD: Final[Country] = Country("CD", "Congo, The Democratic Republic of the", None)
-CF: Final[Country] = Country("CF", "Central African Republic", None)
-CG: Final[Country] = Country("CG", "Republic of the Congo", "Congo")
-CH: Final[Country] = Country("CH", "Swiss Confederation", "Switzerland")
-CI: Final[Country] = Country("CI", "Republic of Côte d'Ivoire", "Côte d'Ivoire")
-CK: Final[Country] = Country("CK", "Cook Islands", None)
-CL: Final[Country] = Country("CL", "Republic of Chile", "Chile")
-CM: Final[Country] = Country("CM", "Republic of Cameroon", "Cameroon")
-CN: Final[Country] = Country("CN", "People's Republic of China", "China")
-CO: Final[Country] = Country("CO", "Republic of Colombia", "Colombia")
-CR: Final[Country] = Country("CR", "Republic of Costa Rica", "Costa Rica")
-CU: Final[Country] = Country("CU", "Republic of Cuba", "Cuba")
-CV: Final[Country] = Country("CV", "Republic of Cabo Verde", "Cabo Verde")
-CW: Final[Country] = Country("CW", "Curaçao", "Curaçao")
-CX: Final[Country] = Country("CX", "Christmas Island", None)
-CY: Final[Country] = Country("CY", "Republic of Cyprus", "Cyprus")
-CZ: Final[Country] = Country("CZ", "Czech Republic", "Czechia")
-DE: Final[Country] = Country("DE", "Federal Republic of Germany", "Germany")
-DJ: Final[Country] = Country("DJ", "Republic of Djibouti", "Djibouti")
-DK: Final[Country] = Country("DK", "Kingdom of Denmark", "Denmark")
-DM: Final[Country] = Country("DM", "Commonwealth of Dominica", "Dominica")
-DO: Final[Country] = Country("DO", "Dominican Republic", None)
-DZ: Final[Country] = Country("DZ", "People's Democratic Republic of Algeria", "Algeria")
-EC: Final[Country] = Country("EC", "Republic of Ecuador", "Ecuador")
-EE: Final[Country] = Country("EE", "Republic of Estonia", "Estonia")
-EG: Final[Country] = Country("EG", "Arab Republic of Egypt", "Egypt")
-EH: Final[Country] = Country("EH", "Western Sahara", None)
-ER: Final[Country] = Country("ER", "the State of Eritrea", "Eritrea")
-ES: Final[Country] = Country("ES", "Kingdom of Spain", "Spain")
-ET: Final[Country] = Country("ET", "Federal Democratic Republic of Ethiopia", "Ethiopia")
-FI: Final[Country] = Country("FI", "Republic of Finland", "Finland")
-FJ: Final[Country] = Country("FJ", "Republic of Fiji", "Fiji")
-FK: Final[Country] = Country("FK", "Falkland Islands (Malvinas)", None)
-FM: Final[Country] = Country("FM", "Federated States of Micronesia", "Micronesia, Federated States of")
-FO: Final[Country] = Country("FO", "Faroe Islands", None)
-FR: Final[Country] = Country("FR", "French Republic", "France")
-GA: Final[Country] = Country("GA", "Gabonese Republic", "Gabon")
-GB: Final[Country] = Country("GB", "United Kingdom of Great Britain and Northern Ireland", "United Kingdom")
-GD: Final[Country] = Country("GD", "Grenada", None)
-GE: Final[Country] = Country("GE", "Georgia", None)
-GF: Final[Country] = Country("GF", "French Guiana", None)
-GG: Final[Country] = Country("GG", "Guernsey", None)
-GH: Final[Country] = Country("GH", "Republic of Ghana", "Ghana")
-GI: Final[Country] = Country("GI", "Gibraltar", None)
-GL: Final[Country] = Country("GL", "Greenland", None)
-GM: Final[Country] = Country("GM", "Republic of the Gambia", "Gambia")
-GN: Final[Country] = Country("GN", "Republic of Guinea", "Guinea")
-GP: Final[Country] = Country("GP", "Guadeloupe", None)
-GQ: Final[Country] = Country("GQ", "Republic of Equatorial Guinea", "Equatorial Guinea")
-GR: Final[Country] = Country("GR", "Hellenic Republic", "Greece")
-GS: Final[Country] = Country("GS", "South Georgia and the South Sandwich Islands", None)
-GT: Final[Country] = Country("GT", "Republic of Guatemala", "Guatemala")
-GU: Final[Country] = Country("GU", "Guam", None)
-GW: Final[Country] = Country("GW", "Republic of Guinea-Bissau", "Guinea-Bissau")
-GY: Final[Country] = Country("GY", "Republic of Guyana", "Guyana")
-HK: Final[Country] = Country("HK", "Hong Kong Special Administrative Region of China", "Hong Kong")
-HM: Final[Country] = Country("HM", "Heard Island and McDonald Islands", None)
-HN: Final[Country] = Country("HN", "Republic of Honduras", "Honduras")
-HR: Final[Country] = Country("HR", "Republic of Croatia", "Croatia")
-HT: Final[Country] = Country("HT", "Republic of Haiti", "Haiti")
-HU: Final[Country] = Country("HU", "Hungary", "Hungary")
-ID: Final[Country] = Country("ID", "Republic of Indonesia", "Indonesia")
-IE: Final[Country] = Country("IE", "Ireland", None)
-IL: Final[Country] = Country("IL", "State of Israel", "Israel")
-IM: Final[Country] = Country("IM", "Isle of Man", None)
-IN: Final[Country] = Country("IN", "Republic of India", "India")
-IO: Final[Country] = Country("IO", "British Indian Ocean Territory", None)
-IQ: Final[Country] = Country("IQ", "Republic of Iraq", "Iraq")
-IR: Final[Country] = Country("IR", "Islamic Republic of Iran", "Iran")
-IS: Final[Country] = Country("IS", "Republic of Iceland", "Iceland")
-IT: Final[Country] = Country("IT", "Italian Republic", "Italy")
-JE: Final[Country] = Country("JE", "Jersey", None)
-JM: Final[Country] = Country("JM", "Jamaica", None)
-JO: Final[Country] = Country("JO", "Hashemite Kingdom of Jordan", "Jordan")
-JP: Final[Country] = Country("JP", "Japan", None)
-KE: Final[Country] = Country("KE", "Republic of Kenya", "Kenya")
-KG: Final[Country] = Country("KG", "Kyrgyz Republic", "Kyrgyzstan")
-KH: Final[Country] = Country("KH", "Kingdom of Cambodia", "Cambodia")
-KI: Final[Country] = Country("KI", "Republic of Kiribati", "Kiribati")
-KM: Final[Country] = Country("KM", "Union of the Comoros", "Comoros")
-KN: Final[Country] = Country("KN", "Saint Kitts and Nevis", None)
-KP: Final[Country] = Country("KP", "Democratic People's Republic of Korea", "North Korea")
-KR: Final[Country] = Country("KR", "Republic of Korea", "South Korea")
-KW: Final[Country] = Country("KW", "State of Kuwait", "Kuwait")
-KY: Final[Country] = Country("KY", "Cayman Islands", None)
-KZ: Final[Country] = Country("KZ", "Republic of Kazakhstan", "Kazakhstan")
-LA: Final[Country] = Country("LA", "Lao People's Democratic Republic", "Laos")
-LB: Final[Country] = Country("LB", "Lebanese Republic", "Lebanon")
-LC: Final[Country] = Country("LC", "Saint Lucia", None)
-LI: Final[Country] = Country("LI", "Principality of Liechtenstein", "Liechtenstein")
-LK: Final[Country] = Country("LK", "Democratic Socialist Republic of Sri Lanka", "Sri Lanka")
-LR: Final[Country] = Country("LR", "Republic of Liberia", "Liberia")
-LS: Final[Country] = Country("LS", "Kingdom of Lesotho", "Lesotho")
-LT: Final[Country] = Country("LT", "Republic of Lithuania", "Lithuania")
-LU: Final[Country] = Country("LU", "Grand Duchy of Luxembourg", "Luxembourg")
-LV: Final[Country] = Country("LV", "Republic of Latvia", "Latvia")
-LY: Final[Country] = Country("LY", "Libya", "Libya")
-MA: Final[Country] = Country("MA", "Kingdom of Morocco", "Morocco")
-MC: Final[Country] = Country("MC", "Principality of Monaco", "Monaco")
-MD: Final[Country] = Country("MD", "Republic of Moldova", "Moldova")
-ME: Final[Country] = Country("ME", "Montenegro", "Montenegro")
-MF: Final[Country] = Country("MF", "Saint Martin (French part)", None)
-MG: Final[Country] = Country("MG", "Republic of Madagascar", "Madagascar")
-MH: Final[Country] = Country("MH", "Republic of the Marshall Islands", "Marshall Islands")
-MK: Final[Country] = Country("MK", "Republic of North Macedonia", "North Macedonia")
-ML: Final[Country] = Country("ML", "Republic of Mali", "Mali")
-MM: Final[Country] = Country("MM", "Republic of Myanmar", "Myanmar")
-MN: Final[Country] = Country("MN", "Mongolia", None)
-MO: Final[Country] = Country("MO", "Macao Special Administrative Region of China", "Macao")
-MP: Final[Country] = Country("MP", "Commonwealth of the Northern Mariana Islands", "Northern Mariana Islands")
-MQ: Final[Country] = Country("MQ", "Martinique", None)
-MR: Final[Country] = Country("MR", "Islamic Republic of Mauritania", "Mauritania")
-MS: Final[Country] = Country("MS", "Montserrat", None)
-MT: Final[Country] = Country("MT", "Republic of Malta", "Malta")
-MU: Final[Country] = Country("MU", "Republic of Mauritius", "Mauritius")
-MV: Final[Country] = Country("MV", "Republic of Maldives", "Maldives")
-MW: Final[Country] = Country("MW", "Republic of Malawi", "Malawi")
-MX: Final[Country] = Country("MX", "United Mexican States", "Mexico")
-MY: Final[Country] = Country("MY", "Malaysia", None)
-MZ: Final[Country] = Country("MZ", "Republic of Mozambique", "Mozambique")
-NA: Final[Country] = Country("NA", "Republic of Namibia", "Namibia")
-NC: Final[Country] = Country("NC", "New Caledonia", None)
-NE: Final[Country] = Country("NE", "Republic of the Niger", "Niger")
-NF: Final[Country] = Country("NF", "Norfolk Island", None)
-NG: Final[Country] = Country("NG", "Federal Republic of Nigeria", "Nigeria")
-NI: Final[Country] = Country("NI", "Republic of Nicaragua", "Nicaragua")
-NL: Final[Country] = Country("NL", "Kingdom of the Netherlands", "Netherlands")
-NO: Final[Country] = Country("NO", "Kingdom of Norway", "Norway")
-NP: Final[Country] = Country("NP", "Federal Democratic Republic of Nepal", "Nepal")
-NR: Final[Country] = Country("NR", "Republic of Nauru", "Nauru")
-NU: Final[Country] = Country("NU", "Niue", "Niue")
-NZ: Final[Country] = Country("NZ", "New Zealand", None)
-OM: Final[Country] = Country("OM", "Sultanate of Oman", "Oman")
-PA: Final[Country] = Country("PA", "Republic of Panama", "Panama")
-PE: Final[Country] = Country("PE", "Republic of Peru", "Peru")
-PF: Final[Country] = Country("PF", "French Polynesia", None)
-PG: Final[Country] = Country("PG", "Independent State of Papua New Guinea", "Papua New Guinea")
-PH: Final[Country] = Country("PH", "Republic of the Philippines", "Philippines")
-PK: Final[Country] = Country("PK", "Islamic Republic of Pakistan", "Pakistan")
-PL: Final[Country] = Country("PL", "Republic of Poland", "Poland")
-PM: Final[Country] = Country("PM", "Saint Pierre and Miquelon", None)
-PN: Final[Country] = Country("PN", "Pitcairn", None)
-PR: Final[Country] = Country("PR", "Puerto Rico", None)
-PS: Final[Country] = Country("PS", "the State of Palestine", "Palestine, State of")
-PT: Final[Country] = Country("PT", "Portuguese Republic", "Portugal")
-PW: Final[Country] = Country("PW", "Republic of Palau", "Palau")
-PY: Final[Country] = Country("PY", "Republic of Paraguay", "Paraguay")
-QA: Final[Country] = Country("QA", "State of Qatar", "Qatar")
-RE: Final[Country] = Country("RE", "Réunion", None)
-RO: Final[Country] = Country("RO", "Romania", None)
-RS: Final[Country] = Country("RS", "Republic of Serbia", "Serbia")
-RU: Final[Country] = Country("RU", "Russian Federation", None)
-RW: Final[Country] = Country("RW", "Rwandese Republic", "Rwanda")
-SA: Final[Country] = Country("SA", "Kingdom of Saudi Arabia", "Saudi Arabia")
-SB: Final[Country] = Country("SB", "Solomon Islands", None)
-SC: Final[Country] = Country("SC", "Republic of Seychelles", "Seychelles")
-SD: Final[Country] = Country("SD", "Republic of the Sudan", "Sudan")
-SE: Final[Country] = Country("SE", "Kingdom of Sweden", "Sweden")
-SG: Final[Country] = Country("SG", "Republic of Singapore", "Singapore")
-SH: Final[Country] = Country("SH", "Saint Helena, Ascension and Tristan da Cunha", None)
-SI: Final[Country] = Country("SI", "Republic of Slovenia", "Slovenia")
-SJ: Final[Country] = Country("SJ", "Svalbard and Jan Mayen", None)
-SK: Final[Country] = Country("SK", "Slovak Republic", "Slovakia")
-SL: Final[Country] = Country("SL", "Republic of Sierra Leone", "Sierra Leone")
-SM: Final[Country] = Country("SM", "Republic of San Marino", "San Marino")
-SN: Final[Country] = Country("SN", "Republic of Senegal", "Senegal")
-SO: Final[Country] = Country("SO", "Federal Republic of Somalia", "Somalia")
-SR: Final[Country] = Country("SR", "Republic of Suriname", "Suriname")
-SS: Final[Country] = Country("SS", "Republic of South Sudan", "South Sudan")
-ST: Final[Country] = Country("ST", "Democratic Republic of Sao Tome and Principe", "Sao Tome and Principe")
-SV: Final[Country] = Country("SV", "Republic of El Salvador", "El Salvador")
-SX: Final[Country] = Country("SX", "Sint Maarten (Dutch part)", "Sint Maarten (Dutch part)")
-SY: Final[Country] = Country("SY", "Syrian Arab Republic", "Syria")
-SZ: Final[Country] = Country("SZ", "Kingdom of Eswatini", "Eswatini")
-TC: Final[Country] = Country("TC", "Turks and Caicos Islands", None)
-TD: Final[Country] = Country("TD", "Republic of Chad", "Chad")
-TF: Final[Country] = Country("TF", "French Southern Territories", None)
-TG: Final[Country] = Country("TG", "Togolese Republic", "Togo")
-TH: Final[Country] = Country("TH", "Kingdom of Thailand", "Thailand")
-TJ: Final[Country] = Country("TJ", "Republic of Tajikistan", "Tajikistan")
-TK: Final[Country] = Country("TK", "Tokelau", None)
-TL: Final[Country] = Country("TL", "Democratic Republic of Timor-Leste", "Timor-Leste")
-TM: Final[Country] = Country("TM", "Turkmenistan", None)
-TN: Final[Country] = Country("TN", "Republic of Tunisia", "Tunisia")
-TO: Final[Country] = Country("TO", "Kingdom of Tonga", "Tonga")
-TR: Final[Country] = Country("TR", "Republic of Türkiye", "Türkiye")
-TT: Final[Country] = Country("TT", "Republic of Trinidad and Tobago", "Trinidad and Tobago")
-TV: Final[Country] = Country("TV", "Tuvalu", None)
-TW: Final[Country] = Country("TW", "Taiwan, Province of China", "Taiwan")
-TZ: Final[Country] = Country("TZ", "United Republic of Tanzania", "Tanzania")
-UA: Final[Country] = Country("UA", "Ukraine", None)
-UG: Final[Country] = Country("UG", "Republic of Uganda", "Uganda")
-UM: Final[Country] = Country("UM", "United States Minor Outlying Islands", None)
-US: Final[Country] = Country("US", "United States of America", "United States")
-UY: Final[Country] = Country("UY", "Eastern Republic of Uruguay", "Uruguay")
-UZ: Final[Country] = Country("UZ", "Republic of Uzbekistan", "Uzbekistan")
-VA: Final[Country] = Country("VA", "Holy See (Vatican City State)", None)
-VC: Final[Country] = Country("VC", "Saint Vincent and the Grenadines", None)
-VE: Final[Country] = Country("VE", "Bolivarian Republic of Venezuela", "Venezuela")
-VG: Final[Country] = Country("VG", "British Virgin Islands", "Virgin Islands, British")
-VI: Final[Country] = Country("VI", "Virgin Islands of the United States", "Virgin Islands, U.S.")
-VN: Final[Country] = Country("VN", "Socialist Republic of Viet Nam", "Vietnam")
-VU: Final[Country] = Country("VU", "Republic of Vanuatu", "Vanuatu")
-WF: Final[Country] = Country("WF", "Wallis and Futuna", None)
-WS: Final[Country] = Country("WS", "Independent State of Samoa", "Samoa")
-YE: Final[Country] = Country("YE", "Republic of Yemen", "Yemen")
-YT: Final[Country] = Country("YT", "Mayotte", None)
-ZA: Final[Country] = Country("ZA", "Republic of South Africa", "South Africa")
-ZM: Final[Country] = Country("ZM", "Republic of Zambia", "Zambia")
-ZW: Final[Country] = Country("ZW", "Republic of Zimbabwe", "Zimbabwe")
+AD: Final[Country] = Country(
+    alpha2="AD",
+    alpha3="AND",
+    name="Andorra",
+    common_name=None,
+    official_name="Principality of Andorra",
+)
+AE: Final[Country] = Country(
+    alpha2="AE",
+    alpha3="ARE",
+    name="United Arab Emirates",
+    common_name=None,
+    official_name=None,
+)
+AF: Final[Country] = Country(
+    alpha2="AF",
+    alpha3="AFG",
+    name="Afghanistan",
+    common_name=None,
+    official_name="Islamic Republic of Afghanistan",
+)
+AG: Final[Country] = Country(
+    alpha2="AG",
+    alpha3="ATG",
+    name="Antigua and Barbuda",
+    common_name=None,
+    official_name=None,
+)
+AI: Final[Country] = Country(alpha2="AI", alpha3="AIA", name="Anguilla", common_name=None, official_name=None)
+AL: Final[Country] = Country(
+    alpha2="AL",
+    alpha3="ALB",
+    name="Albania",
+    common_name=None,
+    official_name="Republic of Albania",
+)
+AM: Final[Country] = Country(
+    alpha2="AM",
+    alpha3="ARM",
+    name="Armenia",
+    common_name=None,
+    official_name="Republic of Armenia",
+)
+AO: Final[Country] = Country(
+    alpha2="AO",
+    alpha3="AGO",
+    name="Angola",
+    common_name=None,
+    official_name="Republic of Angola",
+)
+AQ: Final[Country] = Country(alpha2="AQ", alpha3="ATA", name="Antarctica", common_name=None, official_name=None)
+AR: Final[Country] = Country(
+    alpha2="AR",
+    alpha3="ARG",
+    name="Argentina",
+    common_name=None,
+    official_name="Argentine Republic",
+)
+AS: Final[Country] = Country(alpha2="AS", alpha3="ASM", name="American Samoa", common_name=None, official_name=None)
+AT: Final[Country] = Country(
+    alpha2="AT",
+    alpha3="AUT",
+    name="Austria",
+    common_name=None,
+    official_name="Republic of Austria",
+)
+AU: Final[Country] = Country(alpha2="AU", alpha3="AUS", name="Australia", common_name=None, official_name=None)
+AW: Final[Country] = Country(alpha2="AW", alpha3="ABW", name="Aruba", common_name=None, official_name=None)
+AX: Final[Country] = Country(alpha2="AX", alpha3="ALA", name="Åland Islands", common_name=None, official_name=None)
+AZ: Final[Country] = Country(
+    alpha2="AZ",
+    alpha3="AZE",
+    name="Azerbaijan",
+    common_name=None,
+    official_name="Republic of Azerbaijan",
+)
+BA: Final[Country] = Country(
+    alpha2="BA",
+    alpha3="BIH",
+    name="Bosnia and Herzegovina",
+    common_name=None,
+    official_name="Republic of Bosnia and Herzegovina",
+)
+BB: Final[Country] = Country(alpha2="BB", alpha3="BRB", name="Barbados", common_name=None, official_name=None)
+BD: Final[Country] = Country(
+    alpha2="BD",
+    alpha3="BGD",
+    name="Bangladesh",
+    common_name=None,
+    official_name="People's Republic of Bangladesh",
+)
+BE: Final[Country] = Country(
+    alpha2="BE",
+    alpha3="BEL",
+    name="Belgium",
+    common_name=None,
+    official_name="Kingdom of Belgium",
+)
+BF: Final[Country] = Country(alpha2="BF", alpha3="BFA", name="Burkina Faso", common_name=None, official_name=None)
+BG: Final[Country] = Country(
+    alpha2="BG",
+    alpha3="BGR",
+    name="Bulgaria",
+    common_name=None,
+    official_name="Republic of Bulgaria",
+)
+BH: Final[Country] = Country(
+    alpha2="BH",
+    alpha3="BHR",
+    name="Bahrain",
+    common_name=None,
+    official_name="Kingdom of Bahrain",
+)
+BI: Final[Country] = Country(
+    alpha2="BI",
+    alpha3="BDI",
+    name="Burundi",
+    common_name=None,
+    official_name="Republic of Burundi",
+)
+BJ: Final[Country] = Country(
+    alpha2="BJ",
+    alpha3="BEN",
+    name="Benin",
+    common_name=None,
+    official_name="Republic of Benin",
+)
+BL: Final[Country] = Country(alpha2="BL", alpha3="BLM", name="Saint Barthélemy", common_name=None, official_name=None)
+BM: Final[Country] = Country(alpha2="BM", alpha3="BMU", name="Bermuda", common_name=None, official_name=None)
+BN: Final[Country] = Country(alpha2="BN", alpha3="BRN", name="Brunei Darussalam", common_name=None, official_name=None)
+BO: Final[Country] = Country(
+    alpha2="BO",
+    alpha3="BOL",
+    name="Bolivia, Plurinational State of",
+    common_name="Bolivia",
+    official_name="Plurinational State of Bolivia",
+)
+BQ: Final[Country] = Country(
+    alpha2="BQ",
+    alpha3="BES",
+    name="Bonaire, Sint Eustatius and Saba",
+    common_name=None,
+    official_name="Bonaire, Sint Eustatius and Saba",
+)
+BR: Final[Country] = Country(
+    alpha2="BR",
+    alpha3="BRA",
+    name="Brazil",
+    common_name=None,
+    official_name="Federative Republic of Brazil",
+)
+BS: Final[Country] = Country(
+    alpha2="BS",
+    alpha3="BHS",
+    name="Bahamas",
+    common_name=None,
+    official_name="Commonwealth of the Bahamas",
+)
+BT: Final[Country] = Country(
+    alpha2="BT",
+    alpha3="BTN",
+    name="Bhutan",
+    common_name=None,
+    official_name="Kingdom of Bhutan",
+)
+BV: Final[Country] = Country(alpha2="BV", alpha3="BVT", name="Bouvet Island", common_name=None, official_name=None)
+BW: Final[Country] = Country(
+    alpha2="BW",
+    alpha3="BWA",
+    name="Botswana",
+    common_name=None,
+    official_name="Republic of Botswana",
+)
+BY: Final[Country] = Country(
+    alpha2="BY",
+    alpha3="BLR",
+    name="Belarus",
+    common_name=None,
+    official_name="Republic of Belarus",
+)
+BZ: Final[Country] = Country(alpha2="BZ", alpha3="BLZ", name="Belize", common_name=None, official_name=None)
+CA: Final[Country] = Country(alpha2="CA", alpha3="CAN", name="Canada", common_name=None, official_name=None)
+CC: Final[Country] = Country(
+    alpha2="CC",
+    alpha3="CCK",
+    name="Cocos (Keeling) Islands",
+    common_name=None,
+    official_name=None,
+)
+CD: Final[Country] = Country(
+    alpha2="CD",
+    alpha3="COD",
+    name="Congo, The Democratic Republic of the",
+    common_name=None,
+    official_name=None,
+)
+CF: Final[Country] = Country(
+    alpha2="CF",
+    alpha3="CAF",
+    name="Central African Republic",
+    common_name=None,
+    official_name=None,
+)
+CG: Final[Country] = Country(
+    alpha2="CG",
+    alpha3="COG",
+    name="Congo",
+    common_name=None,
+    official_name="Republic of the Congo",
+)
+CH: Final[Country] = Country(
+    alpha2="CH",
+    alpha3="CHE",
+    name="Switzerland",
+    common_name=None,
+    official_name="Swiss Confederation",
+)
+CI: Final[Country] = Country(
+    alpha2="CI",
+    alpha3="CIV",
+    name="Côte d'Ivoire",
+    common_name=None,
+    official_name="Republic of Côte d'Ivoire",
+)
+CK: Final[Country] = Country(alpha2="CK", alpha3="COK", name="Cook Islands", common_name=None, official_name=None)
+CL: Final[Country] = Country(
+    alpha2="CL",
+    alpha3="CHL",
+    name="Chile",
+    common_name=None,
+    official_name="Republic of Chile",
+)
+CM: Final[Country] = Country(
+    alpha2="CM",
+    alpha3="CMR",
+    name="Cameroon",
+    common_name=None,
+    official_name="Republic of Cameroon",
+)
+CN: Final[Country] = Country(
+    alpha2="CN",
+    alpha3="CHN",
+    name="China",
+    common_name=None,
+    official_name="People's Republic of China",
+)
+CO: Final[Country] = Country(
+    alpha2="CO",
+    alpha3="COL",
+    name="Colombia",
+    common_name=None,
+    official_name="Republic of Colombia",
+)
+CR: Final[Country] = Country(
+    alpha2="CR",
+    alpha3="CRI",
+    name="Costa Rica",
+    common_name=None,
+    official_name="Republic of Costa Rica",
+)
+CU: Final[Country] = Country(alpha2="CU", alpha3="CUB", name="Cuba", common_name=None, official_name="Republic of Cuba")
+CV: Final[Country] = Country(
+    alpha2="CV",
+    alpha3="CPV",
+    name="Cabo Verde",
+    common_name=None,
+    official_name="Republic of Cabo Verde",
+)
+CW: Final[Country] = Country(alpha2="CW", alpha3="CUW", name="Curaçao", common_name=None, official_name="Curaçao")
+CX: Final[Country] = Country(alpha2="CX", alpha3="CXR", name="Christmas Island", common_name=None, official_name=None)
+CY: Final[Country] = Country(
+    alpha2="CY",
+    alpha3="CYP",
+    name="Cyprus",
+    common_name=None,
+    official_name="Republic of Cyprus",
+)
+CZ: Final[Country] = Country(
+    alpha2="CZ",
+    alpha3="CZE",
+    name="Czechia",
+    common_name=None,
+    official_name="Czech Republic",
+)
+DE: Final[Country] = Country(
+    alpha2="DE",
+    alpha3="DEU",
+    name="Germany",
+    common_name=None,
+    official_name="Federal Republic of Germany",
+)
+DJ: Final[Country] = Country(
+    alpha2="DJ",
+    alpha3="DJI",
+    name="Djibouti",
+    common_name=None,
+    official_name="Republic of Djibouti",
+)
+DK: Final[Country] = Country(
+    alpha2="DK",
+    alpha3="DNK",
+    name="Denmark",
+    common_name=None,
+    official_name="Kingdom of Denmark",
+)
+DM: Final[Country] = Country(
+    alpha2="DM",
+    alpha3="DMA",
+    name="Dominica",
+    common_name=None,
+    official_name="Commonwealth of Dominica",
+)
+DO: Final[Country] = Country(alpha2="DO", alpha3="DOM", name="Dominican Republic", common_name=None, official_name=None)
+DZ: Final[Country] = Country(
+    alpha2="DZ",
+    alpha3="DZA",
+    name="Algeria",
+    common_name=None,
+    official_name="People's Democratic Republic of Algeria",
+)
+EC: Final[Country] = Country(
+    alpha2="EC",
+    alpha3="ECU",
+    name="Ecuador",
+    common_name=None,
+    official_name="Republic of Ecuador",
+)
+EE: Final[Country] = Country(
+    alpha2="EE",
+    alpha3="EST",
+    name="Estonia",
+    common_name=None,
+    official_name="Republic of Estonia",
+)
+EG: Final[Country] = Country(
+    alpha2="EG",
+    alpha3="EGY",
+    name="Egypt",
+    common_name=None,
+    official_name="Arab Republic of Egypt",
+)
+EH: Final[Country] = Country(alpha2="EH", alpha3="ESH", name="Western Sahara", common_name=None, official_name=None)
+ER: Final[Country] = Country(
+    alpha2="ER",
+    alpha3="ERI",
+    name="Eritrea",
+    common_name=None,
+    official_name="the State of Eritrea",
+)
+ES: Final[Country] = Country(
+    alpha2="ES",
+    alpha3="ESP",
+    name="Spain",
+    common_name=None,
+    official_name="Kingdom of Spain",
+)
+ET: Final[Country] = Country(
+    alpha2="ET",
+    alpha3="ETH",
+    name="Ethiopia",
+    common_name=None,
+    official_name="Federal Democratic Republic of Ethiopia",
+)
+FI: Final[Country] = Country(
+    alpha2="FI",
+    alpha3="FIN",
+    name="Finland",
+    common_name=None,
+    official_name="Republic of Finland",
+)
+FJ: Final[Country] = Country(alpha2="FJ", alpha3="FJI", name="Fiji", common_name=None, official_name="Republic of Fiji")
+FK: Final[Country] = Country(
+    alpha2="FK",
+    alpha3="FLK",
+    name="Falkland Islands (Malvinas)",
+    common_name=None,
+    official_name=None,
+)
+FM: Final[Country] = Country(
+    alpha2="FM",
+    alpha3="FSM",
+    name="Micronesia, Federated States of",
+    common_name=None,
+    official_name="Federated States of Micronesia",
+)
+FO: Final[Country] = Country(alpha2="FO", alpha3="FRO", name="Faroe Islands", common_name=None, official_name=None)
+FR: Final[Country] = Country(
+    alpha2="FR",
+    alpha3="FRA",
+    name="France",
+    common_name=None,
+    official_name="French Republic",
+)
+GA: Final[Country] = Country(
+    alpha2="GA",
+    alpha3="GAB",
+    name="Gabon",
+    common_name=None,
+    official_name="Gabonese Republic",
+)
+GB: Final[Country] = Country(
+    alpha2="GB",
+    alpha3="GBR",
+    name="United Kingdom",
+    common_name=None,
+    official_name="United Kingdom of Great Britain and Northern Ireland",
+)
+GD: Final[Country] = Country(alpha2="GD", alpha3="GRD", name="Grenada", common_name=None, official_name=None)
+GE: Final[Country] = Country(alpha2="GE", alpha3="GEO", name="Georgia", common_name=None, official_name=None)
+GF: Final[Country] = Country(alpha2="GF", alpha3="GUF", name="French Guiana", common_name=None, official_name=None)
+GG: Final[Country] = Country(alpha2="GG", alpha3="GGY", name="Guernsey", common_name=None, official_name=None)
+GH: Final[Country] = Country(
+    alpha2="GH",
+    alpha3="GHA",
+    name="Ghana",
+    common_name=None,
+    official_name="Republic of Ghana",
+)
+GI: Final[Country] = Country(alpha2="GI", alpha3="GIB", name="Gibraltar", common_name=None, official_name=None)
+GL: Final[Country] = Country(alpha2="GL", alpha3="GRL", name="Greenland", common_name=None, official_name=None)
+GM: Final[Country] = Country(
+    alpha2="GM",
+    alpha3="GMB",
+    name="Gambia",
+    common_name=None,
+    official_name="Republic of the Gambia",
+)
+GN: Final[Country] = Country(
+    alpha2="GN",
+    alpha3="GIN",
+    name="Guinea",
+    common_name=None,
+    official_name="Republic of Guinea",
+)
+GP: Final[Country] = Country(alpha2="GP", alpha3="GLP", name="Guadeloupe", common_name=None, official_name=None)
+GQ: Final[Country] = Country(
+    alpha2="GQ",
+    alpha3="GNQ",
+    name="Equatorial Guinea",
+    common_name=None,
+    official_name="Republic of Equatorial Guinea",
+)
+GR: Final[Country] = Country(
+    alpha2="GR",
+    alpha3="GRC",
+    name="Greece",
+    common_name=None,
+    official_name="Hellenic Republic",
+)
+GS: Final[Country] = Country(
+    alpha2="GS",
+    alpha3="SGS",
+    name="South Georgia and the South Sandwich Islands",
+    common_name=None,
+    official_name=None,
+)
+GT: Final[Country] = Country(
+    alpha2="GT",
+    alpha3="GTM",
+    name="Guatemala",
+    common_name=None,
+    official_name="Republic of Guatemala",
+)
+GU: Final[Country] = Country(alpha2="GU", alpha3="GUM", name="Guam", common_name=None, official_name=None)
+GW: Final[Country] = Country(
+    alpha2="GW",
+    alpha3="GNB",
+    name="Guinea-Bissau",
+    common_name=None,
+    official_name="Republic of Guinea-Bissau",
+)
+GY: Final[Country] = Country(
+    alpha2="GY",
+    alpha3="GUY",
+    name="Guyana",
+    common_name=None,
+    official_name="Republic of Guyana",
+)
+HK: Final[Country] = Country(
+    alpha2="HK",
+    alpha3="HKG",
+    name="Hong Kong",
+    common_name=None,
+    official_name="Hong Kong Special Administrative Region of China",
+)
+HM: Final[Country] = Country(
+    alpha2="HM",
+    alpha3="HMD",
+    name="Heard Island and McDonald Islands",
+    common_name=None,
+    official_name=None,
+)
+HN: Final[Country] = Country(
+    alpha2="HN",
+    alpha3="HND",
+    name="Honduras",
+    common_name=None,
+    official_name="Republic of Honduras",
+)
+HR: Final[Country] = Country(
+    alpha2="HR",
+    alpha3="HRV",
+    name="Croatia",
+    common_name=None,
+    official_name="Republic of Croatia",
+)
+HT: Final[Country] = Country(
+    alpha2="HT",
+    alpha3="HTI",
+    name="Haiti",
+    common_name=None,
+    official_name="Republic of Haiti",
+)
+HU: Final[Country] = Country(alpha2="HU", alpha3="HUN", name="Hungary", common_name=None, official_name="Hungary")
+ID: Final[Country] = Country(
+    alpha2="ID",
+    alpha3="IDN",
+    name="Indonesia",
+    common_name=None,
+    official_name="Republic of Indonesia",
+)
+IE: Final[Country] = Country(alpha2="IE", alpha3="IRL", name="Ireland", common_name=None, official_name=None)
+IL: Final[Country] = Country(
+    alpha2="IL",
+    alpha3="ISR",
+    name="Israel",
+    common_name=None,
+    official_name="State of Israel",
+)
+IM: Final[Country] = Country(alpha2="IM", alpha3="IMN", name="Isle of Man", common_name=None, official_name=None)
+IN: Final[Country] = Country(
+    alpha2="IN",
+    alpha3="IND",
+    name="India",
+    common_name=None,
+    official_name="Republic of India",
+)
+IO: Final[Country] = Country(
+    alpha2="IO",
+    alpha3="IOT",
+    name="British Indian Ocean Territory",
+    common_name=None,
+    official_name=None,
+)
+IQ: Final[Country] = Country(alpha2="IQ", alpha3="IRQ", name="Iraq", common_name=None, official_name="Republic of Iraq")
+IR: Final[Country] = Country(
+    alpha2="IR",
+    alpha3="IRN",
+    name="Iran, Islamic Republic of",
+    common_name="Iran",
+    official_name="Islamic Republic of Iran",
+)
+IS: Final[Country] = Country(
+    alpha2="IS",
+    alpha3="ISL",
+    name="Iceland",
+    common_name=None,
+    official_name="Republic of Iceland",
+)
+IT: Final[Country] = Country(
+    alpha2="IT",
+    alpha3="ITA",
+    name="Italy",
+    common_name=None,
+    official_name="Italian Republic",
+)
+JE: Final[Country] = Country(alpha2="JE", alpha3="JEY", name="Jersey", common_name=None, official_name=None)
+JM: Final[Country] = Country(alpha2="JM", alpha3="JAM", name="Jamaica", common_name=None, official_name=None)
+JO: Final[Country] = Country(
+    alpha2="JO",
+    alpha3="JOR",
+    name="Jordan",
+    common_name=None,
+    official_name="Hashemite Kingdom of Jordan",
+)
+JP: Final[Country] = Country(alpha2="JP", alpha3="JPN", name="Japan", common_name=None, official_name=None)
+KE: Final[Country] = Country(
+    alpha2="KE",
+    alpha3="KEN",
+    name="Kenya",
+    common_name=None,
+    official_name="Republic of Kenya",
+)
+KG: Final[Country] = Country(
+    alpha2="KG",
+    alpha3="KGZ",
+    name="Kyrgyzstan",
+    common_name=None,
+    official_name="Kyrgyz Republic",
+)
+KH: Final[Country] = Country(
+    alpha2="KH",
+    alpha3="KHM",
+    name="Cambodia",
+    common_name=None,
+    official_name="Kingdom of Cambodia",
+)
+KI: Final[Country] = Country(
+    alpha2="KI",
+    alpha3="KIR",
+    name="Kiribati",
+    common_name=None,
+    official_name="Republic of Kiribati",
+)
+KM: Final[Country] = Country(
+    alpha2="KM",
+    alpha3="COM",
+    name="Comoros",
+    common_name=None,
+    official_name="Union of the Comoros",
+)
+KN: Final[Country] = Country(
+    alpha2="KN",
+    alpha3="KNA",
+    name="Saint Kitts and Nevis",
+    common_name=None,
+    official_name=None,
+)
+KP: Final[Country] = Country(
+    alpha2="KP",
+    alpha3="PRK",
+    name="Korea, Democratic People's Republic of",
+    common_name="North Korea",
+    official_name="Democratic People's Republic of Korea",
+)
+KR: Final[Country] = Country(
+    alpha2="KR",
+    alpha3="KOR",
+    name="Korea, Republic of",
+    common_name="South Korea",
+    official_name=None,
+)
+KW: Final[Country] = Country(
+    alpha2="KW",
+    alpha3="KWT",
+    name="Kuwait",
+    common_name=None,
+    official_name="State of Kuwait",
+)
+KY: Final[Country] = Country(alpha2="KY", alpha3="CYM", name="Cayman Islands", common_name=None, official_name=None)
+KZ: Final[Country] = Country(
+    alpha2="KZ",
+    alpha3="KAZ",
+    name="Kazakhstan",
+    common_name=None,
+    official_name="Republic of Kazakhstan",
+)
+LA: Final[Country] = Country(
+    alpha2="LA",
+    alpha3="LAO",
+    name="Lao People's Democratic Republic",
+    common_name="Laos",
+    official_name=None,
+)
+LB: Final[Country] = Country(
+    alpha2="LB",
+    alpha3="LBN",
+    name="Lebanon",
+    common_name=None,
+    official_name="Lebanese Republic",
+)
+LC: Final[Country] = Country(alpha2="LC", alpha3="LCA", name="Saint Lucia", common_name=None, official_name=None)
+LI: Final[Country] = Country(
+    alpha2="LI",
+    alpha3="LIE",
+    name="Liechtenstein",
+    common_name=None,
+    official_name="Principality of Liechtenstein",
+)
+LK: Final[Country] = Country(
+    alpha2="LK",
+    alpha3="LKA",
+    name="Sri Lanka",
+    common_name=None,
+    official_name="Democratic Socialist Republic of Sri Lanka",
+)
+LR: Final[Country] = Country(
+    alpha2="LR",
+    alpha3="LBR",
+    name="Liberia",
+    common_name=None,
+    official_name="Republic of Liberia",
+)
+LS: Final[Country] = Country(
+    alpha2="LS",
+    alpha3="LSO",
+    name="Lesotho",
+    common_name=None,
+    official_name="Kingdom of Lesotho",
+)
+LT: Final[Country] = Country(
+    alpha2="LT",
+    alpha3="LTU",
+    name="Lithuania",
+    common_name=None,
+    official_name="Republic of Lithuania",
+)
+LU: Final[Country] = Country(
+    alpha2="LU",
+    alpha3="LUX",
+    name="Luxembourg",
+    common_name=None,
+    official_name="Grand Duchy of Luxembourg",
+)
+LV: Final[Country] = Country(
+    alpha2="LV",
+    alpha3="LVA",
+    name="Latvia",
+    common_name=None,
+    official_name="Republic of Latvia",
+)
+LY: Final[Country] = Country(alpha2="LY", alpha3="LBY", name="Libya", common_name=None, official_name="Libya")
+MA: Final[Country] = Country(
+    alpha2="MA",
+    alpha3="MAR",
+    name="Morocco",
+    common_name=None,
+    official_name="Kingdom of Morocco",
+)
+MC: Final[Country] = Country(
+    alpha2="MC",
+    alpha3="MCO",
+    name="Monaco",
+    common_name=None,
+    official_name="Principality of Monaco",
+)
+MD: Final[Country] = Country(
+    alpha2="MD",
+    alpha3="MDA",
+    name="Moldova, Republic of",
+    common_name="Moldova",
+    official_name="Republic of Moldova",
+)
+ME: Final[Country] = Country(alpha2="ME", alpha3="MNE", name="Montenegro", common_name=None, official_name="Montenegro")
+MF: Final[Country] = Country(
+    alpha2="MF",
+    alpha3="MAF",
+    name="Saint Martin (French part)",
+    common_name=None,
+    official_name=None,
+)
+MG: Final[Country] = Country(
+    alpha2="MG",
+    alpha3="MDG",
+    name="Madagascar",
+    common_name=None,
+    official_name="Republic of Madagascar",
+)
+MH: Final[Country] = Country(
+    alpha2="MH",
+    alpha3="MHL",
+    name="Marshall Islands",
+    common_name=None,
+    official_name="Republic of the Marshall Islands",
+)
+MK: Final[Country] = Country(
+    alpha2="MK",
+    alpha3="MKD",
+    name="North Macedonia",
+    common_name=None,
+    official_name="Republic of North Macedonia",
+)
+ML: Final[Country] = Country(alpha2="ML", alpha3="MLI", name="Mali", common_name=None, official_name="Republic of Mali")
+MM: Final[Country] = Country(
+    alpha2="MM",
+    alpha3="MMR",
+    name="Myanmar",
+    common_name=None,
+    official_name="Republic of Myanmar",
+)
+MN: Final[Country] = Country(alpha2="MN", alpha3="MNG", name="Mongolia", common_name=None, official_name=None)
+MO: Final[Country] = Country(
+    alpha2="MO",
+    alpha3="MAC",
+    name="Macao",
+    common_name=None,
+    official_name="Macao Special Administrative Region of China",
+)
+MP: Final[Country] = Country(
+    alpha2="MP",
+    alpha3="MNP",
+    name="Northern Mariana Islands",
+    common_name=None,
+    official_name="Commonwealth of the Northern Mariana Islands",
+)
+MQ: Final[Country] = Country(alpha2="MQ", alpha3="MTQ", name="Martinique", common_name=None, official_name=None)
+MR: Final[Country] = Country(
+    alpha2="MR",
+    alpha3="MRT",
+    name="Mauritania",
+    common_name=None,
+    official_name="Islamic Republic of Mauritania",
+)
+MS: Final[Country] = Country(alpha2="MS", alpha3="MSR", name="Montserrat", common_name=None, official_name=None)
+MT: Final[Country] = Country(
+    alpha2="MT",
+    alpha3="MLT",
+    name="Malta",
+    common_name=None,
+    official_name="Republic of Malta",
+)
+MU: Final[Country] = Country(
+    alpha2="MU",
+    alpha3="MUS",
+    name="Mauritius",
+    common_name=None,
+    official_name="Republic of Mauritius",
+)
+MV: Final[Country] = Country(
+    alpha2="MV",
+    alpha3="MDV",
+    name="Maldives",
+    common_name=None,
+    official_name="Republic of Maldives",
+)
+MW: Final[Country] = Country(
+    alpha2="MW",
+    alpha3="MWI",
+    name="Malawi",
+    common_name=None,
+    official_name="Republic of Malawi",
+)
+MX: Final[Country] = Country(
+    alpha2="MX",
+    alpha3="MEX",
+    name="Mexico",
+    common_name=None,
+    official_name="United Mexican States",
+)
+MY: Final[Country] = Country(alpha2="MY", alpha3="MYS", name="Malaysia", common_name=None, official_name=None)
+MZ: Final[Country] = Country(
+    alpha2="MZ",
+    alpha3="MOZ",
+    name="Mozambique",
+    common_name=None,
+    official_name="Republic of Mozambique",
+)
+NA: Final[Country] = Country(
+    alpha2="NA",
+    alpha3="NAM",
+    name="Namibia",
+    common_name=None,
+    official_name="Republic of Namibia",
+)
+NC: Final[Country] = Country(alpha2="NC", alpha3="NCL", name="New Caledonia", common_name=None, official_name=None)
+NE: Final[Country] = Country(
+    alpha2="NE",
+    alpha3="NER",
+    name="Niger",
+    common_name=None,
+    official_name="Republic of the Niger",
+)
+NF: Final[Country] = Country(alpha2="NF", alpha3="NFK", name="Norfolk Island", common_name=None, official_name=None)
+NG: Final[Country] = Country(
+    alpha2="NG",
+    alpha3="NGA",
+    name="Nigeria",
+    common_name=None,
+    official_name="Federal Republic of Nigeria",
+)
+NI: Final[Country] = Country(
+    alpha2="NI",
+    alpha3="NIC",
+    name="Nicaragua",
+    common_name=None,
+    official_name="Republic of Nicaragua",
+)
+NL: Final[Country] = Country(
+    alpha2="NL",
+    alpha3="NLD",
+    name="Netherlands",
+    common_name=None,
+    official_name="Kingdom of the Netherlands",
+)
+NO: Final[Country] = Country(
+    alpha2="NO",
+    alpha3="NOR",
+    name="Norway",
+    common_name=None,
+    official_name="Kingdom of Norway",
+)
+NP: Final[Country] = Country(
+    alpha2="NP",
+    alpha3="NPL",
+    name="Nepal",
+    common_name=None,
+    official_name="Federal Democratic Republic of Nepal",
+)
+NR: Final[Country] = Country(
+    alpha2="NR",
+    alpha3="NRU",
+    name="Nauru",
+    common_name=None,
+    official_name="Republic of Nauru",
+)
+NU: Final[Country] = Country(alpha2="NU", alpha3="NIU", name="Niue", common_name=None, official_name="Niue")
+NZ: Final[Country] = Country(alpha2="NZ", alpha3="NZL", name="New Zealand", common_name=None, official_name=None)
+OM: Final[Country] = Country(
+    alpha2="OM",
+    alpha3="OMN",
+    name="Oman",
+    common_name=None,
+    official_name="Sultanate of Oman",
+)
+PA: Final[Country] = Country(
+    alpha2="PA",
+    alpha3="PAN",
+    name="Panama",
+    common_name=None,
+    official_name="Republic of Panama",
+)
+PE: Final[Country] = Country(alpha2="PE", alpha3="PER", name="Peru", common_name=None, official_name="Republic of Peru")
+PF: Final[Country] = Country(alpha2="PF", alpha3="PYF", name="French Polynesia", common_name=None, official_name=None)
+PG: Final[Country] = Country(
+    alpha2="PG",
+    alpha3="PNG",
+    name="Papua New Guinea",
+    common_name=None,
+    official_name="Independent State of Papua New Guinea",
+)
+PH: Final[Country] = Country(
+    alpha2="PH",
+    alpha3="PHL",
+    name="Philippines",
+    common_name=None,
+    official_name="Republic of the Philippines",
+)
+PK: Final[Country] = Country(
+    alpha2="PK",
+    alpha3="PAK",
+    name="Pakistan",
+    common_name=None,
+    official_name="Islamic Republic of Pakistan",
+)
+PL: Final[Country] = Country(
+    alpha2="PL",
+    alpha3="POL",
+    name="Poland",
+    common_name=None,
+    official_name="Republic of Poland",
+)
+PM: Final[Country] = Country(
+    alpha2="PM",
+    alpha3="SPM",
+    name="Saint Pierre and Miquelon",
+    common_name=None,
+    official_name=None,
+)
+PN: Final[Country] = Country(alpha2="PN", alpha3="PCN", name="Pitcairn", common_name=None, official_name=None)
+PR: Final[Country] = Country(alpha2="PR", alpha3="PRI", name="Puerto Rico", common_name=None, official_name=None)
+PS: Final[Country] = Country(
+    alpha2="PS",
+    alpha3="PSE",
+    name="Palestine, State of",
+    common_name=None,
+    official_name="the State of Palestine",
+)
+PT: Final[Country] = Country(
+    alpha2="PT",
+    alpha3="PRT",
+    name="Portugal",
+    common_name=None,
+    official_name="Portuguese Republic",
+)
+PW: Final[Country] = Country(
+    alpha2="PW",
+    alpha3="PLW",
+    name="Palau",
+    common_name=None,
+    official_name="Republic of Palau",
+)
+PY: Final[Country] = Country(
+    alpha2="PY",
+    alpha3="PRY",
+    name="Paraguay",
+    common_name=None,
+    official_name="Republic of Paraguay",
+)
+QA: Final[Country] = Country(alpha2="QA", alpha3="QAT", name="Qatar", common_name=None, official_name="State of Qatar")
+RE: Final[Country] = Country(alpha2="RE", alpha3="REU", name="Réunion", common_name=None, official_name=None)
+RO: Final[Country] = Country(alpha2="RO", alpha3="ROU", name="Romania", common_name=None, official_name=None)
+RS: Final[Country] = Country(
+    alpha2="RS",
+    alpha3="SRB",
+    name="Serbia",
+    common_name=None,
+    official_name="Republic of Serbia",
+)
+RU: Final[Country] = Country(alpha2="RU", alpha3="RUS", name="Russian Federation", common_name=None, official_name=None)
+RW: Final[Country] = Country(
+    alpha2="RW",
+    alpha3="RWA",
+    name="Rwanda",
+    common_name=None,
+    official_name="Rwandese Republic",
+)
+SA: Final[Country] = Country(
+    alpha2="SA",
+    alpha3="SAU",
+    name="Saudi Arabia",
+    common_name=None,
+    official_name="Kingdom of Saudi Arabia",
+)
+SB: Final[Country] = Country(alpha2="SB", alpha3="SLB", name="Solomon Islands", common_name=None, official_name=None)
+SC: Final[Country] = Country(
+    alpha2="SC",
+    alpha3="SYC",
+    name="Seychelles",
+    common_name=None,
+    official_name="Republic of Seychelles",
+)
+SD: Final[Country] = Country(
+    alpha2="SD",
+    alpha3="SDN",
+    name="Sudan",
+    common_name=None,
+    official_name="Republic of the Sudan",
+)
+SE: Final[Country] = Country(
+    alpha2="SE",
+    alpha3="SWE",
+    name="Sweden",
+    common_name=None,
+    official_name="Kingdom of Sweden",
+)
+SG: Final[Country] = Country(
+    alpha2="SG",
+    alpha3="SGP",
+    name="Singapore",
+    common_name=None,
+    official_name="Republic of Singapore",
+)
+SH: Final[Country] = Country(
+    alpha2="SH",
+    alpha3="SHN",
+    name="Saint Helena, Ascension and Tristan da Cunha",
+    common_name=None,
+    official_name=None,
+)
+SI: Final[Country] = Country(
+    alpha2="SI",
+    alpha3="SVN",
+    name="Slovenia",
+    common_name=None,
+    official_name="Republic of Slovenia",
+)
+SJ: Final[Country] = Country(
+    alpha2="SJ",
+    alpha3="SJM",
+    name="Svalbard and Jan Mayen",
+    common_name=None,
+    official_name=None,
+)
+SK: Final[Country] = Country(
+    alpha2="SK",
+    alpha3="SVK",
+    name="Slovakia",
+    common_name=None,
+    official_name="Slovak Republic",
+)
+SL: Final[Country] = Country(
+    alpha2="SL",
+    alpha3="SLE",
+    name="Sierra Leone",
+    common_name=None,
+    official_name="Republic of Sierra Leone",
+)
+SM: Final[Country] = Country(
+    alpha2="SM",
+    alpha3="SMR",
+    name="San Marino",
+    common_name=None,
+    official_name="Republic of San Marino",
+)
+SN: Final[Country] = Country(
+    alpha2="SN",
+    alpha3="SEN",
+    name="Senegal",
+    common_name=None,
+    official_name="Republic of Senegal",
+)
+SO: Final[Country] = Country(
+    alpha2="SO",
+    alpha3="SOM",
+    name="Somalia",
+    common_name=None,
+    official_name="Federal Republic of Somalia",
+)
+SR: Final[Country] = Country(
+    alpha2="SR",
+    alpha3="SUR",
+    name="Suriname",
+    common_name=None,
+    official_name="Republic of Suriname",
+)
+SS: Final[Country] = Country(
+    alpha2="SS",
+    alpha3="SSD",
+    name="South Sudan",
+    common_name=None,
+    official_name="Republic of South Sudan",
+)
+ST: Final[Country] = Country(
+    alpha2="ST",
+    alpha3="STP",
+    name="Sao Tome and Principe",
+    common_name=None,
+    official_name="Democratic Republic of Sao Tome and Principe",
+)
+SV: Final[Country] = Country(
+    alpha2="SV",
+    alpha3="SLV",
+    name="El Salvador",
+    common_name=None,
+    official_name="Republic of El Salvador",
+)
+SX: Final[Country] = Country(
+    alpha2="SX",
+    alpha3="SXM",
+    name="Sint Maarten (Dutch part)",
+    common_name=None,
+    official_name="Sint Maarten (Dutch part)",
+)
+SY: Final[Country] = Country(
+    alpha2="SY",
+    alpha3="SYR",
+    name="Syrian Arab Republic",
+    common_name="Syria",
+    official_name=None,
+)
+SZ: Final[Country] = Country(
+    alpha2="SZ",
+    alpha3="SWZ",
+    name="Eswatini",
+    common_name=None,
+    official_name="Kingdom of Eswatini",
+)
+TC: Final[Country] = Country(
+    alpha2="TC",
+    alpha3="TCA",
+    name="Turks and Caicos Islands",
+    common_name=None,
+    official_name=None,
+)
+TD: Final[Country] = Country(alpha2="TD", alpha3="TCD", name="Chad", common_name=None, official_name="Republic of Chad")
+TF: Final[Country] = Country(
+    alpha2="TF",
+    alpha3="ATF",
+    name="French Southern Territories",
+    common_name=None,
+    official_name=None,
+)
+TG: Final[Country] = Country(
+    alpha2="TG",
+    alpha3="TGO",
+    name="Togo",
+    common_name=None,
+    official_name="Togolese Republic",
+)
+TH: Final[Country] = Country(
+    alpha2="TH",
+    alpha3="THA",
+    name="Thailand",
+    common_name=None,
+    official_name="Kingdom of Thailand",
+)
+TJ: Final[Country] = Country(
+    alpha2="TJ",
+    alpha3="TJK",
+    name="Tajikistan",
+    common_name=None,
+    official_name="Republic of Tajikistan",
+)
+TK: Final[Country] = Country(alpha2="TK", alpha3="TKL", name="Tokelau", common_name=None, official_name=None)
+TL: Final[Country] = Country(
+    alpha2="TL",
+    alpha3="TLS",
+    name="Timor-Leste",
+    common_name=None,
+    official_name="Democratic Republic of Timor-Leste",
+)
+TM: Final[Country] = Country(alpha2="TM", alpha3="TKM", name="Turkmenistan", common_name=None, official_name=None)
+TN: Final[Country] = Country(
+    alpha2="TN",
+    alpha3="TUN",
+    name="Tunisia",
+    common_name=None,
+    official_name="Republic of Tunisia",
+)
+TO: Final[Country] = Country(
+    alpha2="TO",
+    alpha3="TON",
+    name="Tonga",
+    common_name=None,
+    official_name="Kingdom of Tonga",
+)
+TR: Final[Country] = Country(
+    alpha2="TR",
+    alpha3="TUR",
+    name="Türkiye",
+    common_name=None,
+    official_name="Republic of Türkiye",
+)
+TT: Final[Country] = Country(
+    alpha2="TT",
+    alpha3="TTO",
+    name="Trinidad and Tobago",
+    common_name=None,
+    official_name="Republic of Trinidad and Tobago",
+)
+TV: Final[Country] = Country(alpha2="TV", alpha3="TUV", name="Tuvalu", common_name=None, official_name=None)
+TW: Final[Country] = Country(
+    alpha2="TW",
+    alpha3="TWN",
+    name="Taiwan, Province of China",
+    common_name="Taiwan",
+    official_name="Taiwan, Province of China",
+)
+TZ: Final[Country] = Country(
+    alpha2="TZ",
+    alpha3="TZA",
+    name="Tanzania, United Republic of",
+    common_name="Tanzania",
+    official_name="United Republic of Tanzania",
+)
+UA: Final[Country] = Country(alpha2="UA", alpha3="UKR", name="Ukraine", common_name=None, official_name=None)
+UG: Final[Country] = Country(
+    alpha2="UG",
+    alpha3="UGA",
+    name="Uganda",
+    common_name=None,
+    official_name="Republic of Uganda",
+)
+UM: Final[Country] = Country(
+    alpha2="UM",
+    alpha3="UMI",
+    name="United States Minor Outlying Islands",
+    common_name=None,
+    official_name=None,
+)
+US: Final[Country] = Country(
+    alpha2="US",
+    alpha3="USA",
+    name="United States",
+    common_name=None,
+    official_name="United States of America",
+)
+UY: Final[Country] = Country(
+    alpha2="UY",
+    alpha3="URY",
+    name="Uruguay",
+    common_name=None,
+    official_name="Eastern Republic of Uruguay",
+)
+UZ: Final[Country] = Country(
+    alpha2="UZ",
+    alpha3="UZB",
+    name="Uzbekistan",
+    common_name=None,
+    official_name="Republic of Uzbekistan",
+)
+VA: Final[Country] = Country(
+    alpha2="VA",
+    alpha3="VAT",
+    name="Holy See (Vatican City State)",
+    common_name=None,
+    official_name=None,
+)
+VC: Final[Country] = Country(
+    alpha2="VC",
+    alpha3="VCT",
+    name="Saint Vincent and the Grenadines",
+    common_name=None,
+    official_name=None,
+)
+VE: Final[Country] = Country(
+    alpha2="VE",
+    alpha3="VEN",
+    name="Venezuela, Bolivarian Republic of",
+    common_name="Venezuela",
+    official_name="Bolivarian Republic of Venezuela",
+)
+VG: Final[Country] = Country(
+    alpha2="VG",
+    alpha3="VGB",
+    name="Virgin Islands, British",
+    common_name=None,
+    official_name="British Virgin Islands",
+)
+VI: Final[Country] = Country(
+    alpha2="VI",
+    alpha3="VIR",
+    name="Virgin Islands, U.S.",
+    common_name=None,
+    official_name="Virgin Islands of the United States",
+)
+VN: Final[Country] = Country(
+    alpha2="VN",
+    alpha3="VNM",
+    name="Viet Nam",
+    common_name="Vietnam",
+    official_name="Socialist Republic of Viet Nam",
+)
+VU: Final[Country] = Country(
+    alpha2="VU",
+    alpha3="VUT",
+    name="Vanuatu",
+    common_name=None,
+    official_name="Republic of Vanuatu",
+)
+WF: Final[Country] = Country(alpha2="WF", alpha3="WLF", name="Wallis and Futuna", common_name=None, official_name=None)
+WS: Final[Country] = Country(
+    alpha2="WS",
+    alpha3="WSM",
+    name="Samoa",
+    common_name=None,
+    official_name="Independent State of Samoa",
+)
+YE: Final[Country] = Country(
+    alpha2="YE",
+    alpha3="YEM",
+    name="Yemen",
+    common_name=None,
+    official_name="Republic of Yemen",
+)
+YT: Final[Country] = Country(alpha2="YT", alpha3="MYT", name="Mayotte", common_name=None, official_name=None)
+ZA: Final[Country] = Country(
+    alpha2="ZA",
+    alpha3="ZAF",
+    name="South Africa",
+    common_name=None,
+    official_name="Republic of South Africa",
+)
+ZM: Final[Country] = Country(
+    alpha2="ZM",
+    alpha3="ZMB",
+    name="Zambia",
+    common_name=None,
+    official_name="Republic of Zambia",
+)
+ZW: Final[Country] = Country(
+    alpha2="ZW",
+    alpha3="ZWE",
+    name="Zimbabwe",
+    common_name=None,
+    official_name="Republic of Zimbabwe",
+)
 
 ALPHA2_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha2Type, Country]] = {
-    "AW": AW,
-    "AF": AF,
-    "AO": AO,
-    "AI": AI,
-    "AX": AX,
-    "AL": AL,
     "AD": AD,
     "AE": AE,
-    "AR": AR,
-    "AM": AM,
-    "AS": AS,
-    "AQ": AQ,
-    "TF": TF,
+    "AF": AF,
     "AG": AG,
-    "AU": AU,
+    "AI": AI,
+    "AL": AL,
+    "AM": AM,
+    "AO": AO,
+    "AQ": AQ,
+    "AR": AR,
+    "AS": AS,
     "AT": AT,
+    "AU": AU,
+    "AW": AW,
+    "AX": AX,
     "AZ": AZ,
-    "BI": BI,
-    "BE": BE,
-    "BJ": BJ,
-    "BQ": BQ,
-    "BF": BF,
+    "BA": BA,
+    "BB": BB,
     "BD": BD,
+    "BE": BE,
+    "BF": BF,
     "BG": BG,
     "BH": BH,
-    "BS": BS,
-    "BA": BA,
+    "BI": BI,
+    "BJ": BJ,
     "BL": BL,
-    "BY": BY,
-    "BZ": BZ,
     "BM": BM,
-    "BO": BO,
-    "BR": BR,
-    "BB": BB,
     "BN": BN,
+    "BO": BO,
+    "BQ": BQ,
+    "BR": BR,
+    "BS": BS,
     "BT": BT,
     "BV": BV,
     "BW": BW,
-    "CF": CF,
+    "BY": BY,
+    "BZ": BZ,
     "CA": CA,
     "CC": CC,
-    "CH": CH,
-    "CL": CL,
-    "CN": CN,
-    "CI": CI,
-    "CM": CM,
     "CD": CD,
+    "CF": CF,
     "CG": CG,
+    "CH": CH,
+    "CI": CI,
     "CK": CK,
+    "CL": CL,
+    "CM": CM,
+    "CN": CN,
     "CO": CO,
-    "KM": KM,
-    "CV": CV,
     "CR": CR,
     "CU": CU,
+    "CV": CV,
     "CW": CW,
     "CX": CX,
-    "KY": KY,
     "CY": CY,
     "CZ": CZ,
     "DE": DE,
     "DJ": DJ,
-    "DM": DM,
     "DK": DK,
+    "DM": DM,
     "DO": DO,
     "DZ": DZ,
     "EC": EC,
-    "EG": EG,
-    "ER": ER,
-    "EH": EH,
-    "ES": ES,
     "EE": EE,
+    "EG": EG,
+    "EH": EH,
+    "ER": ER,
+    "ES": ES,
     "ET": ET,
     "FI": FI,
     "FJ": FJ,
     "FK": FK,
-    "FR": FR,
-    "FO": FO,
     "FM": FM,
+    "FO": FO,
+    "FR": FR,
     "GA": GA,
     "GB": GB,
+    "GD": GD,
     "GE": GE,
+    "GF": GF,
     "GG": GG,
     "GH": GH,
     "GI": GI,
+    "GL": GL,
+    "GM": GM,
     "GN": GN,
     "GP": GP,
-    "GM": GM,
-    "GW": GW,
     "GQ": GQ,
     "GR": GR,
-    "GD": GD,
-    "GL": GL,
+    "GS": GS,
     "GT": GT,
-    "GF": GF,
     "GU": GU,
+    "GW": GW,
     "GY": GY,
     "HK": HK,
     "HM": HM,
@@ -361,138 +1458,139 @@ ALPHA2_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha2Type, Country]] = {
     "HT": HT,
     "HU": HU,
     "ID": ID,
+    "IE": IE,
+    "IL": IL,
     "IM": IM,
     "IN": IN,
     "IO": IO,
-    "IE": IE,
-    "IR": IR,
     "IQ": IQ,
+    "IR": IR,
     "IS": IS,
-    "IL": IL,
     "IT": IT,
-    "JM": JM,
     "JE": JE,
+    "JM": JM,
     "JO": JO,
     "JP": JP,
-    "KZ": KZ,
     "KE": KE,
     "KG": KG,
     "KH": KH,
     "KI": KI,
+    "KM": KM,
     "KN": KN,
+    "KP": KP,
     "KR": KR,
     "KW": KW,
+    "KY": KY,
+    "KZ": KZ,
     "LA": LA,
     "LB": LB,
-    "LR": LR,
-    "LY": LY,
     "LC": LC,
     "LI": LI,
     "LK": LK,
+    "LR": LR,
     "LS": LS,
     "LT": LT,
     "LU": LU,
     "LV": LV,
-    "MO": MO,
-    "MF": MF,
+    "LY": LY,
     "MA": MA,
     "MC": MC,
     "MD": MD,
+    "ME": ME,
+    "MF": MF,
     "MG": MG,
-    "MV": MV,
-    "MX": MX,
     "MH": MH,
     "MK": MK,
     "ML": ML,
-    "MT": MT,
     "MM": MM,
-    "ME": ME,
     "MN": MN,
+    "MO": MO,
     "MP": MP,
-    "MZ": MZ,
+    "MQ": MQ,
     "MR": MR,
     "MS": MS,
-    "MQ": MQ,
+    "MT": MT,
     "MU": MU,
+    "MV": MV,
     "MW": MW,
+    "MX": MX,
     "MY": MY,
-    "YT": YT,
+    "MZ": MZ,
     "NA": NA,
     "NC": NC,
     "NE": NE,
     "NF": NF,
     "NG": NG,
     "NI": NI,
-    "NU": NU,
     "NL": NL,
     "NO": NO,
     "NP": NP,
     "NR": NR,
+    "NU": NU,
     "NZ": NZ,
     "OM": OM,
-    "PK": PK,
     "PA": PA,
-    "PN": PN,
     "PE": PE,
-    "PH": PH,
-    "PW": PW,
-    "PG": PG,
-    "PL": PL,
-    "PR": PR,
-    "KP": KP,
-    "PT": PT,
-    "PY": PY,
-    "PS": PS,
     "PF": PF,
+    "PG": PG,
+    "PH": PH,
+    "PK": PK,
+    "PL": PL,
+    "PM": PM,
+    "PN": PN,
+    "PR": PR,
+    "PS": PS,
+    "PT": PT,
+    "PW": PW,
+    "PY": PY,
     "QA": QA,
     "RE": RE,
     "RO": RO,
+    "RS": RS,
     "RU": RU,
     "RW": RW,
     "SA": SA,
-    "SD": SD,
-    "SN": SN,
-    "SG": SG,
-    "GS": GS,
-    "SH": SH,
-    "SJ": SJ,
     "SB": SB,
+    "SC": SC,
+    "SD": SD,
+    "SE": SE,
+    "SG": SG,
+    "SH": SH,
+    "SI": SI,
+    "SJ": SJ,
+    "SK": SK,
     "SL": SL,
-    "SV": SV,
     "SM": SM,
+    "SN": SN,
     "SO": SO,
-    "PM": PM,
-    "RS": RS,
+    "SR": SR,
     "SS": SS,
     "ST": ST,
-    "SR": SR,
-    "SK": SK,
-    "SI": SI,
-    "SE": SE,
-    "SZ": SZ,
+    "SV": SV,
     "SX": SX,
-    "SC": SC,
     "SY": SY,
+    "SZ": SZ,
     "TC": TC,
     "TD": TD,
+    "TF": TF,
     "TG": TG,
     "TH": TH,
     "TJ": TJ,
     "TK": TK,
-    "TM": TM,
     "TL": TL,
-    "TO": TO,
-    "TT": TT,
+    "TM": TM,
     "TN": TN,
+    "TO": TO,
     "TR": TR,
+    "TT": TT,
     "TV": TV,
     "TW": TW,
     "TZ": TZ,
-    "UG": UG,
     "UA": UA,
+    "UG": UG,
     "UM": UM,
-    "UY": UY,
     "US": US,
+    "UY": UY,
     "UZ": UZ,
     "VA": VA,
     "VC": VC,
@@ -504,7 +1602,260 @@ ALPHA2_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha2Type, Country]] = {
     "WF": WF,
     "WS": WS,
     "YE": YE,
+    "YT": YT,
     "ZA": ZA,
     "ZM": ZM,
     "ZW": ZW,
+}
+
+ALPHA3_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha3Type, Country]] = {
+    "AND": AD,
+    "ARE": AE,
+    "AFG": AF,
+    "ATG": AG,
+    "AIA": AI,
+    "ALB": AL,
+    "ARM": AM,
+    "AGO": AO,
+    "ATA": AQ,
+    "ARG": AR,
+    "ASM": AS,
+    "AUT": AT,
+    "AUS": AU,
+    "ABW": AW,
+    "ALA": AX,
+    "AZE": AZ,
+    "BIH": BA,
+    "BRB": BB,
+    "BGD": BD,
+    "BEL": BE,
+    "BFA": BF,
+    "BGR": BG,
+    "BHR": BH,
+    "BDI": BI,
+    "BEN": BJ,
+    "BLM": BL,
+    "BMU": BM,
+    "BRN": BN,
+    "BOL": BO,
+    "BES": BQ,
+    "BRA": BR,
+    "BHS": BS,
+    "BTN": BT,
+    "BVT": BV,
+    "BWA": BW,
+    "BLR": BY,
+    "BLZ": BZ,
+    "CAN": CA,
+    "CCK": CC,
+    "COD": CD,
+    "CAF": CF,
+    "COG": CG,
+    "CHE": CH,
+    "CIV": CI,
+    "COK": CK,
+    "CHL": CL,
+    "CMR": CM,
+    "CHN": CN,
+    "COL": CO,
+    "CRI": CR,
+    "CUB": CU,
+    "CPV": CV,
+    "CUW": CW,
+    "CXR": CX,
+    "CYP": CY,
+    "CZE": CZ,
+    "DEU": DE,
+    "DJI": DJ,
+    "DNK": DK,
+    "DMA": DM,
+    "DOM": DO,
+    "DZA": DZ,
+    "ECU": EC,
+    "EST": EE,
+    "EGY": EG,
+    "ESH": EH,
+    "ERI": ER,
+    "ESP": ES,
+    "ETH": ET,
+    "FIN": FI,
+    "FJI": FJ,
+    "FLK": FK,
+    "FSM": FM,
+    "FRO": FO,
+    "FRA": FR,
+    "GAB": GA,
+    "GBR": GB,
+    "GRD": GD,
+    "GEO": GE,
+    "GUF": GF,
+    "GGY": GG,
+    "GHA": GH,
+    "GIB": GI,
+    "GRL": GL,
+    "GMB": GM,
+    "GIN": GN,
+    "GLP": GP,
+    "GNQ": GQ,
+    "GRC": GR,
+    "SGS": GS,
+    "GTM": GT,
+    "GUM": GU,
+    "GNB": GW,
+    "GUY": GY,
+    "HKG": HK,
+    "HMD": HM,
+    "HND": HN,
+    "HRV": HR,
+    "HTI": HT,
+    "HUN": HU,
+    "IDN": ID,
+    "IRL": IE,
+    "ISR": IL,
+    "IMN": IM,
+    "IND": IN,
+    "IOT": IO,
+    "IRQ": IQ,
+    "IRN": IR,
+    "ISL": IS,
+    "ITA": IT,
+    "JEY": JE,
+    "JAM": JM,
+    "JOR": JO,
+    "JPN": JP,
+    "KEN": KE,
+    "KGZ": KG,
+    "KHM": KH,
+    "KIR": KI,
+    "COM": KM,
+    "KNA": KN,
+    "PRK": KP,
+    "KOR": KR,
+    "KWT": KW,
+    "CYM": KY,
+    "KAZ": KZ,
+    "LAO": LA,
+    "LBN": LB,
+    "LCA": LC,
+    "LIE": LI,
+    "LKA": LK,
+    "LBR": LR,
+    "LSO": LS,
+    "LTU": LT,
+    "LUX": LU,
+    "LVA": LV,
+    "LBY": LY,
+    "MAR": MA,
+    "MCO": MC,
+    "MDA": MD,
+    "MNE": ME,
+    "MAF": MF,
+    "MDG": MG,
+    "MHL": MH,
+    "MKD": MK,
+    "MLI": ML,
+    "MMR": MM,
+    "MNG": MN,
+    "MAC": MO,
+    "MNP": MP,
+    "MTQ": MQ,
+    "MRT": MR,
+    "MSR": MS,
+    "MLT": MT,
+    "MUS": MU,
+    "MDV": MV,
+    "MWI": MW,
+    "MEX": MX,
+    "MYS": MY,
+    "MOZ": MZ,
+    "NAM": NA,
+    "NCL": NC,
+    "NER": NE,
+    "NFK": NF,
+    "NGA": NG,
+    "NIC": NI,
+    "NLD": NL,
+    "NOR": NO,
+    "NPL": NP,
+    "NRU": NR,
+    "NIU": NU,
+    "NZL": NZ,
+    "OMN": OM,
+    "PAN": PA,
+    "PER": PE,
+    "PYF": PF,
+    "PNG": PG,
+    "PHL": PH,
+    "PAK": PK,
+    "POL": PL,
+    "SPM": PM,
+    "PCN": PN,
+    "PRI": PR,
+    "PSE": PS,
+    "PRT": PT,
+    "PLW": PW,
+    "PRY": PY,
+    "QAT": QA,
+    "REU": RE,
+    "ROU": RO,
+    "SRB": RS,
+    "RUS": RU,
+    "RWA": RW,
+    "SAU": SA,
+    "SLB": SB,
+    "SYC": SC,
+    "SDN": SD,
+    "SWE": SE,
+    "SGP": SG,
+    "SHN": SH,
+    "SVN": SI,
+    "SJM": SJ,
+    "SVK": SK,
+    "SLE": SL,
+    "SMR": SM,
+    "SEN": SN,
+    "SOM": SO,
+    "SUR": SR,
+    "SSD": SS,
+    "STP": ST,
+    "SLV": SV,
+    "SXM": SX,
+    "SYR": SY,
+    "SWZ": SZ,
+    "TCA": TC,
+    "TCD": TD,
+    "ATF": TF,
+    "TGO": TG,
+    "THA": TH,
+    "TJK": TJ,
+    "TKL": TK,
+    "TLS": TL,
+    "TKM": TM,
+    "TUN": TN,
+    "TON": TO,
+    "TUR": TR,
+    "TTO": TT,
+    "TUV": TV,
+    "TWN": TW,
+    "TZA": TZ,
+    "UKR": UA,
+    "UGA": UG,
+    "UMI": UM,
+    "USA": US,
+    "URY": UY,
+    "UZB": UZ,
+    "VAT": VA,
+    "VCT": VC,
+    "VEN": VE,
+    "VGB": VG,
+    "VIR": VI,
+    "VNM": VN,
+    "VUT": VU,
+    "WLF": WF,
+    "WSM": WS,
+    "YEM": YE,
+    "MYT": YT,
+    "ZAF": ZA,
+    "ZMB": ZM,
+    "ZWE": ZW,
 }

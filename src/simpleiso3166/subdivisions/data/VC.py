@@ -9,10 +9,10 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Saint Vincent and the Grenadines"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("VC-01", "Charlotte"),
-    Subdivision("VC-02", "Saint Andrew"),
-    Subdivision("VC-03", "Saint David"),
-    Subdivision("VC-04", "Saint George"),
-    Subdivision("VC-05", "Saint Patrick"),
-    Subdivision("VC-06", "Grenadines"),
+    Subdivision(code="VC-01", name="Charlotte", type_="Parish"),
+    Subdivision(code="VC-02", name="Saint Andrew", type_="Parish"),
+    Subdivision(code="VC-03", name="Saint David", type_="Parish"),
+    Subdivision(code="VC-04", name="Saint George", type_="Parish"),
+    Subdivision(code="VC-05", name="Saint Patrick", type_="Parish"),
+    Subdivision(code="VC-06", name="Grenadines", type_="Parish"),
 ]

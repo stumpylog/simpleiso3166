@@ -3,19 +3,32 @@
 # SPDX-License-Identifier: MPL-2.0
 from __future__ import annotations
 
+import sys
+from dataclasses import dataclass
 from dataclasses import field
+from functools import cached_property
 from typing import TYPE_CHECKING
-from typing import Generator
 
-from simpleiso3166._compat import slots_dataclass_decorator
+from simpleiso3166.errors import NoCountryBestNameError
 from simpleiso3166.subdivisions import Subdivision
 
 if TYPE_CHECKING:
+    from collections.abc import Generator
+
     from simpleiso3166.countries.types import CountryCodeAlpha2Type
+    from simpleiso3166.countries.types import CountryCodeAlpha3Type
     from simpleiso3166.subdivisions.types import SubdivisionCodeType
 
+dataclass_args = {}
 
-@slots_dataclass_decorator
+# Add slots=True if the Python version is 3.10 or higher
+if sys.version_info >= (3, 10):
+    dataclass_args["slots"] = True
+
+# Apply the arguments to the dataclass decorator
+
+
+@dataclass(**dataclass_args)
 class Country:
     """
     Data object containing information about a single country.
@@ -24,8 +37,10 @@ class Country:
     """
 
     alpha2: CountryCodeAlpha2Type
-    name: str
+    alpha3: CountryCodeAlpha3Type
+    name: str | None
     common_name: str | None
+    official_name: str | None
     _actual_subdivisions: dict[str, Subdivision] = field(init=False, default_factory=dict, repr=False)
     _subdivisions_loaded: bool = field(init=False, default=False, repr=False)
 
@@ -44,6 +59,19 @@ class Country:
         """
         self._check_and_load()
         return subdivision_code in self._actual_subdivisions
+
+    @cached_property
+    def best_name(self) -> str:
+        """
+        Returns the most common name for a country, based on what is available
+        """
+        if self.common_name:
+            return self.common_name
+        if self.name:
+            return self.name
+        if self.official_name:
+            return self.official_name
+        raise NoCountryBestNameError("Unable to determine best name option")  # noqa: EM101, TRY003
 
     @property
     def subdivisions(self) -> Generator[Subdivision, None, None]:
@@ -81,6 +109,15 @@ class Country:
         from simpleiso3166.countries.data import ALPHA2_CODE_TO_COUNTRIES
 
         return ALPHA2_CODE_TO_COUNTRIES.get(alpha2)
+
+    @staticmethod
+    def from_alpha3(alpha3: CountryCodeAlpha3Type) -> Country | None:
+        """
+        Constructs a Country object from an alpha-2 code, if the code is valid.
+        """
+        from simpleiso3166.countries.data import ALPHA3_CODE_TO_COUNTRIES
+
+        return ALPHA3_CODE_TO_COUNTRIES.get(alpha3)
 
     @staticmethod
     def from_exact_name(name: str) -> Country | None:

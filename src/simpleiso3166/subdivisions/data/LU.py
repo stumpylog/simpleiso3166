@@ -6,19 +6,19 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Grand Duchy of Luxembourg"
+COUNTRY_NAME: Final[str] = "Luxembourg"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("LU-CA", "Capellen"),
-    Subdivision("LU-CL", "Clervaux"),
-    Subdivision("LU-DI", "Diekirch"),
-    Subdivision("LU-EC", "Echternach"),
-    Subdivision("LU-ES", "Esch-sur-Alzette"),
-    Subdivision("LU-GR", "Grevenmacher"),
-    Subdivision("LU-LU", "Luxembourg"),
-    Subdivision("LU-ME", "Mersch"),
-    Subdivision("LU-RD", "Redange"),
-    Subdivision("LU-RM", "Remich"),
-    Subdivision("LU-VD", "Vianden"),
-    Subdivision("LU-WI", "Wiltz"),
+    Subdivision(code="LU-CA", name="Capellen", type_="Canton"),
+    Subdivision(code="LU-CL", name="Clervaux", type_="Canton"),
+    Subdivision(code="LU-DI", name="Diekirch", type_="Canton"),
+    Subdivision(code="LU-EC", name="Echternach", type_="Canton"),
+    Subdivision(code="LU-ES", name="Esch-sur-Alzette", type_="Canton"),
+    Subdivision(code="LU-GR", name="Grevenmacher", type_="Canton"),
+    Subdivision(code="LU-LU", name="Luxembourg", type_="Canton"),
+    Subdivision(code="LU-ME", name="Mersch", type_="Canton"),
+    Subdivision(code="LU-RD", name="Redange", type_="Canton"),
+    Subdivision(code="LU-RM", name="Remich", type_="Canton"),
+    Subdivision(code="LU-VD", name="Vianden", type_="Canton"),
+    Subdivision(code="LU-WI", name="Wiltz", type_="Canton"),
 ]

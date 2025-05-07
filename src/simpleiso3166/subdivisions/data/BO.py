@@ -6,16 +6,16 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Plurinational State of Bolivia"
+COUNTRY_NAME: Final[str] = "Bolivia, Plurinational State of"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BO-B", "El Beni"),
-    Subdivision("BO-C", "Cochabamba"),
-    Subdivision("BO-H", "Chuquisaca"),
-    Subdivision("BO-L", "La Paz"),
-    Subdivision("BO-N", "Pando"),
-    Subdivision("BO-O", "Oruro"),
-    Subdivision("BO-P", "Potosí"),
-    Subdivision("BO-S", "Santa Cruz"),
-    Subdivision("BO-T", "Tarija"),
+    Subdivision(code="BO-B", name="El Beni", type_="Department"),
+    Subdivision(code="BO-C", name="Cochabamba", type_="Department"),
+    Subdivision(code="BO-H", name="Chuquisaca", type_="Department"),
+    Subdivision(code="BO-L", name="La Paz", type_="Department"),
+    Subdivision(code="BO-N", name="Pando", type_="Department"),
+    Subdivision(code="BO-O", name="Oruro", type_="Department"),
+    Subdivision(code="BO-P", name="Potosí", type_="Department"),
+    Subdivision(code="BO-S", name="Santa Cruz", type_="Department"),
+    Subdivision(code="BO-T", name="Tarija", type_="Department"),
 ]

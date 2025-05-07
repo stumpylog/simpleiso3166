@@ -6,27 +6,27 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Kazakhstan"
+COUNTRY_NAME: Final[str] = "Kazakhstan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("KZ-10", "Abajskaja oblast’"),
-    Subdivision("KZ-11", "Akmolinskaja oblast'"),
-    Subdivision("KZ-15", "Aktjubinskaja oblast'"),
-    Subdivision("KZ-19", "Almatinskaja oblast'"),
-    Subdivision("KZ-23", "Atyrauskaja oblast'"),
-    Subdivision("KZ-27", "Batys Qazaqstan oblysy"),
-    Subdivision("KZ-31", "Zhambyl oblysy"),
-    Subdivision("KZ-33", "Zhetisū oblysy"),
-    Subdivision("KZ-35", "Karagandinskaja oblast'"),
-    Subdivision("KZ-39", "Kostanajskaja oblast'"),
-    Subdivision("KZ-43", "Kyzylordinskaja oblast'"),
-    Subdivision("KZ-47", "Mangghystaū oblysy"),
-    Subdivision("KZ-55", "Pavlodar oblysy"),
-    Subdivision("KZ-59", "Severo-Kazahstanskaja oblast'"),
-    Subdivision("KZ-61", "Turkestankaya oblast'"),
-    Subdivision("KZ-62", "Ulytauskaja oblast’"),
-    Subdivision("KZ-63", "Shyghys Qazaqstan oblysy"),
-    Subdivision("KZ-71", "Astana"),
-    Subdivision("KZ-75", "Almaty"),
-    Subdivision("KZ-79", "Shymkent"),
+    Subdivision(code="KZ-10", name="Abajskaja oblast’", type_="Region"),
+    Subdivision(code="KZ-11", name="Akmolinskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-15", name="Aktjubinskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-19", name="Almatinskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-23", name="Atyrauskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-27", name="Batys Qazaqstan oblysy", type_="Region"),
+    Subdivision(code="KZ-31", name="Zhambyl oblysy", type_="Region"),
+    Subdivision(code="KZ-33", name="Zhetisū oblysy", type_="Region"),
+    Subdivision(code="KZ-35", name="Karagandinskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-39", name="Kostanajskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-43", name="Kyzylordinskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-47", name="Mangghystaū oblysy", type_="Region"),
+    Subdivision(code="KZ-55", name="Pavlodar oblysy", type_="Region"),
+    Subdivision(code="KZ-59", name="Severo-Kazahstanskaja oblast'", type_="Region"),
+    Subdivision(code="KZ-61", name="Turkestankaya oblast'", type_="Region"),
+    Subdivision(code="KZ-62", name="Ulytauskaja oblast’", type_="Region"),
+    Subdivision(code="KZ-63", name="Shyghys Qazaqstan oblysy", type_="Region"),
+    Subdivision(code="KZ-71", name="Astana", type_="City"),
+    Subdivision(code="KZ-75", name="Almaty", type_="City"),
+    Subdivision(code="KZ-79", name="Shymkent", type_="City"),
 ]

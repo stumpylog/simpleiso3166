@@ -6,10 +6,10 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Kiribati"
+COUNTRY_NAME: Final[str] = "Kiribati"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("KI-G", "Gilbert Islands"),
-    Subdivision("KI-L", "Line Islands"),
-    Subdivision("KI-P", "Phoenix Islands"),
+    Subdivision(code="KI-G", name="Gilbert Islands", type_="Group of islands (20 inhabited islands)"),
+    Subdivision(code="KI-L", name="Line Islands", type_="Group of islands (20 inhabited islands)"),
+    Subdivision(code="KI-P", name="Phoenix Islands", type_="Group of islands (20 inhabited islands)"),
 ]

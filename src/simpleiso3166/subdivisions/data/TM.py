@@ -9,10 +9,10 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Turkmenistan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TM-A", "Ahal"),
-    Subdivision("TM-B", "Balkan"),
-    Subdivision("TM-D", "Daşoguz"),
-    Subdivision("TM-L", "Lebap"),
-    Subdivision("TM-M", "Mary"),
-    Subdivision("TM-S", "Aşgabat"),
+    Subdivision(code="TM-A", name="Ahal", type_="Region"),
+    Subdivision(code="TM-B", name="Balkan", type_="Region"),
+    Subdivision(code="TM-D", name="Daşoguz", type_="Region"),
+    Subdivision(code="TM-L", name="Lebap", type_="Region"),
+    Subdivision(code="TM-M", name="Mary", type_="Region"),
+    Subdivision(code="TM-S", name="Aşgabat", type_="City"),
 ]

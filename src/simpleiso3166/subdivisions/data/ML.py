@@ -6,18 +6,18 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Mali"
+COUNTRY_NAME: Final[str] = "Mali"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("ML-1", "Kayes"),
-    Subdivision("ML-10", "Taoudénit"),
-    Subdivision("ML-2", "Koulikoro"),
-    Subdivision("ML-3", "Sikasso"),
-    Subdivision("ML-4", "Ségou"),
-    Subdivision("ML-5", "Mopti"),
-    Subdivision("ML-6", "Tombouctou"),
-    Subdivision("ML-7", "Gao"),
-    Subdivision("ML-8", "Kidal"),
-    Subdivision("ML-9", "Ménaka"),
-    Subdivision("ML-BKO", "Bamako"),
+    Subdivision(code="ML-1", name="Kayes", type_="Region"),
+    Subdivision(code="ML-10", name="Taoudénit", type_="Region"),
+    Subdivision(code="ML-2", name="Koulikoro", type_="Region"),
+    Subdivision(code="ML-3", name="Sikasso", type_="Region"),
+    Subdivision(code="ML-4", name="Ségou", type_="Region"),
+    Subdivision(code="ML-5", name="Mopti", type_="Region"),
+    Subdivision(code="ML-6", name="Tombouctou", type_="Region"),
+    Subdivision(code="ML-7", name="Gao", type_="Region"),
+    Subdivision(code="ML-8", name="Kidal", type_="Region"),
+    Subdivision(code="ML-9", name="Ménaka", type_="Region"),
+    Subdivision(code="ML-BKO", name="Bamako", type_="District"),
 ]

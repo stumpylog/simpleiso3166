@@ -6,23 +6,23 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "the State of Palestine"
+COUNTRY_NAME: Final[str] = "Palestine, State of"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("PS-BTH", "Bethlehem"),
-    Subdivision("PS-DEB", "Deir El Balah"),
-    Subdivision("PS-GZA", "Gaza"),
-    Subdivision("PS-HBN", "Hebron"),
-    Subdivision("PS-JEM", "Jerusalem"),
-    Subdivision("PS-JEN", "Jenin"),
-    Subdivision("PS-JRH", "Jericho and Al Aghwar"),
-    Subdivision("PS-KYS", "Khan Yunis"),
-    Subdivision("PS-NBS", "Nablus"),
-    Subdivision("PS-NGZ", "North Gaza"),
-    Subdivision("PS-QQA", "Qalqilya"),
-    Subdivision("PS-RBH", "Ramallah"),
-    Subdivision("PS-RFH", "Rafah"),
-    Subdivision("PS-SLT", "Salfit"),
-    Subdivision("PS-TBS", "Tubas"),
-    Subdivision("PS-TKM", "Tulkarm"),
+    Subdivision(code="PS-BTH", name="Bethlehem", type_="Governorate"),
+    Subdivision(code="PS-DEB", name="Deir El Balah", type_="Governorate"),
+    Subdivision(code="PS-GZA", name="Gaza", type_="Governorate"),
+    Subdivision(code="PS-HBN", name="Hebron", type_="Governorate"),
+    Subdivision(code="PS-JEM", name="Jerusalem", type_="Governorate"),
+    Subdivision(code="PS-JEN", name="Jenin", type_="Governorate"),
+    Subdivision(code="PS-JRH", name="Jericho and Al Aghwar", type_="Governorate"),
+    Subdivision(code="PS-KYS", name="Khan Yunis", type_="Governorate"),
+    Subdivision(code="PS-NBS", name="Nablus", type_="Governorate"),
+    Subdivision(code="PS-NGZ", name="North Gaza", type_="Governorate"),
+    Subdivision(code="PS-QQA", name="Qalqilya", type_="Governorate"),
+    Subdivision(code="PS-RBH", name="Ramallah", type_="Governorate"),
+    Subdivision(code="PS-RFH", name="Rafah", type_="Governorate"),
+    Subdivision(code="PS-SLT", name="Salfit", type_="Governorate"),
+    Subdivision(code="PS-TBS", name="Tubas", type_="Governorate"),
+    Subdivision(code="PS-TKM", name="Tulkarm", type_="Governorate"),
 ]

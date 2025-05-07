@@ -6,14 +6,14 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Federal Democratic Republic of Nepal"
+COUNTRY_NAME: Final[str] = "Nepal"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("NP-P1", "Koshi"),
-    Subdivision("NP-P2", "Madhesh"),
-    Subdivision("NP-P3", "Bagmati"),
-    Subdivision("NP-P4", "Gandaki"),
-    Subdivision("NP-P5", "Lumbini"),
-    Subdivision("NP-P6", "Karnali"),
-    Subdivision("NP-P7", "Sudurpashchim"),
+    Subdivision(code="NP-P1", name="Koshi", type_="Province"),
+    Subdivision(code="NP-P2", name="Madhesh", type_="Province"),
+    Subdivision(code="NP-P3", name="Bagmati", type_="Province"),
+    Subdivision(code="NP-P4", name="Gandaki", type_="Province"),
+    Subdivision(code="NP-P5", name="Lumbini", type_="Province"),
+    Subdivision(code="NP-P6", name="Karnali", type_="Province"),
+    Subdivision(code="NP-P7", name="Sudurpashchim", type_="Province"),
 ]

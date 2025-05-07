@@ -6,22 +6,22 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Liberia"
+COUNTRY_NAME: Final[str] = "Liberia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("LR-BG", "Bong"),
-    Subdivision("LR-BM", "Bomi"),
-    Subdivision("LR-CM", "Grand Cape Mount"),
-    Subdivision("LR-GB", "Grand Bassa"),
-    Subdivision("LR-GG", "Grand Gedeh"),
-    Subdivision("LR-GK", "Grand Kru"),
-    Subdivision("LR-GP", "Gbarpolu"),
-    Subdivision("LR-LO", "Lofa"),
-    Subdivision("LR-MG", "Margibi"),
-    Subdivision("LR-MO", "Montserrado"),
-    Subdivision("LR-MY", "Maryland"),
-    Subdivision("LR-NI", "Nimba"),
-    Subdivision("LR-RG", "River Gee"),
-    Subdivision("LR-RI", "River Cess"),
-    Subdivision("LR-SI", "Sinoe"),
+    Subdivision(code="LR-BG", name="Bong", type_="County"),
+    Subdivision(code="LR-BM", name="Bomi", type_="County"),
+    Subdivision(code="LR-CM", name="Grand Cape Mount", type_="County"),
+    Subdivision(code="LR-GB", name="Grand Bassa", type_="County"),
+    Subdivision(code="LR-GG", name="Grand Gedeh", type_="County"),
+    Subdivision(code="LR-GK", name="Grand Kru", type_="County"),
+    Subdivision(code="LR-GP", name="Gbarpolu", type_="County"),
+    Subdivision(code="LR-LO", name="Lofa", type_="County"),
+    Subdivision(code="LR-MG", name="Margibi", type_="County"),
+    Subdivision(code="LR-MO", name="Montserrado", type_="County"),
+    Subdivision(code="LR-MY", name="Maryland", type_="County"),
+    Subdivision(code="LR-NI", name="Nimba", type_="County"),
+    Subdivision(code="LR-RG", name="River Gee", type_="County"),
+    Subdivision(code="LR-RI", name="River Cess", type_="County"),
+    Subdivision(code="LR-SI", name="Sinoe", type_="County"),
 ]

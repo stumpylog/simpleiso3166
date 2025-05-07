@@ -6,26 +6,26 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Eastern Republic of Uruguay"
+COUNTRY_NAME: Final[str] = "Uruguay"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("UY-AR", "Artigas"),
-    Subdivision("UY-CA", "Canelones"),
-    Subdivision("UY-CL", "Cerro Largo"),
-    Subdivision("UY-CO", "Colonia"),
-    Subdivision("UY-DU", "Durazno"),
-    Subdivision("UY-FD", "Florida"),
-    Subdivision("UY-FS", "Flores"),
-    Subdivision("UY-LA", "Lavalleja"),
-    Subdivision("UY-MA", "Maldonado"),
-    Subdivision("UY-MO", "Montevideo"),
-    Subdivision("UY-PA", "Paysandú"),
-    Subdivision("UY-RN", "Río Negro"),
-    Subdivision("UY-RO", "Rocha"),
-    Subdivision("UY-RV", "Rivera"),
-    Subdivision("UY-SA", "Salto"),
-    Subdivision("UY-SJ", "San José"),
-    Subdivision("UY-SO", "Soriano"),
-    Subdivision("UY-TA", "Tacuarembó"),
-    Subdivision("UY-TT", "Treinta y Tres"),
+    Subdivision(code="UY-AR", name="Artigas", type_="Department"),
+    Subdivision(code="UY-CA", name="Canelones", type_="Department"),
+    Subdivision(code="UY-CL", name="Cerro Largo", type_="Department"),
+    Subdivision(code="UY-CO", name="Colonia", type_="Department"),
+    Subdivision(code="UY-DU", name="Durazno", type_="Department"),
+    Subdivision(code="UY-FD", name="Florida", type_="Department"),
+    Subdivision(code="UY-FS", name="Flores", type_="Department"),
+    Subdivision(code="UY-LA", name="Lavalleja", type_="Department"),
+    Subdivision(code="UY-MA", name="Maldonado", type_="Department"),
+    Subdivision(code="UY-MO", name="Montevideo", type_="Department"),
+    Subdivision(code="UY-PA", name="Paysandú", type_="Department"),
+    Subdivision(code="UY-RN", name="Río Negro", type_="Department"),
+    Subdivision(code="UY-RO", name="Rocha", type_="Department"),
+    Subdivision(code="UY-RV", name="Rivera", type_="Department"),
+    Subdivision(code="UY-SA", name="Salto", type_="Department"),
+    Subdivision(code="UY-SJ", name="San José", type_="Department"),
+    Subdivision(code="UY-SO", name="Soriano", type_="Department"),
+    Subdivision(code="UY-TA", name="Tacuarembó", type_="Department"),
+    Subdivision(code="UY-TT", name="Treinta y Tres", type_="Department"),
 ]

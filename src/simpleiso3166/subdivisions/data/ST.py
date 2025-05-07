@@ -6,14 +6,14 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Democratic Republic of Sao Tome and Principe"
+COUNTRY_NAME: Final[str] = "Sao Tome and Principe"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("ST-01", "Água Grande"),
-    Subdivision("ST-02", "Cantagalo"),
-    Subdivision("ST-03", "Caué"),
-    Subdivision("ST-04", "Lembá"),
-    Subdivision("ST-05", "Lobata"),
-    Subdivision("ST-06", "Mé-Zóchi"),
-    Subdivision("ST-P", "Príncipe"),
+    Subdivision(code="ST-01", name="Água Grande", type_="District"),
+    Subdivision(code="ST-02", name="Cantagalo", type_="District"),
+    Subdivision(code="ST-03", name="Caué", type_="District"),
+    Subdivision(code="ST-04", name="Lembá", type_="District"),
+    Subdivision(code="ST-05", name="Lobata", type_="District"),
+    Subdivision(code="ST-06", name="Mé-Zóchi", type_="District"),
+    Subdivision(code="ST-P", name="Príncipe", type_="Autonomous region"),
 ]

@@ -4,24 +4,32 @@
 from __future__ import annotations
 
 import importlib
+import sys
+from dataclasses import dataclass
 from functools import cached_property
 from typing import TYPE_CHECKING
-from typing import Generator
 from typing import get_args
 
-from simpleiso3166._compat import frozen_slots_dataclass_decorator
 from simpleiso3166.countries.types import CountryCodeAlpha2Type
 
 if TYPE_CHECKING:
+    from collections.abc import Generator
 
     from simpleiso3166.subdivisions.types import SubdivisionCodeType
+    from simpleiso3166.subdivisions.types import SubdivisionType
+
+dataclass_args = {}
+
+# Add slots=True if the Python version is 3.10 or higher
+if sys.version_info >= (3, 10):
+    dataclass_args["slots"] = True
 
 
-@frozen_slots_dataclass_decorator
+@dataclass(**dataclass_args)
 class Subdivision:
-
     code: SubdivisionCodeType
     name: str
+    type_: SubdivisionType
 
     @cached_property
     def country(self) -> CountryCodeAlpha2Type:
@@ -46,7 +54,6 @@ class Subdivision:
         *,
         ratio: float | int = 80.0,
     ) -> Generator[Subdivision, None, None]:
-
         from rapidfuzz.fuzz import token_set_ratio
         from rapidfuzz.utils import default_process
 

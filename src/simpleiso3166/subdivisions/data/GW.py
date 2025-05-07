@@ -6,19 +6,19 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Guinea-Bissau"
+COUNTRY_NAME: Final[str] = "Guinea-Bissau"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GW-BA", "Bafatá"),
-    Subdivision("GW-BL", "Bolama / Bijagós"),
-    Subdivision("GW-BM", "Biombo"),
-    Subdivision("GW-BS", "Bissau"),
-    Subdivision("GW-CA", "Cacheu"),
-    Subdivision("GW-GA", "Gabú"),
-    Subdivision("GW-L", "Leste"),
-    Subdivision("GW-N", "Norte"),
-    Subdivision("GW-OI", "Oio"),
-    Subdivision("GW-QU", "Quinara"),
-    Subdivision("GW-S", "Sul"),
-    Subdivision("GW-TO", "Tombali"),
+    Subdivision(code="GW-BA", name="Bafatá", type_="Region"),
+    Subdivision(code="GW-BL", name="Bolama / Bijagós", type_="Region"),
+    Subdivision(code="GW-BM", name="Biombo", type_="Region"),
+    Subdivision(code="GW-BS", name="Bissau", type_="Autonomous sector"),
+    Subdivision(code="GW-CA", name="Cacheu", type_="Region"),
+    Subdivision(code="GW-GA", name="Gabú", type_="Region"),
+    Subdivision(code="GW-L", name="Leste", type_="Province"),
+    Subdivision(code="GW-N", name="Norte", type_="Province"),
+    Subdivision(code="GW-OI", name="Oio", type_="Region"),
+    Subdivision(code="GW-QU", name="Quinara", type_="Region"),
+    Subdivision(code="GW-S", name="Sul", type_="Province"),
+    Subdivision(code="GW-TO", name="Tombali", type_="Region"),
 ]

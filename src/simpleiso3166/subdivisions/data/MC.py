@@ -6,24 +6,24 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Principality of Monaco"
+COUNTRY_NAME: Final[str] = "Monaco"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("MC-CL", "La Colle"),
-    Subdivision("MC-CO", "La Condamine"),
-    Subdivision("MC-FO", "Fontvieille"),
-    Subdivision("MC-GA", "La Gare"),
-    Subdivision("MC-JE", "Jardin Exotique"),
-    Subdivision("MC-LA", "Larvotto"),
-    Subdivision("MC-MA", "Malbousquet"),
-    Subdivision("MC-MC", "Monte-Carlo"),
-    Subdivision("MC-MG", "Moneghetti"),
-    Subdivision("MC-MO", "Monaco-Ville"),
-    Subdivision("MC-MU", "Moulins"),
-    Subdivision("MC-PH", "Port-Hercule"),
-    Subdivision("MC-SD", "Sainte-Dévote"),
-    Subdivision("MC-SO", "La Source"),
-    Subdivision("MC-SP", "Spélugues"),
-    Subdivision("MC-SR", "Saint-Roman"),
-    Subdivision("MC-VR", "Vallon de la Rousse"),
+    Subdivision(code="MC-CL", name="La Colle", type_="Quarter"),
+    Subdivision(code="MC-CO", name="La Condamine", type_="Quarter"),
+    Subdivision(code="MC-FO", name="Fontvieille", type_="Quarter"),
+    Subdivision(code="MC-GA", name="La Gare", type_="Quarter"),
+    Subdivision(code="MC-JE", name="Jardin Exotique", type_="Quarter"),
+    Subdivision(code="MC-LA", name="Larvotto", type_="Quarter"),
+    Subdivision(code="MC-MA", name="Malbousquet", type_="Quarter"),
+    Subdivision(code="MC-MC", name="Monte-Carlo", type_="Quarter"),
+    Subdivision(code="MC-MG", name="Moneghetti", type_="Quarter"),
+    Subdivision(code="MC-MO", name="Monaco-Ville", type_="Quarter"),
+    Subdivision(code="MC-MU", name="Moulins", type_="Quarter"),
+    Subdivision(code="MC-PH", name="Port-Hercule", type_="Quarter"),
+    Subdivision(code="MC-SD", name="Sainte-Dévote", type_="Quarter"),
+    Subdivision(code="MC-SO", name="La Source", type_="Quarter"),
+    Subdivision(code="MC-SP", name="Spélugues", type_="Quarter"),
+    Subdivision(code="MC-SR", name="Saint-Roman", type_="Quarter"),
+    Subdivision(code="MC-VR", name="Vallon de la Rousse", type_="Quarter"),
 ]

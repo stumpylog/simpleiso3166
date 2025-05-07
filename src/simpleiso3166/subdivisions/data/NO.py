@@ -6,20 +6,20 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kingdom of Norway"
+COUNTRY_NAME: Final[str] = "Norway"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("NO-03", "Oslo"),
-    Subdivision("NO-11", "Rogaland"),
-    Subdivision("NO-15", "Møre og Romsdal"),
-    Subdivision("NO-18", "Nordland"),
-    Subdivision("NO-21", "Svalbard (Arctic Region)"),
-    Subdivision("NO-22", "Jan Mayen (Arctic Region)"),
-    Subdivision("NO-30", "Viken"),
-    Subdivision("NO-34", "Innlandet"),
-    Subdivision("NO-38", "Vestfold og Telemark"),
-    Subdivision("NO-42", "Agder"),
-    Subdivision("NO-46", "Vestland"),
-    Subdivision("NO-50", "Trööndelage"),
-    Subdivision("NO-54", "Romssa ja Finnmárkku"),
+    Subdivision(code="NO-03", name="Oslo", type_="County"),
+    Subdivision(code="NO-11", name="Rogaland", type_="County"),
+    Subdivision(code="NO-15", name="Møre og Romsdal", type_="County"),
+    Subdivision(code="NO-18", name="Nordland", type_="County"),
+    Subdivision(code="NO-21", name="Svalbard (Arctic Region)", type_="Arctic region"),
+    Subdivision(code="NO-22", name="Jan Mayen (Arctic Region)", type_="Arctic region"),
+    Subdivision(code="NO-30", name="Viken", type_="County"),
+    Subdivision(code="NO-34", name="Innlandet", type_="County"),
+    Subdivision(code="NO-38", name="Vestfold og Telemark", type_="County"),
+    Subdivision(code="NO-42", name="Agder", type_="County"),
+    Subdivision(code="NO-46", name="Vestland", type_="County"),
+    Subdivision(code="NO-50", name="Trööndelage", type_="County"),
+    Subdivision(code="NO-54", name="Romssa ja Finnmárkku", type_="County"),
 ]

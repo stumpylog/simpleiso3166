@@ -6,15 +6,15 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of the Niger"
+COUNTRY_NAME: Final[str] = "Niger"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("NE-1", "Agadez"),
-    Subdivision("NE-2", "Diffa"),
-    Subdivision("NE-3", "Dosso"),
-    Subdivision("NE-4", "Maradi"),
-    Subdivision("NE-5", "Tahoua"),
-    Subdivision("NE-6", "Tillabéri"),
-    Subdivision("NE-7", "Zinder"),
-    Subdivision("NE-8", "Niamey"),
+    Subdivision(code="NE-1", name="Agadez", type_="Region"),
+    Subdivision(code="NE-2", name="Diffa", type_="Region"),
+    Subdivision(code="NE-3", name="Dosso", type_="Region"),
+    Subdivision(code="NE-4", name="Maradi", type_="Region"),
+    Subdivision(code="NE-5", name="Tahoua", type_="Region"),
+    Subdivision(code="NE-6", name="Tillabéri", type_="Region"),
+    Subdivision(code="NE-7", name="Zinder", type_="Region"),
+    Subdivision(code="NE-8", name="Niamey", type_="Urban community"),
 ]

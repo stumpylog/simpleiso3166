@@ -6,10 +6,10 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Bosnia and Herzegovina"
+COUNTRY_NAME: Final[str] = "Bosnia and Herzegovina"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BA-BIH", "Federacija Bosne i Hercegovine"),
-    Subdivision("BA-BRC", "Brčko distrikt"),
-    Subdivision("BA-SRP", "Republika Srpska"),
+    Subdivision(code="BA-BIH", name="Federacija Bosne i Hercegovine", type_="Entity"),
+    Subdivision(code="BA-BRC", name="Brčko distrikt", type_="District with special status"),
+    Subdivision(code="BA-SRP", name="Republika Srpska", type_="Entity"),
 ]

@@ -6,25 +6,25 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Angola"
+COUNTRY_NAME: Final[str] = "Angola"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AO-BGO", "Bengo"),
-    Subdivision("AO-BGU", "Benguela"),
-    Subdivision("AO-BIE", "Bié"),
-    Subdivision("AO-CAB", "Cabinda"),
-    Subdivision("AO-CCU", "Cuando Cubango"),
-    Subdivision("AO-CNN", "Cunene"),
-    Subdivision("AO-CNO", "Cuanza-Norte"),
-    Subdivision("AO-CUS", "Cuanza-Sul"),
-    Subdivision("AO-HUA", "Huambo"),
-    Subdivision("AO-HUI", "Huíla"),
-    Subdivision("AO-LNO", "Lunda-Norte"),
-    Subdivision("AO-LSU", "Lunda-Sul"),
-    Subdivision("AO-LUA", "Luanda"),
-    Subdivision("AO-MAL", "Malange"),
-    Subdivision("AO-MOX", "Moxico"),
-    Subdivision("AO-NAM", "Namibe"),
-    Subdivision("AO-UIG", "Uíge"),
-    Subdivision("AO-ZAI", "Zaire"),
+    Subdivision(code="AO-BGO", name="Bengo", type_="Province"),
+    Subdivision(code="AO-BGU", name="Benguela", type_="Province"),
+    Subdivision(code="AO-BIE", name="Bié", type_="Province"),
+    Subdivision(code="AO-CAB", name="Cabinda", type_="Province"),
+    Subdivision(code="AO-CCU", name="Cuando Cubango", type_="Province"),
+    Subdivision(code="AO-CNN", name="Cunene", type_="Province"),
+    Subdivision(code="AO-CNO", name="Cuanza-Norte", type_="Province"),
+    Subdivision(code="AO-CUS", name="Cuanza-Sul", type_="Province"),
+    Subdivision(code="AO-HUA", name="Huambo", type_="Province"),
+    Subdivision(code="AO-HUI", name="Huíla", type_="Province"),
+    Subdivision(code="AO-LNO", name="Lunda-Norte", type_="Province"),
+    Subdivision(code="AO-LSU", name="Lunda-Sul", type_="Province"),
+    Subdivision(code="AO-LUA", name="Luanda", type_="Province"),
+    Subdivision(code="AO-MAL", name="Malange", type_="Province"),
+    Subdivision(code="AO-MOX", name="Moxico", type_="Province"),
+    Subdivision(code="AO-NAM", name="Namibe", type_="Province"),
+    Subdivision(code="AO-UIG", name="Uíge", type_="Province"),
+    Subdivision(code="AO-ZAI", name="Zaire", type_="Province"),
 ]

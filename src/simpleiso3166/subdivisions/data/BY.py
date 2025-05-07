@@ -6,14 +6,14 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Belarus"
+COUNTRY_NAME: Final[str] = "Belarus"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BY-BR", "Bresckaja voblasć"),
-    Subdivision("BY-HM", "Gorod Minsk"),
-    Subdivision("BY-HO", "Gomel'skaja oblast'"),
-    Subdivision("BY-HR", "Grodnenskaja oblast'"),
-    Subdivision("BY-MA", "Mahilioŭskaja voblasć"),
-    Subdivision("BY-MI", "Minskaja oblast'"),
-    Subdivision("BY-VI", "Viciebskaja voblasć"),
+    Subdivision(code="BY-BR", name="Bresckaja voblasć", type_="Oblast"),
+    Subdivision(code="BY-HM", name="Gorod Minsk", type_="City"),
+    Subdivision(code="BY-HO", name="Gomel'skaja oblast'", type_="Oblast"),
+    Subdivision(code="BY-HR", name="Grodnenskaja oblast'", type_="Oblast"),
+    Subdivision(code="BY-MA", name="Mahilioŭskaja voblasć", type_="Oblast"),
+    Subdivision(code="BY-MI", name="Minskaja oblast'", type_="Oblast"),
+    Subdivision(code="BY-VI", name="Viciebskaja voblasć", type_="Oblast"),
 ]

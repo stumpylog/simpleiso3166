@@ -6,6 +6,6 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Virgin Islands of the United States"
+COUNTRY_NAME: Final[str] = "Virgin Islands, U.S."
 
 SUBDIVISIONS: Final[list[Subdivision]] = []

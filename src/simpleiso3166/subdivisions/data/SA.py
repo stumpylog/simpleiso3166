@@ -6,20 +6,20 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kingdom of Saudi Arabia"
+COUNTRY_NAME: Final[str] = "Saudi Arabia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SA-01", "Ar Riyāḑ"),
-    Subdivision("SA-02", "Makkah al Mukarramah"),
-    Subdivision("SA-03", "Al Madīnah al Munawwarah"),
-    Subdivision("SA-04", "Ash Sharqīyah"),
-    Subdivision("SA-05", "Al Qaşīm"),
-    Subdivision("SA-06", "Ḩā'il"),
-    Subdivision("SA-07", "Tabūk"),
-    Subdivision("SA-08", "Al Ḩudūd ash Shamālīyah"),
-    Subdivision("SA-09", "Jāzān"),
-    Subdivision("SA-10", "Najrān"),
-    Subdivision("SA-11", "Al Bāḩah"),
-    Subdivision("SA-12", "Al Jawf"),
-    Subdivision("SA-14", "'Asīr"),
+    Subdivision(code="SA-01", name="Ar Riyāḑ", type_="Region"),
+    Subdivision(code="SA-02", name="Makkah al Mukarramah", type_="Region"),
+    Subdivision(code="SA-03", name="Al Madīnah al Munawwarah", type_="Region"),
+    Subdivision(code="SA-04", name="Ash Sharqīyah", type_="Region"),
+    Subdivision(code="SA-05", name="Al Qaşīm", type_="Region"),
+    Subdivision(code="SA-06", name="Ḩā'il", type_="Region"),
+    Subdivision(code="SA-07", name="Tabūk", type_="Region"),
+    Subdivision(code="SA-08", name="Al Ḩudūd ash Shamālīyah", type_="Region"),
+    Subdivision(code="SA-09", name="Jāzān", type_="Region"),
+    Subdivision(code="SA-10", name="Najrān", type_="Region"),
+    Subdivision(code="SA-11", name="Al Bāḩah", type_="Region"),
+    Subdivision(code="SA-12", name="Al Jawf", type_="Region"),
+    Subdivision(code="SA-14", name="'Asīr", type_="Region"),
 ]

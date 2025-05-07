@@ -9,12 +9,12 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Australia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AU-ACT", "Australian Capital Territory"),
-    Subdivision("AU-NSW", "New South Wales"),
-    Subdivision("AU-NT", "Northern Territory"),
-    Subdivision("AU-QLD", "Queensland"),
-    Subdivision("AU-SA", "South Australia"),
-    Subdivision("AU-TAS", "Tasmania"),
-    Subdivision("AU-VIC", "Victoria"),
-    Subdivision("AU-WA", "Western Australia"),
+    Subdivision(code="AU-ACT", name="Australian Capital Territory", type_="Territory"),
+    Subdivision(code="AU-NSW", name="New South Wales", type_="State"),
+    Subdivision(code="AU-NT", name="Northern Territory", type_="Territory"),
+    Subdivision(code="AU-QLD", name="Queensland", type_="State"),
+    Subdivision(code="AU-SA", name="South Australia", type_="State"),
+    Subdivision(code="AU-TAS", name="Tasmania", type_="State"),
+    Subdivision(code="AU-VIC", name="Victoria", type_="State"),
+    Subdivision(code="AU-WA", name="Western Australia", type_="State"),
 ]

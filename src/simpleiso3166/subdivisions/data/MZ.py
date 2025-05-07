@@ -6,18 +6,18 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Mozambique"
+COUNTRY_NAME: Final[str] = "Mozambique"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("MZ-A", "Niassa"),
-    Subdivision("MZ-B", "Manica"),
-    Subdivision("MZ-G", "Gaza"),
-    Subdivision("MZ-I", "Inhambane"),
-    Subdivision("MZ-L", "Maputo"),
-    Subdivision("MZ-MPM", "Maputo"),
-    Subdivision("MZ-N", "Nampula"),
-    Subdivision("MZ-P", "Cabo Delgado"),
-    Subdivision("MZ-Q", "Zambézia"),
-    Subdivision("MZ-S", "Sofala"),
-    Subdivision("MZ-T", "Tete"),
+    Subdivision(code="MZ-A", name="Niassa", type_="Province"),
+    Subdivision(code="MZ-B", name="Manica", type_="Province"),
+    Subdivision(code="MZ-G", name="Gaza", type_="Province"),
+    Subdivision(code="MZ-I", name="Inhambane", type_="Province"),
+    Subdivision(code="MZ-L", name="Maputo", type_="Province"),
+    Subdivision(code="MZ-MPM", name="Maputo", type_="City"),
+    Subdivision(code="MZ-N", name="Nampula", type_="Province"),
+    Subdivision(code="MZ-P", name="Cabo Delgado", type_="Province"),
+    Subdivision(code="MZ-Q", name="Zambézia", type_="Province"),
+    Subdivision(code="MZ-S", name="Sofala", type_="Province"),
+    Subdivision(code="MZ-T", name="Tete", type_="Province"),
 ]

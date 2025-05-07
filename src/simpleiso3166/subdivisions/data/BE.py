@@ -6,20 +6,20 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kingdom of Belgium"
+COUNTRY_NAME: Final[str] = "Belgium"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BE-BRU", "Bruxelles-Capitale, Région de"),
-    Subdivision("BE-VAN", "Antwerpen"),
-    Subdivision("BE-VBR", "Vlaams-Brabant"),
-    Subdivision("BE-VLG", "Vlaams Gewest"),
-    Subdivision("BE-VLI", "Limburg"),
-    Subdivision("BE-VOV", "Oost-Vlaanderen"),
-    Subdivision("BE-VWV", "West-Vlaanderen"),
-    Subdivision("BE-WAL", "wallonne, Région"),
-    Subdivision("BE-WBR", "Brabant wallon"),
-    Subdivision("BE-WHT", "Hainaut"),
-    Subdivision("BE-WLG", "Liège"),
-    Subdivision("BE-WLX", "Luxembourg"),
-    Subdivision("BE-WNA", "Namur"),
+    Subdivision(code="BE-BRU", name="Bruxelles-Capitale, Région de", type_="Region"),
+    Subdivision(code="BE-VAN", name="Antwerpen", type_="Province"),
+    Subdivision(code="BE-VBR", name="Vlaams-Brabant", type_="Province"),
+    Subdivision(code="BE-VLG", name="Vlaams Gewest", type_="Region"),
+    Subdivision(code="BE-VLI", name="Limburg", type_="Province"),
+    Subdivision(code="BE-VOV", name="Oost-Vlaanderen", type_="Province"),
+    Subdivision(code="BE-VWV", name="West-Vlaanderen", type_="Province"),
+    Subdivision(code="BE-WAL", name="wallonne, Région", type_="Region"),
+    Subdivision(code="BE-WBR", name="Brabant wallon", type_="Province"),
+    Subdivision(code="BE-WHT", name="Hainaut", type_="Province"),
+    Subdivision(code="BE-WLG", name="Liège", type_="Province"),
+    Subdivision(code="BE-WLX", name="Luxembourg", type_="Province"),
+    Subdivision(code="BE-WNA", name="Namur", type_="Province"),
 ]
