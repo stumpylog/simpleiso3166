@@ -7,6 +7,7 @@ import importlib
 import sys
 from dataclasses import dataclass
 from functools import cached_property
+from functools import lru_cache
 from typing import TYPE_CHECKING
 from typing import get_args
 
@@ -18,11 +19,19 @@ if TYPE_CHECKING:
     from simpleiso3166.subdivisions.types import SubdivisionCodeType
     from simpleiso3166.subdivisions.types import SubdivisionType
 
-dataclass_args = {}
+dataclass_args = {"frozen": True}
 
 # Add slots=True if the Python version is 3.10 or higher
 if sys.version_info >= (3, 10):
     dataclass_args["slots"] = True
+
+
+@lru_cache(maxsize=1)
+def _all_subdivisions() -> list[Subdivision]:
+    subdivisions = []
+    for country_code in get_args(CountryCodeAlpha2Type):  # type: ignore[misc]
+        subdivisions.extend(Subdivision.from_country_alpha2(country_code))  # type: ignore[misc]
+    return subdivisions
 
 
 @dataclass(**dataclass_args)
@@ -52,25 +61,24 @@ class Subdivision:
     def search_by_name(
         subdivision_name: str,
         *,
-        ratio: float | int = 80.0,
+        ratio: float | int | None = 80.0,
+        limit: int = 10,
     ) -> Generator[Subdivision, None, None]:
-        from rapidfuzz.fuzz import token_set_ratio
+        from rapidfuzz import fuzz
+        from rapidfuzz import process
         from rapidfuzz.utils import default_process
 
         processed_name = default_process(subdivision_name)
 
-        results: list[tuple[float, SubdivisionCodeType]] = []
-
-        for country_code in get_args(CountryCodeAlpha2Type):  # type: ignore[misc]
-            subdivisions = Subdivision.from_country_alpha2(country_code)  # type: ignore[misc]
-            for subdivision in subdivisions:
-                similarity = token_set_ratio(processed_name, default_process(subdivision.name))
-                if similarity >= ratio:
-                    results.append((similarity, subdivision))  # type: ignore[misc]
-
-        sent = set()
-
-        for result in sorted(results, key=lambda x: x[0], reverse=True):  # type: ignore[misc]
-            if result[1] not in sent:
-                yield result[1]
-                sent.add(result[1])
+        sent = 0
+        for _, _, result in process.extract(
+            processed_name,
+            {x: default_process(x.name) for x in _all_subdivisions()},
+            scorer=fuzz.WRatio,
+            score_cutoff=ratio,
+            limit=None,
+        ):
+            yield result
+            sent += 1  # noqa: SIM113
+            if sent >= limit:
+                return
