@@ -71,7 +71,7 @@ extra-dependencies = [
   "rapidfuzz",
 
 ]
-extra-args = [ "--maxprocesses=8", "--pythonwarnings=all" ]
+extra-args = [ "--maxprocesses=8", "--pythonwarnings=all", "--junitxml=junit.xml", "-o", "junit_family=legacy" ]
 
 [tool.hatch.envs.hatch-test.scripts]
 run = [
