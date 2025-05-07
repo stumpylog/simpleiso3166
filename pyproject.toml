@@ -220,7 +220,7 @@ lint.isort.force-single-line = true
 lint.isort.known-first-party = [ "simpleiso3166" ]
 
 [tool.codespell]
-skip = "src/simpleiso3166/aliases.py,src/simpleiso3166/subdivisions/data/*,src/simpleiso3166/subdivisions/types.py,src/simpleiso3166/countries/data.py,src/simpleiso3166/countries/types.py"
+skip = "src/simpleiso3166/aliases.py,src/simpleiso3166/subdivisions/data/*,src/simpleiso3166/subdivisions/types.py,src/simpleiso3166/countries/data/*"
 
 [tool.pyproject-fmt]
 max_supported_python = "3.13"

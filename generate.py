@@ -71,11 +71,16 @@ def output_country_data(
     revision: str = "d055275324963c9bce5882eaaa93024cf2bf7ed0",
 ):
     countries_dir = module_dir / "countries"
-    country_mapping_file = countries_dir / "data.py"
-    country_type_file = countries_dir / "types.py"
+    country_data_module = countries_dir / "data"
+    country_data_file = country_data_module / "countries.py"
+    country_mapping_file = country_data_module / "mapping.py"
+    country_type_file = country_data_module / "types.py"
 
-    if not countries_dir.exists():
-        countries_dir.mkdir(parents=True, exist_ok=True)
+    countries_dir.mkdir(parents=True, exist_ok=True)
+    country_data_module.mkdir(parents=True, exist_ok=True)
+
+    with (country_data_module / "__init__.py").open("w", encoding="utf-8", newline="\n") as f:
+        common_header(f, revision)
 
     with country_type_file.open("w", encoding="utf-8", newline="\n") as f:
         common_header(f, revision)
@@ -95,14 +100,11 @@ def output_country_data(
             )
         f.write("]\n")
 
-    with country_mapping_file.open("w", encoding="utf-8", newline="\n") as f:
+    with country_data_file.open("w", encoding="utf-8", newline="\n") as f:
         common_header(f, revision)
         f.writelines(
             [
-                "from typing import Final\n\n"
-                "from simpleiso3166.countries import Country\n"
-                "from simpleiso3166.countries.types import CountryCodeAlpha2Type\n",
-                "from simpleiso3166.countries.types import CountryCodeAlpha3Type\n\n",
+                "from typing import Final\n\nfrom simpleiso3166.countries import Country\n\n",
             ],
         )
 
@@ -125,16 +127,28 @@ def output_country_data(
                 f.write("official_name=None, ")
             f.write(")\n")
         f.write("\n")
-
+    with country_mapping_file.open("w", encoding="utf-8", newline="\n") as f:
+        common_header(f, revision)
+        f.write(
+            "from typing import Final\n\nfrom simpleiso3166.countries import Country\n",
+        )
+        for country_code in sorted(combined_data):
+            f.write(f"from simpleiso3166.countries.data.countries import {country_code.upper()}\n")
+        f.write(
+            "from simpleiso3166.countries.data.types import CountryCodeAlpha2Type\n"
+            "from simpleiso3166.countries.data.types import CountryCodeAlpha3Type\n\n",
+        )
         f.write("ALPHA2_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha2Type, Country]] = {\n")
         for country_code in sorted(combined_data):
-            f.write(f'    "{country_code}": {country_code},\n')
+            comment_name = get_country_comment_name(combined_data[country_code])
+            f.write(f'    "{country_code}": {country_code},  # {comment_name}\n')
         f.write("}\n\n")
 
         f.write("ALPHA3_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha3Type, Country]] = {\n")
         for country_code in sorted(combined_data):
+            comment_name = get_country_comment_name(combined_data[country_code])
             country_data = combined_data[country_code]
-            f.write(f'    "{country_data["alpha_3"]}": {country_code},\n')
+            f.write(f'    "{country_data["alpha_3"]}": {country_code},  # {comment_name}\n')
         f.write("}\n\n")
 
 

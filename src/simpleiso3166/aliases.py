@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 from typing import Final
 
-from simpleiso3166.countries.types import CountryCodeAlpha2Type
+from simpleiso3166.countries.data.types import CountryCodeAlpha2Type
 from simpleiso3166.subdivisions.types import SubdivisionCodeType
 
 COUNTRY_ALIAS_TO_CODE: Final[dict[str, CountryCodeAlpha2Type]] = {
