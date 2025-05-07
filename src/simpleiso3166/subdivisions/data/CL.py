@@ -6,23 +6,23 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Chile"
+COUNTRY_NAME: Final[str] = "Chile"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("CL-AI", "Aisén del General Carlos Ibañez del Campo"),
-    Subdivision("CL-AN", "Antofagasta"),
-    Subdivision("CL-AP", "Arica y Parinacota"),
-    Subdivision("CL-AR", "La Araucanía"),
-    Subdivision("CL-AT", "Atacama"),
-    Subdivision("CL-BI", "Biobío"),
-    Subdivision("CL-CO", "Coquimbo"),
-    Subdivision("CL-LI", "Libertador General Bernardo O'Higgins"),
-    Subdivision("CL-LL", "Los Lagos"),
-    Subdivision("CL-LR", "Los Ríos"),
-    Subdivision("CL-MA", "Magallanes"),
-    Subdivision("CL-ML", "Maule"),
-    Subdivision("CL-NB", "Ñuble"),
-    Subdivision("CL-RM", "Región Metropolitana de Santiago"),
-    Subdivision("CL-TA", "Tarapacá"),
-    Subdivision("CL-VS", "Valparaíso"),
+    Subdivision(code="CL-AI", name="Aisén del General Carlos Ibañez del Campo", type_="Region"),
+    Subdivision(code="CL-AN", name="Antofagasta", type_="Region"),
+    Subdivision(code="CL-AP", name="Arica y Parinacota", type_="Region"),
+    Subdivision(code="CL-AR", name="La Araucanía", type_="Region"),
+    Subdivision(code="CL-AT", name="Atacama", type_="Region"),
+    Subdivision(code="CL-BI", name="Biobío", type_="Region"),
+    Subdivision(code="CL-CO", name="Coquimbo", type_="Region"),
+    Subdivision(code="CL-LI", name="Libertador General Bernardo O'Higgins", type_="Region"),
+    Subdivision(code="CL-LL", name="Los Lagos", type_="Region"),
+    Subdivision(code="CL-LR", name="Los Ríos", type_="Region"),
+    Subdivision(code="CL-MA", name="Magallanes", type_="Region"),
+    Subdivision(code="CL-ML", name="Maule", type_="Region"),
+    Subdivision(code="CL-NB", name="Ñuble", type_="Region"),
+    Subdivision(code="CL-RM", name="Región Metropolitana de Santiago", type_="Region"),
+    Subdivision(code="CL-TA", name="Tarapacá", type_="Region"),
+    Subdivision(code="CL-VS", name="Valparaíso", type_="Region"),
 ]

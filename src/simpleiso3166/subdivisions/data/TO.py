@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kingdom of Tonga"
+COUNTRY_NAME: Final[str] = "Tonga"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TO-01", "'Eua"),
-    Subdivision("TO-02", "Ha'apai"),
-    Subdivision("TO-03", "Niuas"),
-    Subdivision("TO-04", "Tongatapu"),
-    Subdivision("TO-05", "Vava'u"),
+    Subdivision(code="TO-01", name="'Eua", type_="Division"),
+    Subdivision(code="TO-02", name="Ha'apai", type_="Division"),
+    Subdivision(code="TO-03", name="Niuas", type_="Division"),
+    Subdivision(code="TO-04", name="Tongatapu", type_="Division"),
+    Subdivision(code="TO-05", name="Vava'u", type_="Division"),
 ]

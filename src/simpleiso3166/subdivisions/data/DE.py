@@ -6,23 +6,23 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Federal Republic of Germany"
+COUNTRY_NAME: Final[str] = "Germany"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("DE-BB", "Brandenburg"),
-    Subdivision("DE-BE", "Berlin"),
-    Subdivision("DE-BW", "Baden-Württemberg"),
-    Subdivision("DE-BY", "Bayern"),
-    Subdivision("DE-HB", "Bremen"),
-    Subdivision("DE-HE", "Hessen"),
-    Subdivision("DE-HH", "Hamburg"),
-    Subdivision("DE-MV", "Mecklenburg-Vorpommern"),
-    Subdivision("DE-NI", "Niedersachsen"),
-    Subdivision("DE-NW", "Nordrhein-Westfalen"),
-    Subdivision("DE-RP", "Rheinland-Pfalz"),
-    Subdivision("DE-SH", "Schleswig-Holstein"),
-    Subdivision("DE-SL", "Saarland"),
-    Subdivision("DE-SN", "Sachsen"),
-    Subdivision("DE-ST", "Sachsen-Anhalt"),
-    Subdivision("DE-TH", "Thüringen"),
+    Subdivision(code="DE-BB", name="Brandenburg", type_="Land"),
+    Subdivision(code="DE-BE", name="Berlin", type_="Land"),
+    Subdivision(code="DE-BW", name="Baden-Württemberg", type_="Land"),
+    Subdivision(code="DE-BY", name="Bayern", type_="Land"),
+    Subdivision(code="DE-HB", name="Bremen", type_="Land"),
+    Subdivision(code="DE-HE", name="Hessen", type_="Land"),
+    Subdivision(code="DE-HH", name="Hamburg", type_="Land"),
+    Subdivision(code="DE-MV", name="Mecklenburg-Vorpommern", type_="Land"),
+    Subdivision(code="DE-NI", name="Niedersachsen", type_="Land"),
+    Subdivision(code="DE-NW", name="Nordrhein-Westfalen", type_="Land"),
+    Subdivision(code="DE-RP", name="Rheinland-Pfalz", type_="Land"),
+    Subdivision(code="DE-SH", name="Schleswig-Holstein", type_="Land"),
+    Subdivision(code="DE-SL", name="Saarland", type_="Land"),
+    Subdivision(code="DE-SN", name="Sachsen", type_="Land"),
+    Subdivision(code="DE-ST", name="Sachsen-Anhalt", type_="Land"),
+    Subdivision(code="DE-TH", name="Thüringen", type_="Land"),
 ]

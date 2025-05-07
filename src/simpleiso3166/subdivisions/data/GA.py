@@ -6,16 +6,16 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Gabonese Republic"
+COUNTRY_NAME: Final[str] = "Gabon"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GA-1", "Estuaire"),
-    Subdivision("GA-2", "Haut-Ogooué"),
-    Subdivision("GA-3", "Moyen-Ogooué"),
-    Subdivision("GA-4", "Ngounié"),
-    Subdivision("GA-5", "Nyanga"),
-    Subdivision("GA-6", "Ogooué-Ivindo"),
-    Subdivision("GA-7", "Ogooué-Lolo"),
-    Subdivision("GA-8", "Ogooué-Maritime"),
-    Subdivision("GA-9", "Woleu-Ntem"),
+    Subdivision(code="GA-1", name="Estuaire", type_="Province"),
+    Subdivision(code="GA-2", name="Haut-Ogooué", type_="Province"),
+    Subdivision(code="GA-3", name="Moyen-Ogooué", type_="Province"),
+    Subdivision(code="GA-4", name="Ngounié", type_="Province"),
+    Subdivision(code="GA-5", name="Nyanga", type_="Province"),
+    Subdivision(code="GA-6", name="Ogooué-Ivindo", type_="Province"),
+    Subdivision(code="GA-7", name="Ogooué-Lolo", type_="Province"),
+    Subdivision(code="GA-8", name="Ogooué-Maritime", type_="Province"),
+    Subdivision(code="GA-9", name="Woleu-Ntem", type_="Province"),
 ]

@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Madagascar"
+COUNTRY_NAME: Final[str] = "Madagascar"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("MG-A", "Toamasina"),
-    Subdivision("MG-D", "Antsiranana"),
-    Subdivision("MG-F", "Fianarantsoa"),
-    Subdivision("MG-M", "Mahajanga"),
-    Subdivision("MG-T", "Antananarivo"),
-    Subdivision("MG-U", "Toliara"),
+    Subdivision(code="MG-A", name="Toamasina", type_="Province"),
+    Subdivision(code="MG-D", name="Antsiranana", type_="Province"),
+    Subdivision(code="MG-F", name="Fianarantsoa", type_="Province"),
+    Subdivision(code="MG-M", name="Mahajanga", type_="Province"),
+    Subdivision(code="MG-T", name="Antananarivo", type_="Province"),
+    Subdivision(code="MG-U", name="Toliara", type_="Province"),
 ]

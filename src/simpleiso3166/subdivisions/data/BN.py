@@ -9,8 +9,8 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Brunei Darussalam"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BN-BE", "Belait"),
-    Subdivision("BN-BM", "Brunei-Muara"),
-    Subdivision("BN-TE", "Temburong"),
-    Subdivision("BN-TU", "Tutong"),
+    Subdivision(code="BN-BE", name="Belait", type_="District"),
+    Subdivision(code="BN-BM", name="Brunei-Muara", type_="District"),
+    Subdivision(code="BN-TE", name="Temburong", type_="District"),
+    Subdivision(code="BN-TU", name="Tutong", type_="District"),
 ]

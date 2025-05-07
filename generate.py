@@ -40,7 +40,9 @@ class Iso3116TypeTwoEntry(TypedDict):
 class CombinedData(TypedDict):
     name: str
     common_name: str | None
+    official_name: str | None
     alpha_2: str
+    alpha_3: str
     subdivisions: list[Iso3116TypeTwoEntry]
 
 
@@ -68,7 +70,6 @@ def output_country_data(
     combined_data: dict[str, CombinedData],
     revision: str = "d055275324963c9bce5882eaaa93024cf2bf7ed0",
 ):
-
     countries_dir = module_dir / "countries"
     country_mapping_file = countries_dir / "data.py"
     country_type_file = countries_dir / "types.py"
@@ -80,10 +81,17 @@ def output_country_data(
         common_header(f, revision)
         f.write("from typing import Literal\n\n")
         f.write("CountryCodeAlpha2Type = Literal[\n")
-        for country_code in track(sorted(combined_data), description="Writing country codes...     "):
+        for country_code in track(sorted(combined_data), description="Writing country alpha 2 codes...     "):
             comment_name = get_country_comment_name(combined_data[country_code])
             f.write(
                 f'    "{combined_data[country_code]["alpha_2"]}",  # {comment_name}\n',
+            )
+        f.write("]\n\n")
+        f.write("CountryCodeAlpha3Type = Literal[\n")
+        for country_code in track(sorted(combined_data), description="Writing country alpha 3 codes...     "):
+            comment_name = get_country_comment_name(combined_data[country_code])
+            f.write(
+                f'    "{combined_data[country_code]["alpha_3"]}",  # {comment_name}\n',
             )
         f.write("]\n")
 
@@ -93,27 +101,41 @@ def output_country_data(
             [
                 "from typing import Final\n\n"
                 "from simpleiso3166.countries import Country\n"
-                "from simpleiso3166.countries.types import CountryCodeAlpha2Type\n\n",
+                "from simpleiso3166.countries.types import CountryCodeAlpha2Type\n",
+                "from simpleiso3166.countries.types import CountryCodeAlpha3Type\n\n",
             ],
         )
 
-        for country_code in track(sorted(combined_data), description="Writing country data...      "):
+        for country_code in track(
+            sorted(combined_data),
+            description="Writing country data...      ",
+        ):
+            country_data = combined_data[country_code]
             f.write(f"{country_code}: Final[Country] = ")
-            f.write(f'Country("{country_code}",')
-            for key in ["name", "common_name"]:
-                if combined_data[country_code][key] is None:
-                    f.write(" None")
-                else:
-                    f.write(f' "{combined_data[country_code][key]}"')
-                if key != "common_name":
-                    f.write(",")
+            f.write(f'Country(alpha2="{country_data["alpha_2"]}", ')
+            f.write(f'alpha3="{country_data["alpha_3"]}", ')
+            f.write(f'name="{country_data["name"]}", ')
+            if country_data["common_name"]:
+                f.write(f'common_name="{country_data["common_name"]}", ')
+            else:
+                f.write("common_name=None, ")
+            if country_data["official_name"]:
+                f.write(f'official_name="{country_data["official_name"]}", ')
+            else:
+                f.write("official_name=None, ")
             f.write(")\n")
         f.write("\n")
 
         f.write("ALPHA2_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha2Type, Country]] = {\n")
-        for country_code in combined_data:
+        for country_code in sorted(combined_data):
             f.write(f'    "{country_code}": {country_code},\n')
-        f.write("}\n")
+        f.write("}\n\n")
+
+        f.write("ALPHA3_CODE_TO_COUNTRIES: Final[dict[CountryCodeAlpha3Type, Country]] = {\n")
+        for country_code in sorted(combined_data):
+            country_data = combined_data[country_code]
+            f.write(f'    "{country_data["alpha_3"]}": {country_code},\n')
+        f.write("}\n\n")
 
 
 def output_subdivision_data(
@@ -132,6 +154,7 @@ def output_subdivision_data(
         subdivision_data_dir.mkdir(parents=True, exist_ok=True)
 
     with subdivision_type_file.open("w", encoding="utf-8", newline="\n") as f:
+        subdivision_types: set[str] = set()
         f.write("from typing import Literal\n\n")
         f.write("SubdivisionCodeType = Literal[\n")
         for country_code in track(sorted(combined_data), description="Writing subdivisions types..."):
@@ -144,6 +167,11 @@ def output_subdivision_data(
                 subdivision_code: str = subdivision["code"]
                 name: str = subdivision["name"]
                 f.write(f'    "{subdivision_code}",  # {name}\n')
+                subdivision_types.add(subdivision["type"])
+        f.write("]\n")
+        f.write("SubdivisionType = Literal[\n")
+        for type_ in sorted(subdivision_types):
+            f.write(f'    "{type_}",\n')
         f.write("]\n\n")
 
     for country_code in track(sorted(combined_data), description="Writing subdivisions...      "):
@@ -162,7 +190,8 @@ def output_subdivision_data(
             for subdivision in country["subdivisions"]:
                 name: str = subdivision["name"]
                 code = subdivision["code"]
-                f.write(f'    Subdivision("{code}", "{name}"),\n')
+                type_ = subdivision["type"]
+                f.write(f'    Subdivision(code="{code}", name="{name}", type_="{type_}"),\n')
             f.write("]\n")
 
 
@@ -191,7 +220,7 @@ def main(
     if not module_dir.exists():
         module_dir.mkdir(parents=True, exist_ok=True)
 
-    country_code_to_subdivision: dict[str, list] = defaultdict(list)
+    country_code_to_subdivision: dict[str, list[Iso3116TypeTwoEntry]] = defaultdict(list)
 
     for subdivision in subdivision_data:
         subdivision_code: str = subdivision["code"]
@@ -201,31 +230,13 @@ def main(
     combined_data: dict[str, CombinedData] = {}
 
     for country in track(country_data, description="Combining data...            "):
-        common_name = country.get("common_name")
-        official_name = country.get("official_name")
-        name = country.get("name")
-
-        used_name = None
-
-        if official_name:
-            used_name = official_name
-        elif name:
-            used_name = name
-        assert used_name is not None  # noqa: S101
-        assert isinstance(used_name, str)  # noqa: S101
-
-        if not common_name and used_name == official_name:
-            common_name = name
-
-        if used_name.lower().endswith("of"):
-            used_name = " ".join(used_name.split(",", maxsplit=1)[::-1]).strip()
-
-        country_alpha_2 = country["alpha_2"]
-        combined_data[country_alpha_2] = {
-            "alpha_2": country_alpha_2,
-            "name": used_name,
-            "common_name": common_name,
-            "subdivisions": country_code_to_subdivision.get(country_alpha_2, []),
+        combined_data[country["alpha_2"]] = {
+            "alpha_2": country["alpha_2"],
+            "alpha_3": country["alpha_3"],
+            "name": country.get("name"),
+            "common_name": country.get("common_name"),
+            "official_name": country.get("official_name"),
+            "subdivisions": country_code_to_subdivision.get(country["alpha_2"], []),
         }
 
     output_country_data(module_dir, combined_data)

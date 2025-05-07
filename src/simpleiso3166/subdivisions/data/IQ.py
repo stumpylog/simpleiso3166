@@ -6,26 +6,26 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Iraq"
+COUNTRY_NAME: Final[str] = "Iraq"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("IQ-AN", "Al Anbār"),
-    Subdivision("IQ-AR", "Arbīl"),
-    Subdivision("IQ-BA", "Al Başrah"),
-    Subdivision("IQ-BB", "Bābil"),
-    Subdivision("IQ-BG", "Baghdād"),
-    Subdivision("IQ-DA", "Dahūk"),
-    Subdivision("IQ-DI", "Diyālá"),
-    Subdivision("IQ-DQ", "Dhī Qār"),
-    Subdivision("IQ-KA", "Karbalā’"),
-    Subdivision("IQ-KI", "Kirkūk"),
-    Subdivision("IQ-KR", "Herêm-î Kurdistan"),
-    Subdivision("IQ-MA", "Maysān"),
-    Subdivision("IQ-MU", "Al Muthanná"),
-    Subdivision("IQ-NA", "An Najaf"),
-    Subdivision("IQ-NI", "Nīnawá"),
-    Subdivision("IQ-QA", "Al Qādisīyah"),
-    Subdivision("IQ-SD", "Şalāḩ ad Dīn"),
-    Subdivision("IQ-SU", "As Sulaymānīyah"),
-    Subdivision("IQ-WA", "Wāsiţ"),
+    Subdivision(code="IQ-AN", name="Al Anbār", type_="Governorate"),
+    Subdivision(code="IQ-AR", name="Arbīl", type_="Governorate"),
+    Subdivision(code="IQ-BA", name="Al Başrah", type_="Governorate"),
+    Subdivision(code="IQ-BB", name="Bābil", type_="Governorate"),
+    Subdivision(code="IQ-BG", name="Baghdād", type_="Governorate"),
+    Subdivision(code="IQ-DA", name="Dahūk", type_="Governorate"),
+    Subdivision(code="IQ-DI", name="Diyālá", type_="Governorate"),
+    Subdivision(code="IQ-DQ", name="Dhī Qār", type_="Governorate"),
+    Subdivision(code="IQ-KA", name="Karbalā’", type_="Governorate"),
+    Subdivision(code="IQ-KI", name="Kirkūk", type_="Governorate"),
+    Subdivision(code="IQ-KR", name="Herêm-î Kurdistan", type_="Region"),
+    Subdivision(code="IQ-MA", name="Maysān", type_="Governorate"),
+    Subdivision(code="IQ-MU", name="Al Muthanná", type_="Governorate"),
+    Subdivision(code="IQ-NA", name="An Najaf", type_="Governorate"),
+    Subdivision(code="IQ-NI", name="Nīnawá", type_="Governorate"),
+    Subdivision(code="IQ-QA", name="Al Qādisīyah", type_="Governorate"),
+    Subdivision(code="IQ-SD", name="Şalāḩ ad Dīn", type_="Governorate"),
+    Subdivision(code="IQ-SU", name="As Sulaymānīyah", type_="Governorate"),
+    Subdivision(code="IQ-WA", name="Wāsiţ", type_="Governorate"),
 ]

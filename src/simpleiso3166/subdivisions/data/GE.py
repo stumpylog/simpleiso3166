@@ -9,16 +9,16 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Georgia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GE-AB", "Abkhazia"),
-    Subdivision("GE-AJ", "Ajaria"),
-    Subdivision("GE-GU", "Guria"),
-    Subdivision("GE-IM", "Imereti"),
-    Subdivision("GE-KA", "K'akheti"),
-    Subdivision("GE-KK", "Kvemo Kartli"),
-    Subdivision("GE-MM", "Mtskheta-Mtianeti"),
-    Subdivision("GE-RL", "Rach'a-Lechkhumi-Kvemo Svaneti"),
-    Subdivision("GE-SJ", "Samtskhe-Javakheti"),
-    Subdivision("GE-SK", "Shida Kartli"),
-    Subdivision("GE-SZ", "Samegrelo-Zemo Svaneti"),
-    Subdivision("GE-TB", "Tbilisi"),
+    Subdivision(code="GE-AB", name="Abkhazia", type_="Autonomous republic"),
+    Subdivision(code="GE-AJ", name="Ajaria", type_="Autonomous republic"),
+    Subdivision(code="GE-GU", name="Guria", type_="Region"),
+    Subdivision(code="GE-IM", name="Imereti", type_="Region"),
+    Subdivision(code="GE-KA", name="K'akheti", type_="Region"),
+    Subdivision(code="GE-KK", name="Kvemo Kartli", type_="Region"),
+    Subdivision(code="GE-MM", name="Mtskheta-Mtianeti", type_="Region"),
+    Subdivision(code="GE-RL", name="Rach'a-Lechkhumi-Kvemo Svaneti", type_="Region"),
+    Subdivision(code="GE-SJ", name="Samtskhe-Javakheti", type_="Region"),
+    Subdivision(code="GE-SK", name="Shida Kartli", type_="Region"),
+    Subdivision(code="GE-SZ", name="Samegrelo-Zemo Svaneti", type_="Region"),
+    Subdivision(code="GE-TB", name="Tbilisi", type_="City"),
 ]

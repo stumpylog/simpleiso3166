@@ -6,16 +6,16 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of South Africa"
+COUNTRY_NAME: Final[str] = "South Africa"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("ZA-EC", "Eastern Cape"),
-    Subdivision("ZA-FS", "Free State"),
-    Subdivision("ZA-GP", "Gauteng"),
-    Subdivision("ZA-KZN", "Kwazulu-Natal"),
-    Subdivision("ZA-LP", "Limpopo"),
-    Subdivision("ZA-MP", "Mpumalanga"),
-    Subdivision("ZA-NC", "Northern Cape"),
-    Subdivision("ZA-NW", "North-West"),
-    Subdivision("ZA-WC", "Western Cape"),
+    Subdivision(code="ZA-EC", name="Eastern Cape", type_="Province"),
+    Subdivision(code="ZA-FS", name="Free State", type_="Province"),
+    Subdivision(code="ZA-GP", name="Gauteng", type_="Province"),
+    Subdivision(code="ZA-KZN", name="Kwazulu-Natal", type_="Province"),
+    Subdivision(code="ZA-LP", name="Limpopo", type_="Province"),
+    Subdivision(code="ZA-MP", name="Mpumalanga", type_="Province"),
+    Subdivision(code="ZA-NC", name="Northern Cape", type_="Province"),
+    Subdivision(code="ZA-NW", name="North-West", type_="Province"),
+    Subdivision(code="ZA-WC", name="Western Cape", type_="Province"),
 ]

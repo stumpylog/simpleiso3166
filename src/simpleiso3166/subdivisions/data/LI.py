@@ -6,18 +6,18 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Principality of Liechtenstein"
+COUNTRY_NAME: Final[str] = "Liechtenstein"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("LI-01", "Balzers"),
-    Subdivision("LI-02", "Eschen"),
-    Subdivision("LI-03", "Gamprin"),
-    Subdivision("LI-04", "Mauren"),
-    Subdivision("LI-05", "Planken"),
-    Subdivision("LI-06", "Ruggell"),
-    Subdivision("LI-07", "Schaan"),
-    Subdivision("LI-08", "Schellenberg"),
-    Subdivision("LI-09", "Triesen"),
-    Subdivision("LI-10", "Triesenberg"),
-    Subdivision("LI-11", "Vaduz"),
+    Subdivision(code="LI-01", name="Balzers", type_="Commune"),
+    Subdivision(code="LI-02", name="Eschen", type_="Commune"),
+    Subdivision(code="LI-03", name="Gamprin", type_="Commune"),
+    Subdivision(code="LI-04", name="Mauren", type_="Commune"),
+    Subdivision(code="LI-05", name="Planken", type_="Commune"),
+    Subdivision(code="LI-06", name="Ruggell", type_="Commune"),
+    Subdivision(code="LI-07", name="Schaan", type_="Commune"),
+    Subdivision(code="LI-08", name="Schellenberg", type_="Commune"),
+    Subdivision(code="LI-09", name="Triesen", type_="Commune"),
+    Subdivision(code="LI-10", name="Triesenberg", type_="Commune"),
+    Subdivision(code="LI-11", name="Vaduz", type_="Commune"),
 ]

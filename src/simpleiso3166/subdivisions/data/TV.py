@@ -9,12 +9,12 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Tuvalu"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("TV-FUN", "Funafuti"),
-    Subdivision("TV-NIT", "Niutao"),
-    Subdivision("TV-NKF", "Nukufetau"),
-    Subdivision("TV-NKL", "Nukulaelae"),
-    Subdivision("TV-NMA", "Nanumea"),
-    Subdivision("TV-NMG", "Nanumaga"),
-    Subdivision("TV-NUI", "Nui"),
-    Subdivision("TV-VAI", "Vaitupu"),
+    Subdivision(code="TV-FUN", name="Funafuti", type_="Town council"),
+    Subdivision(code="TV-NIT", name="Niutao", type_="Island council"),
+    Subdivision(code="TV-NKF", name="Nukufetau", type_="Island council"),
+    Subdivision(code="TV-NKL", name="Nukulaelae", type_="Island council"),
+    Subdivision(code="TV-NMA", name="Nanumea", type_="Island council"),
+    Subdivision(code="TV-NMG", name="Nanumaga", type_="Island council"),
+    Subdivision(code="TV-NUI", name="Nui", type_="Island council"),
+    Subdivision(code="TV-VAI", name="Vaitupu", type_="Island council"),
 ]

@@ -6,14 +6,14 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Costa Rica"
+COUNTRY_NAME: Final[str] = "Costa Rica"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("CR-A", "Alajuela"),
-    Subdivision("CR-C", "Cartago"),
-    Subdivision("CR-G", "Guanacaste"),
-    Subdivision("CR-H", "Heredia"),
-    Subdivision("CR-L", "Limón"),
-    Subdivision("CR-P", "Puntarenas"),
-    Subdivision("CR-SJ", "San José"),
+    Subdivision(code="CR-A", name="Alajuela", type_="Province"),
+    Subdivision(code="CR-C", name="Cartago", type_="Province"),
+    Subdivision(code="CR-G", name="Guanacaste", type_="Province"),
+    Subdivision(code="CR-H", name="Heredia", type_="Province"),
+    Subdivision(code="CR-L", name="Limón", type_="Province"),
+    Subdivision(code="CR-P", name="Puntarenas", type_="Province"),
+    Subdivision(code="CR-SJ", name="San José", type_="Province"),
 ]

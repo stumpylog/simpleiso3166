@@ -6,21 +6,21 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Nauru"
+COUNTRY_NAME: Final[str] = "Nauru"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("NR-01", "Aiwo"),
-    Subdivision("NR-02", "Anabar"),
-    Subdivision("NR-03", "Anetan"),
-    Subdivision("NR-04", "Anibare"),
-    Subdivision("NR-05", "Baitsi"),
-    Subdivision("NR-06", "Boe"),
-    Subdivision("NR-07", "Buada"),
-    Subdivision("NR-08", "Denigomodu"),
-    Subdivision("NR-09", "Ewa"),
-    Subdivision("NR-10", "Ijuw"),
-    Subdivision("NR-11", "Meneng"),
-    Subdivision("NR-12", "Nibok"),
-    Subdivision("NR-13", "Uaboe"),
-    Subdivision("NR-14", "Yaren"),
+    Subdivision(code="NR-01", name="Aiwo", type_="District"),
+    Subdivision(code="NR-02", name="Anabar", type_="District"),
+    Subdivision(code="NR-03", name="Anetan", type_="District"),
+    Subdivision(code="NR-04", name="Anibare", type_="District"),
+    Subdivision(code="NR-05", name="Baitsi", type_="District"),
+    Subdivision(code="NR-06", name="Boe", type_="District"),
+    Subdivision(code="NR-07", name="Buada", type_="District"),
+    Subdivision(code="NR-08", name="Denigomodu", type_="District"),
+    Subdivision(code="NR-09", name="Ewa", type_="District"),
+    Subdivision(code="NR-10", name="Ijuw", type_="District"),
+    Subdivision(code="NR-11", name="Meneng", type_="District"),
+    Subdivision(code="NR-12", name="Nibok", type_="District"),
+    Subdivision(code="NR-13", name="Uaboe", type_="District"),
+    Subdivision(code="NR-14", name="Yaren", type_="District"),
 ]

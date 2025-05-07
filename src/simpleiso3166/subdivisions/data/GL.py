@@ -9,9 +9,9 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Greenland"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GL-AV", "Avannaata Kommunia"),
-    Subdivision("GL-KU", "Kommune Kujalleq"),
-    Subdivision("GL-QE", "Qeqqata Kommunia"),
-    Subdivision("GL-QT", "Kommune Qeqertalik"),
-    Subdivision("GL-SM", "Kommuneqarfik Sermersooq"),
+    Subdivision(code="GL-AV", name="Avannaata Kommunia", type_="Municipality"),
+    Subdivision(code="GL-KU", name="Kommune Kujalleq", type_="Municipality"),
+    Subdivision(code="GL-QE", name="Qeqqata Kommunia", type_="Municipality"),
+    Subdivision(code="GL-QT", name="Kommune Qeqertalik", type_="Municipality"),
+    Subdivision(code="GL-SM", name="Kommuneqarfik Sermersooq", type_="Municipality"),
 ]

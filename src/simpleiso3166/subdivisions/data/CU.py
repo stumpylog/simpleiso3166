@@ -6,23 +6,23 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Cuba"
+COUNTRY_NAME: Final[str] = "Cuba"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("CU-01", "Pinar del Río"),
-    Subdivision("CU-03", "La Habana"),
-    Subdivision("CU-04", "Matanzas"),
-    Subdivision("CU-05", "Villa Clara"),
-    Subdivision("CU-06", "Cienfuegos"),
-    Subdivision("CU-07", "Sancti Spíritus"),
-    Subdivision("CU-08", "Ciego de Ávila"),
-    Subdivision("CU-09", "Camagüey"),
-    Subdivision("CU-10", "Las Tunas"),
-    Subdivision("CU-11", "Holguín"),
-    Subdivision("CU-12", "Granma"),
-    Subdivision("CU-13", "Santiago de Cuba"),
-    Subdivision("CU-14", "Guantánamo"),
-    Subdivision("CU-15", "Artemisa"),
-    Subdivision("CU-16", "Mayabeque"),
-    Subdivision("CU-99", "Isla de la Juventud"),
+    Subdivision(code="CU-01", name="Pinar del Río", type_="Province"),
+    Subdivision(code="CU-03", name="La Habana", type_="Province"),
+    Subdivision(code="CU-04", name="Matanzas", type_="Province"),
+    Subdivision(code="CU-05", name="Villa Clara", type_="Province"),
+    Subdivision(code="CU-06", name="Cienfuegos", type_="Province"),
+    Subdivision(code="CU-07", name="Sancti Spíritus", type_="Province"),
+    Subdivision(code="CU-08", name="Ciego de Ávila", type_="Province"),
+    Subdivision(code="CU-09", name="Camagüey", type_="Province"),
+    Subdivision(code="CU-10", name="Las Tunas", type_="Province"),
+    Subdivision(code="CU-11", name="Holguín", type_="Province"),
+    Subdivision(code="CU-12", name="Granma", type_="Province"),
+    Subdivision(code="CU-13", name="Santiago de Cuba", type_="Province"),
+    Subdivision(code="CU-14", name="Guantánamo", type_="Province"),
+    Subdivision(code="CU-15", name="Artemisa", type_="Province"),
+    Subdivision(code="CU-16", name="Mayabeque", type_="Province"),
+    Subdivision(code="CU-99", name="Isla de la Juventud", type_="Special municipality"),
 ]

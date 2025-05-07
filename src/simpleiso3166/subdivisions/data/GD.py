@@ -9,11 +9,11 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Grenada"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GD-01", "Saint Andrew"),
-    Subdivision("GD-02", "Saint David"),
-    Subdivision("GD-03", "Saint George"),
-    Subdivision("GD-04", "Saint John"),
-    Subdivision("GD-05", "Saint Mark"),
-    Subdivision("GD-06", "Saint Patrick"),
-    Subdivision("GD-10", "Southern Grenadine Islands"),
+    Subdivision(code="GD-01", name="Saint Andrew", type_="Parish"),
+    Subdivision(code="GD-02", name="Saint David", type_="Parish"),
+    Subdivision(code="GD-03", name="Saint George", type_="Parish"),
+    Subdivision(code="GD-04", name="Saint John", type_="Parish"),
+    Subdivision(code="GD-05", name="Saint Mark", type_="Parish"),
+    Subdivision(code="GD-06", name="Saint Patrick", type_="Parish"),
+    Subdivision(code="GD-10", name="Southern Grenadine Islands", type_="Dependency"),
 ]

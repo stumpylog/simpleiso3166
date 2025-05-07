@@ -6,16 +6,16 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kyrgyz Republic"
+COUNTRY_NAME: Final[str] = "Kyrgyzstan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("KG-B", "Batken"),
-    Subdivision("KG-C", "Chuyskaya oblast'"),
-    Subdivision("KG-GB", "Bishkek Shaary"),
-    Subdivision("KG-GO", "Gorod Osh"),
-    Subdivision("KG-J", "Dzhalal-Abadskaya oblast'"),
-    Subdivision("KG-N", "Naryn"),
-    Subdivision("KG-O", "Osh"),
-    Subdivision("KG-T", "Talas"),
-    Subdivision("KG-Y", "Issyk-Kul'skaja oblast'"),
+    Subdivision(code="KG-B", name="Batken", type_="Region"),
+    Subdivision(code="KG-C", name="Chuyskaya oblast'", type_="Region"),
+    Subdivision(code="KG-GB", name="Bishkek Shaary", type_="City"),
+    Subdivision(code="KG-GO", name="Gorod Osh", type_="City"),
+    Subdivision(code="KG-J", name="Dzhalal-Abadskaya oblast'", type_="Region"),
+    Subdivision(code="KG-N", name="Naryn", type_="Region"),
+    Subdivision(code="KG-O", name="Osh", type_="Region"),
+    Subdivision(code="KG-T", name="Talas", type_="Region"),
+    Subdivision(code="KG-Y", name="Issyk-Kul'skaja oblast'", type_="Region"),
 ]

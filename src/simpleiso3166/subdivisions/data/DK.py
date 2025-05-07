@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kingdom of Denmark"
+COUNTRY_NAME: Final[str] = "Denmark"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("DK-81", "Nordjylland"),
-    Subdivision("DK-82", "Midtjylland"),
-    Subdivision("DK-83", "Syddanmark"),
-    Subdivision("DK-84", "Hovedstaden"),
-    Subdivision("DK-85", "Sjælland"),
+    Subdivision(code="DK-81", name="Nordjylland", type_="Region"),
+    Subdivision(code="DK-82", name="Midtjylland", type_="Region"),
+    Subdivision(code="DK-83", name="Syddanmark", type_="Region"),
+    Subdivision(code="DK-84", name="Hovedstaden", type_="Region"),
+    Subdivision(code="DK-85", name="Sjælland", type_="Region"),
 ]

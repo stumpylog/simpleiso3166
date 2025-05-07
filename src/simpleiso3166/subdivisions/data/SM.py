@@ -6,16 +6,16 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of San Marino"
+COUNTRY_NAME: Final[str] = "San Marino"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SM-01", "Acquaviva"),
-    Subdivision("SM-02", "Chiesanuova"),
-    Subdivision("SM-03", "Domagnano"),
-    Subdivision("SM-04", "Faetano"),
-    Subdivision("SM-05", "Fiorentino"),
-    Subdivision("SM-06", "Borgo Maggiore"),
-    Subdivision("SM-07", "Città di San Marino"),
-    Subdivision("SM-08", "Montegiardino"),
-    Subdivision("SM-09", "Serravalle"),
+    Subdivision(code="SM-01", name="Acquaviva", type_="Municipality"),
+    Subdivision(code="SM-02", name="Chiesanuova", type_="Municipality"),
+    Subdivision(code="SM-03", name="Domagnano", type_="Municipality"),
+    Subdivision(code="SM-04", name="Faetano", type_="Municipality"),
+    Subdivision(code="SM-05", name="Fiorentino", type_="Municipality"),
+    Subdivision(code="SM-06", name="Borgo Maggiore", type_="Municipality"),
+    Subdivision(code="SM-07", name="Città di San Marino", type_="Municipality"),
+    Subdivision(code="SM-08", name="Montegiardino", type_="Municipality"),
+    Subdivision(code="SM-09", name="Serravalle", type_="Municipality"),
 ]

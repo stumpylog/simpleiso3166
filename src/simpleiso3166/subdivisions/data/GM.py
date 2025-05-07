@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of the Gambia"
+COUNTRY_NAME: Final[str] = "Gambia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GM-B", "Banjul"),
-    Subdivision("GM-L", "Lower River"),
-    Subdivision("GM-M", "Central River"),
-    Subdivision("GM-N", "North Bank"),
-    Subdivision("GM-U", "Upper River"),
-    Subdivision("GM-W", "Western"),
+    Subdivision(code="GM-B", name="Banjul", type_="City"),
+    Subdivision(code="GM-L", name="Lower River", type_="Division"),
+    Subdivision(code="GM-M", name="Central River", type_="Division"),
+    Subdivision(code="GM-N", name="North Bank", type_="Division"),
+    Subdivision(code="GM-U", name="Upper River", type_="Division"),
+    Subdivision(code="GM-W", name="Western", type_="Division"),
 ]

@@ -6,23 +6,23 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Palau"
+COUNTRY_NAME: Final[str] = "Palau"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("PW-002", "Aimeliik"),
-    Subdivision("PW-004", "Airai"),
-    Subdivision("PW-010", "Angaur"),
-    Subdivision("PW-050", "Hatohobei"),
-    Subdivision("PW-100", "Kayangel"),
-    Subdivision("PW-150", "Koror"),
-    Subdivision("PW-212", "Melekeok"),
-    Subdivision("PW-214", "Ngaraard"),
-    Subdivision("PW-218", "Ngarchelong"),
-    Subdivision("PW-222", "Ngardmau"),
-    Subdivision("PW-224", "Ngatpang"),
-    Subdivision("PW-226", "Ngchesar"),
-    Subdivision("PW-227", "Ngeremlengui"),
-    Subdivision("PW-228", "Ngiwal"),
-    Subdivision("PW-350", "Peleliu"),
-    Subdivision("PW-370", "Sonsorol"),
+    Subdivision(code="PW-002", name="Aimeliik", type_="State"),
+    Subdivision(code="PW-004", name="Airai", type_="State"),
+    Subdivision(code="PW-010", name="Angaur", type_="State"),
+    Subdivision(code="PW-050", name="Hatohobei", type_="State"),
+    Subdivision(code="PW-100", name="Kayangel", type_="State"),
+    Subdivision(code="PW-150", name="Koror", type_="State"),
+    Subdivision(code="PW-212", name="Melekeok", type_="State"),
+    Subdivision(code="PW-214", name="Ngaraard", type_="State"),
+    Subdivision(code="PW-218", name="Ngarchelong", type_="State"),
+    Subdivision(code="PW-222", name="Ngardmau", type_="State"),
+    Subdivision(code="PW-224", name="Ngatpang", type_="State"),
+    Subdivision(code="PW-226", name="Ngchesar", type_="State"),
+    Subdivision(code="PW-227", name="Ngeremlengui", type_="State"),
+    Subdivision(code="PW-228", name="Ngiwal", type_="State"),
+    Subdivision(code="PW-350", name="Peleliu", type_="State"),
+    Subdivision(code="PW-370", name="Sonsorol", type_="State"),
 ]

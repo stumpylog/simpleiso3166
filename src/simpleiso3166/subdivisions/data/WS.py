@@ -6,18 +6,18 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Independent State of Samoa"
+COUNTRY_NAME: Final[str] = "Samoa"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("WS-AA", "A'ana"),
-    Subdivision("WS-AL", "Aiga-i-le-Tai"),
-    Subdivision("WS-AT", "Atua"),
-    Subdivision("WS-FA", "Fa'asaleleaga"),
-    Subdivision("WS-GE", "Gaga'emauga"),
-    Subdivision("WS-GI", "Gagaifomauga"),
-    Subdivision("WS-PA", "Palauli"),
-    Subdivision("WS-SA", "Satupa'itea"),
-    Subdivision("WS-TU", "Tuamasaga"),
-    Subdivision("WS-VF", "Va'a-o-Fonoti"),
-    Subdivision("WS-VS", "Vaisigano"),
+    Subdivision(code="WS-AA", name="A'ana", type_="District"),
+    Subdivision(code="WS-AL", name="Aiga-i-le-Tai", type_="District"),
+    Subdivision(code="WS-AT", name="Atua", type_="District"),
+    Subdivision(code="WS-FA", name="Fa'asaleleaga", type_="District"),
+    Subdivision(code="WS-GE", name="Gaga'emauga", type_="District"),
+    Subdivision(code="WS-GI", name="Gagaifomauga", type_="District"),
+    Subdivision(code="WS-PA", name="Palauli", type_="District"),
+    Subdivision(code="WS-SA", name="Satupa'itea", type_="District"),
+    Subdivision(code="WS-TU", name="Tuamasaga", type_="District"),
+    Subdivision(code="WS-VF", name="Va'a-o-Fonoti", type_="District"),
+    Subdivision(code="WS-VS", name="Vaisigano", type_="District"),
 ]

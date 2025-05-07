@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Vanuatu"
+COUNTRY_NAME: Final[str] = "Vanuatu"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("VU-MAP", "Malampa"),
-    Subdivision("VU-PAM", "Pénama"),
-    Subdivision("VU-SAM", "Sanma"),
-    Subdivision("VU-SEE", "Shéfa"),
-    Subdivision("VU-TAE", "Taféa"),
-    Subdivision("VU-TOB", "Torba"),
+    Subdivision(code="VU-MAP", name="Malampa", type_="Province"),
+    Subdivision(code="VU-PAM", name="Pénama", type_="Province"),
+    Subdivision(code="VU-SAM", name="Sanma", type_="Province"),
+    Subdivision(code="VU-SEE", name="Shéfa", type_="Province"),
+    Subdivision(code="VU-TAE", name="Taféa", type_="Province"),
+    Subdivision(code="VU-TOB", name="Torba", type_="Province"),
 ]

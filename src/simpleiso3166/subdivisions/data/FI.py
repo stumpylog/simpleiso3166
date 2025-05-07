@@ -6,26 +6,26 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Finland"
+COUNTRY_NAME: Final[str] = "Finland"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("FI-01", "Landskapet Åland"),
-    Subdivision("FI-02", "Etelä-Karjala"),
-    Subdivision("FI-03", "Etelä-Pohjanmaa"),
-    Subdivision("FI-04", "Etelä-Savo"),
-    Subdivision("FI-05", "Kainuu"),
-    Subdivision("FI-06", "Kanta-Häme"),
-    Subdivision("FI-07", "Keski-Pohjanmaa"),
-    Subdivision("FI-08", "Keski-Suomi"),
-    Subdivision("FI-09", "Kymenlaakso"),
-    Subdivision("FI-10", "Lappi"),
-    Subdivision("FI-11", "Pirkanmaa"),
-    Subdivision("FI-12", "Pohjanmaa"),
-    Subdivision("FI-13", "Pohjois-Karjala"),
-    Subdivision("FI-14", "Pohjois-Pohjanmaa"),
-    Subdivision("FI-15", "Pohjois-Savo"),
-    Subdivision("FI-16", "Päijät-Häme"),
-    Subdivision("FI-17", "Satakunta"),
-    Subdivision("FI-18", "Uusimaa"),
-    Subdivision("FI-19", "Varsinais-Suomi"),
+    Subdivision(code="FI-01", name="Landskapet Åland", type_="Region"),
+    Subdivision(code="FI-02", name="Etelä-Karjala", type_="Region"),
+    Subdivision(code="FI-03", name="Etelä-Pohjanmaa", type_="Region"),
+    Subdivision(code="FI-04", name="Etelä-Savo", type_="Region"),
+    Subdivision(code="FI-05", name="Kainuu", type_="Region"),
+    Subdivision(code="FI-06", name="Kanta-Häme", type_="Region"),
+    Subdivision(code="FI-07", name="Keski-Pohjanmaa", type_="Region"),
+    Subdivision(code="FI-08", name="Keski-Suomi", type_="Region"),
+    Subdivision(code="FI-09", name="Kymenlaakso", type_="Region"),
+    Subdivision(code="FI-10", name="Lappi", type_="Region"),
+    Subdivision(code="FI-11", name="Pirkanmaa", type_="Region"),
+    Subdivision(code="FI-12", name="Pohjanmaa", type_="Region"),
+    Subdivision(code="FI-13", name="Pohjois-Karjala", type_="Region"),
+    Subdivision(code="FI-14", name="Pohjois-Pohjanmaa", type_="Region"),
+    Subdivision(code="FI-15", name="Pohjois-Savo", type_="Region"),
+    Subdivision(code="FI-16", name="Päijät-Häme", type_="Region"),
+    Subdivision(code="FI-17", name="Satakunta", type_="Region"),
+    Subdivision(code="FI-18", name="Uusimaa", type_="Region"),
+    Subdivision(code="FI-19", name="Varsinais-Suomi", type_="Region"),
 ]

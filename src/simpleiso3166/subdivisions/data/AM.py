@@ -6,18 +6,18 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Armenia"
+COUNTRY_NAME: Final[str] = "Armenia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AM-AG", "Aragac̣otn"),
-    Subdivision("AM-AR", "Ararat"),
-    Subdivision("AM-AV", "Armavir"),
-    Subdivision("AM-ER", "Erevan"),
-    Subdivision("AM-GR", "Geġark'unik'"),
-    Subdivision("AM-KT", "Kotayk'"),
-    Subdivision("AM-LO", "Loṙi"),
-    Subdivision("AM-SH", "Širak"),
-    Subdivision("AM-SU", "Syunik'"),
-    Subdivision("AM-TV", "Tavuš"),
-    Subdivision("AM-VD", "Vayoć Jor"),
+    Subdivision(code="AM-AG", name="Aragac̣otn", type_="Region"),
+    Subdivision(code="AM-AR", name="Ararat", type_="Region"),
+    Subdivision(code="AM-AV", name="Armavir", type_="Region"),
+    Subdivision(code="AM-ER", name="Erevan", type_="City"),
+    Subdivision(code="AM-GR", name="Geġark'unik'", type_="Region"),
+    Subdivision(code="AM-KT", name="Kotayk'", type_="Region"),
+    Subdivision(code="AM-LO", name="Loṙi", type_="Region"),
+    Subdivision(code="AM-SH", name="Širak", type_="Region"),
+    Subdivision(code="AM-SU", name="Syunik'", type_="Region"),
+    Subdivision(code="AM-TV", name="Tavuš", type_="Region"),
+    Subdivision(code="AM-VD", name="Vayoć Jor", type_="Region"),
 ]

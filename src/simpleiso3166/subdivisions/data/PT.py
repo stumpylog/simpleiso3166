@@ -6,27 +6,27 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Portuguese Republic"
+COUNTRY_NAME: Final[str] = "Portugal"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("PT-01", "Aveiro"),
-    Subdivision("PT-02", "Beja"),
-    Subdivision("PT-03", "Braga"),
-    Subdivision("PT-04", "Bragança"),
-    Subdivision("PT-05", "Castelo Branco"),
-    Subdivision("PT-06", "Coimbra"),
-    Subdivision("PT-07", "Évora"),
-    Subdivision("PT-08", "Faro"),
-    Subdivision("PT-09", "Guarda"),
-    Subdivision("PT-10", "Leiria"),
-    Subdivision("PT-11", "Lisboa"),
-    Subdivision("PT-12", "Portalegre"),
-    Subdivision("PT-13", "Porto"),
-    Subdivision("PT-14", "Santarém"),
-    Subdivision("PT-15", "Setúbal"),
-    Subdivision("PT-16", "Viana do Castelo"),
-    Subdivision("PT-17", "Vila Real"),
-    Subdivision("PT-18", "Viseu"),
-    Subdivision("PT-20", "Região Autónoma dos Açores"),
-    Subdivision("PT-30", "Região Autónoma da Madeira"),
+    Subdivision(code="PT-01", name="Aveiro", type_="District"),
+    Subdivision(code="PT-02", name="Beja", type_="District"),
+    Subdivision(code="PT-03", name="Braga", type_="District"),
+    Subdivision(code="PT-04", name="Bragança", type_="District"),
+    Subdivision(code="PT-05", name="Castelo Branco", type_="District"),
+    Subdivision(code="PT-06", name="Coimbra", type_="District"),
+    Subdivision(code="PT-07", name="Évora", type_="District"),
+    Subdivision(code="PT-08", name="Faro", type_="District"),
+    Subdivision(code="PT-09", name="Guarda", type_="District"),
+    Subdivision(code="PT-10", name="Leiria", type_="District"),
+    Subdivision(code="PT-11", name="Lisboa", type_="District"),
+    Subdivision(code="PT-12", name="Portalegre", type_="District"),
+    Subdivision(code="PT-13", name="Porto", type_="District"),
+    Subdivision(code="PT-14", name="Santarém", type_="District"),
+    Subdivision(code="PT-15", name="Setúbal", type_="District"),
+    Subdivision(code="PT-16", name="Viana do Castelo", type_="District"),
+    Subdivision(code="PT-17", name="Vila Real", type_="District"),
+    Subdivision(code="PT-18", name="Viseu", type_="District"),
+    Subdivision(code="PT-20", name="Região Autónoma dos Açores", type_="Autonomous region"),
+    Subdivision(code="PT-30", name="Região Autónoma da Madeira", type_="Autonomous region"),
 ]

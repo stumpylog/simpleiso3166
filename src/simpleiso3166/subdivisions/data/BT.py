@@ -6,27 +6,27 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Kingdom of Bhutan"
+COUNTRY_NAME: Final[str] = "Bhutan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BT-11", "Paro"),
-    Subdivision("BT-12", "Chhukha"),
-    Subdivision("BT-13", "Haa"),
-    Subdivision("BT-14", "Samtse"),
-    Subdivision("BT-15", "Thimphu"),
-    Subdivision("BT-21", "Tsirang"),
-    Subdivision("BT-22", "Dagana"),
-    Subdivision("BT-23", "Punakha"),
-    Subdivision("BT-24", "Wangdue Phodrang"),
-    Subdivision("BT-31", "Sarpang"),
-    Subdivision("BT-32", "Trongsa"),
-    Subdivision("BT-33", "Bumthang"),
-    Subdivision("BT-34", "Zhemgang"),
-    Subdivision("BT-41", "Trashigang"),
-    Subdivision("BT-42", "Monggar"),
-    Subdivision("BT-43", "Pema Gatshel"),
-    Subdivision("BT-44", "Lhuentse"),
-    Subdivision("BT-45", "Samdrup Jongkhar"),
-    Subdivision("BT-GA", "Gasa"),
-    Subdivision("BT-TY", "Trashi Yangtse"),
+    Subdivision(code="BT-11", name="Paro", type_="District"),
+    Subdivision(code="BT-12", name="Chhukha", type_="District"),
+    Subdivision(code="BT-13", name="Haa", type_="District"),
+    Subdivision(code="BT-14", name="Samtse", type_="District"),
+    Subdivision(code="BT-15", name="Thimphu", type_="District"),
+    Subdivision(code="BT-21", name="Tsirang", type_="District"),
+    Subdivision(code="BT-22", name="Dagana", type_="District"),
+    Subdivision(code="BT-23", name="Punakha", type_="District"),
+    Subdivision(code="BT-24", name="Wangdue Phodrang", type_="District"),
+    Subdivision(code="BT-31", name="Sarpang", type_="District"),
+    Subdivision(code="BT-32", name="Trongsa", type_="District"),
+    Subdivision(code="BT-33", name="Bumthang", type_="District"),
+    Subdivision(code="BT-34", name="Zhemgang", type_="District"),
+    Subdivision(code="BT-41", name="Trashigang", type_="District"),
+    Subdivision(code="BT-42", name="Monggar", type_="District"),
+    Subdivision(code="BT-43", name="Pema Gatshel", type_="District"),
+    Subdivision(code="BT-44", name="Lhuentse", type_="District"),
+    Subdivision(code="BT-45", name="Samdrup Jongkhar", type_="District"),
+    Subdivision(code="BT-GA", name="Gasa", type_="District"),
+    Subdivision(code="BT-TY", name="Trashi Yangtse", type_="District"),
 ]

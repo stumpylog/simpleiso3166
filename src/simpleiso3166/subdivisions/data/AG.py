@@ -9,12 +9,12 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Antigua and Barbuda"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AG-03", "Saint George"),
-    Subdivision("AG-04", "Saint John"),
-    Subdivision("AG-05", "Saint Mary"),
-    Subdivision("AG-06", "Saint Paul"),
-    Subdivision("AG-07", "Saint Peter"),
-    Subdivision("AG-08", "Saint Philip"),
-    Subdivision("AG-10", "Barbuda"),
-    Subdivision("AG-11", "Redonda"),
+    Subdivision(code="AG-03", name="Saint George", type_="Parish"),
+    Subdivision(code="AG-04", name="Saint John", type_="Parish"),
+    Subdivision(code="AG-05", name="Saint Mary", type_="Parish"),
+    Subdivision(code="AG-06", name="Saint Paul", type_="Parish"),
+    Subdivision(code="AG-07", name="Saint Peter", type_="Parish"),
+    Subdivision(code="AG-08", name="Saint Philip", type_="Parish"),
+    Subdivision(code="AG-10", name="Barbuda", type_="Dependency"),
+    Subdivision(code="AG-11", name="Redonda", type_="Dependency"),
 ]

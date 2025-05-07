@@ -6,24 +6,24 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Nicaragua"
+COUNTRY_NAME: Final[str] = "Nicaragua"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("NI-AN", "Costa Caribe Norte"),
-    Subdivision("NI-AS", "Costa Caribe Sur"),
-    Subdivision("NI-BO", "Boaco"),
-    Subdivision("NI-CA", "Carazo"),
-    Subdivision("NI-CI", "Chinandega"),
-    Subdivision("NI-CO", "Chontales"),
-    Subdivision("NI-ES", "Estelí"),
-    Subdivision("NI-GR", "Granada"),
-    Subdivision("NI-JI", "Jinotega"),
-    Subdivision("NI-LE", "León"),
-    Subdivision("NI-MD", "Madriz"),
-    Subdivision("NI-MN", "Managua"),
-    Subdivision("NI-MS", "Masaya"),
-    Subdivision("NI-MT", "Matagalpa"),
-    Subdivision("NI-NS", "Nueva Segovia"),
-    Subdivision("NI-RI", "Rivas"),
-    Subdivision("NI-SJ", "Río San Juan"),
+    Subdivision(code="NI-AN", name="Costa Caribe Norte", type_="Autonomous region"),
+    Subdivision(code="NI-AS", name="Costa Caribe Sur", type_="Autonomous region"),
+    Subdivision(code="NI-BO", name="Boaco", type_="Department"),
+    Subdivision(code="NI-CA", name="Carazo", type_="Department"),
+    Subdivision(code="NI-CI", name="Chinandega", type_="Department"),
+    Subdivision(code="NI-CO", name="Chontales", type_="Department"),
+    Subdivision(code="NI-ES", name="Estelí", type_="Department"),
+    Subdivision(code="NI-GR", name="Granada", type_="Department"),
+    Subdivision(code="NI-JI", name="Jinotega", type_="Department"),
+    Subdivision(code="NI-LE", name="León", type_="Department"),
+    Subdivision(code="NI-MD", name="Madriz", type_="Department"),
+    Subdivision(code="NI-MN", name="Managua", type_="Department"),
+    Subdivision(code="NI-MS", name="Masaya", type_="Department"),
+    Subdivision(code="NI-MT", name="Matagalpa", type_="Department"),
+    Subdivision(code="NI-NS", name="Nueva Segovia", type_="Department"),
+    Subdivision(code="NI-RI", name="Rivas", type_="Department"),
+    Subdivision(code="NI-SJ", name="Río San Juan", type_="Department"),
 ]

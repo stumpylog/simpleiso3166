@@ -6,14 +6,14 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Principality of Andorra"
+COUNTRY_NAME: Final[str] = "Andorra"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AD-02", "Canillo"),
-    Subdivision("AD-03", "Encamp"),
-    Subdivision("AD-04", "La Massana"),
-    Subdivision("AD-05", "Ordino"),
-    Subdivision("AD-06", "Sant Julià de Lòria"),
-    Subdivision("AD-07", "Andorra la Vella"),
-    Subdivision("AD-08", "Escaldes-Engordany"),
+    Subdivision(code="AD-02", name="Canillo", type_="Parish"),
+    Subdivision(code="AD-03", name="Encamp", type_="Parish"),
+    Subdivision(code="AD-04", name="La Massana", type_="Parish"),
+    Subdivision(code="AD-05", name="Ordino", type_="Parish"),
+    Subdivision(code="AD-06", name="Sant Julià de Lòria", type_="Parish"),
+    Subdivision(code="AD-07", name="Andorra la Vella", type_="Parish"),
+    Subdivision(code="AD-08", name="Escaldes-Engordany", type_="Parish"),
 ]

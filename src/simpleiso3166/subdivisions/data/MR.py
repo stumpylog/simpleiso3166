@@ -6,22 +6,22 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Islamic Republic of Mauritania"
+COUNTRY_NAME: Final[str] = "Mauritania"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("MR-01", "Hodh ech Chargui"),
-    Subdivision("MR-02", "Hodh el Gharbi"),
-    Subdivision("MR-03", "Assaba"),
-    Subdivision("MR-04", "Gorgol"),
-    Subdivision("MR-05", "Brakna"),
-    Subdivision("MR-06", "Trarza"),
-    Subdivision("MR-07", "Adrar"),
-    Subdivision("MR-08", "Dakhlet Nouâdhibou"),
-    Subdivision("MR-09", "Tagant"),
-    Subdivision("MR-10", "Guidimaka"),
-    Subdivision("MR-11", "Tiris Zemmour"),
-    Subdivision("MR-12", "Inchiri"),
-    Subdivision("MR-13", "Nouakchott Ouest"),
-    Subdivision("MR-14", "Nouakchott Nord"),
-    Subdivision("MR-15", "Nouakchott Sud"),
+    Subdivision(code="MR-01", name="Hodh ech Chargui", type_="Region"),
+    Subdivision(code="MR-02", name="Hodh el Gharbi", type_="Region"),
+    Subdivision(code="MR-03", name="Assaba", type_="Region"),
+    Subdivision(code="MR-04", name="Gorgol", type_="Region"),
+    Subdivision(code="MR-05", name="Brakna", type_="Region"),
+    Subdivision(code="MR-06", name="Trarza", type_="Region"),
+    Subdivision(code="MR-07", name="Adrar", type_="Region"),
+    Subdivision(code="MR-08", name="Dakhlet Nouâdhibou", type_="Region"),
+    Subdivision(code="MR-09", name="Tagant", type_="Region"),
+    Subdivision(code="MR-10", name="Guidimaka", type_="Region"),
+    Subdivision(code="MR-11", name="Tiris Zemmour", type_="Region"),
+    Subdivision(code="MR-12", name="Inchiri", type_="Region"),
+    Subdivision(code="MR-13", name="Nouakchott Ouest", type_="Region"),
+    Subdivision(code="MR-14", name="Nouakchott Nord", type_="Region"),
+    Subdivision(code="MR-15", name="Nouakchott Sud", type_="Region"),
 ]

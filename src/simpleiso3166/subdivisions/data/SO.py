@@ -6,25 +6,25 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Federal Republic of Somalia"
+COUNTRY_NAME: Final[str] = "Somalia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SO-AW", "Awdal"),
-    Subdivision("SO-BK", "Bakool"),
-    Subdivision("SO-BN", "Banaadir"),
-    Subdivision("SO-BR", "Bari"),
-    Subdivision("SO-BY", "Bay"),
-    Subdivision("SO-GA", "Galguduud"),
-    Subdivision("SO-GE", "Gedo"),
-    Subdivision("SO-HI", "Hiiraan"),
-    Subdivision("SO-JD", "Jubbada Dhexe"),
-    Subdivision("SO-JH", "Jubbada Hoose"),
-    Subdivision("SO-MU", "Mudug"),
-    Subdivision("SO-NU", "Nugaal"),
-    Subdivision("SO-SA", "Sanaag"),
-    Subdivision("SO-SD", "Shabeellaha Dhexe"),
-    Subdivision("SO-SH", "Shabeellaha Hoose"),
-    Subdivision("SO-SO", "Sool"),
-    Subdivision("SO-TO", "Togdheer"),
-    Subdivision("SO-WO", "Woqooyi Galbeed"),
+    Subdivision(code="SO-AW", name="Awdal", type_="Region"),
+    Subdivision(code="SO-BK", name="Bakool", type_="Region"),
+    Subdivision(code="SO-BN", name="Banaadir", type_="Region"),
+    Subdivision(code="SO-BR", name="Bari", type_="Region"),
+    Subdivision(code="SO-BY", name="Bay", type_="Region"),
+    Subdivision(code="SO-GA", name="Galguduud", type_="Region"),
+    Subdivision(code="SO-GE", name="Gedo", type_="Region"),
+    Subdivision(code="SO-HI", name="Hiiraan", type_="Region"),
+    Subdivision(code="SO-JD", name="Jubbada Dhexe", type_="Region"),
+    Subdivision(code="SO-JH", name="Jubbada Hoose", type_="Region"),
+    Subdivision(code="SO-MU", name="Mudug", type_="Region"),
+    Subdivision(code="SO-NU", name="Nugaal", type_="Region"),
+    Subdivision(code="SO-SA", name="Sanaag", type_="Region"),
+    Subdivision(code="SO-SD", name="Shabeellaha Dhexe", type_="Region"),
+    Subdivision(code="SO-SH", name="Shabeellaha Hoose", type_="Region"),
+    Subdivision(code="SO-SO", name="Sool", type_="Region"),
+    Subdivision(code="SO-TO", name="Togdheer", type_="Region"),
+    Subdivision(code="SO-WO", name="Woqooyi Galbeed", type_="Region"),
 ]

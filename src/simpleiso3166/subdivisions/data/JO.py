@@ -6,19 +6,19 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Hashemite Kingdom of Jordan"
+COUNTRY_NAME: Final[str] = "Jordan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("JO-AJ", "‘Ajlūn"),
-    Subdivision("JO-AM", "Al ‘A̅şimah"),
-    Subdivision("JO-AQ", "Al ‘Aqabah"),
-    Subdivision("JO-AT", "Aţ Ţafīlah"),
-    Subdivision("JO-AZ", "Az Zarqā’"),
-    Subdivision("JO-BA", "Al Balqā’"),
-    Subdivision("JO-IR", "Irbid"),
-    Subdivision("JO-JA", "Jarash"),
-    Subdivision("JO-KA", "Al Karak"),
-    Subdivision("JO-MA", "Al Mafraq"),
-    Subdivision("JO-MD", "Mādabā"),
-    Subdivision("JO-MN", "Ma‘ān"),
+    Subdivision(code="JO-AJ", name="‘Ajlūn", type_="Governorate"),
+    Subdivision(code="JO-AM", name="Al ‘A̅şimah", type_="Governorate"),
+    Subdivision(code="JO-AQ", name="Al ‘Aqabah", type_="Governorate"),
+    Subdivision(code="JO-AT", name="Aţ Ţafīlah", type_="Governorate"),
+    Subdivision(code="JO-AZ", name="Az Zarqā’", type_="Governorate"),
+    Subdivision(code="JO-BA", name="Al Balqā’", type_="Governorate"),
+    Subdivision(code="JO-IR", name="Irbid", type_="Governorate"),
+    Subdivision(code="JO-JA", name="Jarash", type_="Governorate"),
+    Subdivision(code="JO-KA", name="Al Karak", type_="Governorate"),
+    Subdivision(code="JO-MA", name="Al Mafraq", type_="Governorate"),
+    Subdivision(code="JO-MD", name="Mādabā", type_="Governorate"),
+    Subdivision(code="JO-MN", name="Ma‘ān", type_="Governorate"),
 ]

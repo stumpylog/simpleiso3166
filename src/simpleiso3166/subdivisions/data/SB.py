@@ -9,14 +9,14 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Solomon Islands"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SB-CE", "Central"),
-    Subdivision("SB-CH", "Choiseul"),
-    Subdivision("SB-CT", "Capital Territory (Honiara)"),
-    Subdivision("SB-GU", "Guadalcanal"),
-    Subdivision("SB-IS", "Isabel"),
-    Subdivision("SB-MK", "Makira-Ulawa"),
-    Subdivision("SB-ML", "Malaita"),
-    Subdivision("SB-RB", "Rennell and Bellona"),
-    Subdivision("SB-TE", "Temotu"),
-    Subdivision("SB-WE", "Western"),
+    Subdivision(code="SB-CE", name="Central", type_="Province"),
+    Subdivision(code="SB-CH", name="Choiseul", type_="Province"),
+    Subdivision(code="SB-CT", name="Capital Territory (Honiara)", type_="Capital territory"),
+    Subdivision(code="SB-GU", name="Guadalcanal", type_="Province"),
+    Subdivision(code="SB-IS", name="Isabel", type_="Province"),
+    Subdivision(code="SB-MK", name="Makira-Ulawa", type_="Province"),
+    Subdivision(code="SB-ML", name="Malaita", type_="Province"),
+    Subdivision(code="SB-RB", name="Rennell and Bellona", type_="Province"),
+    Subdivision(code="SB-TE", name="Temotu", type_="Province"),
+    Subdivision(code="SB-WE", name="Western", type_="Province"),
 ]

@@ -6,12 +6,12 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Rwandese Republic"
+COUNTRY_NAME: Final[str] = "Rwanda"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("RW-01", "City of Kigali"),
-    Subdivision("RW-02", "Eastern"),
-    Subdivision("RW-03", "Northern"),
-    Subdivision("RW-04", "Western"),
-    Subdivision("RW-05", "Southern"),
+    Subdivision(code="RW-01", name="City of Kigali", type_="City"),
+    Subdivision(code="RW-02", name="Eastern", type_="Province"),
+    Subdivision(code="RW-03", name="Northern", type_="Province"),
+    Subdivision(code="RW-04", name="Western", type_="Province"),
+    Subdivision(code="RW-05", name="Southern", type_="Province"),
 ]

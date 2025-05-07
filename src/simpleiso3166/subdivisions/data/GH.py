@@ -6,23 +6,23 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Ghana"
+COUNTRY_NAME: Final[str] = "Ghana"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GH-AA", "Greater Accra"),
-    Subdivision("GH-AF", "Ahafo"),
-    Subdivision("GH-AH", "Ashanti"),
-    Subdivision("GH-BE", "Bono East"),
-    Subdivision("GH-BO", "Bono"),
-    Subdivision("GH-CP", "Central"),
-    Subdivision("GH-EP", "Eastern"),
-    Subdivision("GH-NE", "North East"),
-    Subdivision("GH-NP", "Northern"),
-    Subdivision("GH-OT", "Oti"),
-    Subdivision("GH-SV", "Savannah"),
-    Subdivision("GH-TV", "Volta"),
-    Subdivision("GH-UE", "Upper East"),
-    Subdivision("GH-UW", "Upper West"),
-    Subdivision("GH-WN", "Western North"),
-    Subdivision("GH-WP", "Western"),
+    Subdivision(code="GH-AA", name="Greater Accra", type_="Region"),
+    Subdivision(code="GH-AF", name="Ahafo", type_="Region"),
+    Subdivision(code="GH-AH", name="Ashanti", type_="Region"),
+    Subdivision(code="GH-BE", name="Bono East", type_="Region"),
+    Subdivision(code="GH-BO", name="Bono", type_="Region"),
+    Subdivision(code="GH-CP", name="Central", type_="Region"),
+    Subdivision(code="GH-EP", name="Eastern", type_="Region"),
+    Subdivision(code="GH-NE", name="North East", type_="Region"),
+    Subdivision(code="GH-NP", name="Northern", type_="Region"),
+    Subdivision(code="GH-OT", name="Oti", type_="Region"),
+    Subdivision(code="GH-SV", name="Savannah", type_="Region"),
+    Subdivision(code="GH-TV", name="Volta", type_="Region"),
+    Subdivision(code="GH-UE", name="Upper East", type_="Region"),
+    Subdivision(code="GH-UW", name="Upper West", type_="Region"),
+    Subdivision(code="GH-WN", name="Western North", type_="Region"),
+    Subdivision(code="GH-WP", name="Western", type_="Region"),
 ]

@@ -6,21 +6,21 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Uzbekistan"
+COUNTRY_NAME: Final[str] = "Uzbekistan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("UZ-AN", "Andijon"),
-    Subdivision("UZ-BU", "Buxoro"),
-    Subdivision("UZ-FA", "Farg‘ona"),
-    Subdivision("UZ-JI", "Jizzax"),
-    Subdivision("UZ-NG", "Namangan"),
-    Subdivision("UZ-NW", "Navoiy"),
-    Subdivision("UZ-QA", "Qashqadaryo"),
-    Subdivision("UZ-QR", "Qoraqalpog‘iston Respublikasi"),
-    Subdivision("UZ-SA", "Samarqand"),
-    Subdivision("UZ-SI", "Sirdaryo"),
-    Subdivision("UZ-SU", "Surxondaryo"),
-    Subdivision("UZ-TK", "Toshkent"),
-    Subdivision("UZ-TO", "Toshkent"),
-    Subdivision("UZ-XO", "Xorazm"),
+    Subdivision(code="UZ-AN", name="Andijon", type_="Region"),
+    Subdivision(code="UZ-BU", name="Buxoro", type_="Region"),
+    Subdivision(code="UZ-FA", name="Farg‘ona", type_="Region"),
+    Subdivision(code="UZ-JI", name="Jizzax", type_="Region"),
+    Subdivision(code="UZ-NG", name="Namangan", type_="Region"),
+    Subdivision(code="UZ-NW", name="Navoiy", type_="Region"),
+    Subdivision(code="UZ-QA", name="Qashqadaryo", type_="Region"),
+    Subdivision(code="UZ-QR", name="Qoraqalpog‘iston Respublikasi", type_="Republic"),
+    Subdivision(code="UZ-SA", name="Samarqand", type_="Region"),
+    Subdivision(code="UZ-SI", name="Sirdaryo", type_="Region"),
+    Subdivision(code="UZ-SU", name="Surxondaryo", type_="Region"),
+    Subdivision(code="UZ-TK", name="Toshkent", type_="City"),
+    Subdivision(code="UZ-TO", name="Toshkent", type_="Region"),
+    Subdivision(code="UZ-XO", name="Xorazm", type_="Region"),
 ]

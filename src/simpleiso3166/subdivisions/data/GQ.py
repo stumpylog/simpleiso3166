@@ -6,17 +6,17 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Equatorial Guinea"
+COUNTRY_NAME: Final[str] = "Equatorial Guinea"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("GQ-AN", "Annobon"),
-    Subdivision("GQ-BN", "Bioko Nord"),
-    Subdivision("GQ-BS", "Bioko Sud"),
-    Subdivision("GQ-C", "Région Continentale"),
-    Subdivision("GQ-CS", "Centro Sud"),
-    Subdivision("GQ-DJ", "Djibloho"),
-    Subdivision("GQ-I", "Région Insulaire"),
-    Subdivision("GQ-KN", "Kié-Ntem"),
-    Subdivision("GQ-LI", "Littoral"),
-    Subdivision("GQ-WN", "Wele-Nzas"),
+    Subdivision(code="GQ-AN", name="Annobon", type_="Province"),
+    Subdivision(code="GQ-BN", name="Bioko Nord", type_="Province"),
+    Subdivision(code="GQ-BS", name="Bioko Sud", type_="Province"),
+    Subdivision(code="GQ-C", name="Région Continentale", type_="Region"),
+    Subdivision(code="GQ-CS", name="Centro Sud", type_="Province"),
+    Subdivision(code="GQ-DJ", name="Djibloho", type_="Province"),
+    Subdivision(code="GQ-I", name="Région Insulaire", type_="Region"),
+    Subdivision(code="GQ-KN", name="Kié-Ntem", type_="Province"),
+    Subdivision(code="GQ-LI", name="Littoral", type_="Province"),
+    Subdivision(code="GQ-WN", name="Wele-Nzas", type_="Province"),
 ]

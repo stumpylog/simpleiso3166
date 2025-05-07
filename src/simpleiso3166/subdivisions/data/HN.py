@@ -6,25 +6,25 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Honduras"
+COUNTRY_NAME: Final[str] = "Honduras"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("HN-AT", "Atlántida"),
-    Subdivision("HN-CH", "Choluteca"),
-    Subdivision("HN-CL", "Colón"),
-    Subdivision("HN-CM", "Comayagua"),
-    Subdivision("HN-CP", "Copán"),
-    Subdivision("HN-CR", "Cortés"),
-    Subdivision("HN-EP", "El Paraíso"),
-    Subdivision("HN-FM", "Francisco Morazán"),
-    Subdivision("HN-GD", "Gracias a Dios"),
-    Subdivision("HN-IB", "Islas de la Bahía"),
-    Subdivision("HN-IN", "Intibucá"),
-    Subdivision("HN-LE", "Lempira"),
-    Subdivision("HN-LP", "La Paz"),
-    Subdivision("HN-OC", "Ocotepeque"),
-    Subdivision("HN-OL", "Olancho"),
-    Subdivision("HN-SB", "Santa Bárbara"),
-    Subdivision("HN-VA", "Valle"),
-    Subdivision("HN-YO", "Yoro"),
+    Subdivision(code="HN-AT", name="Atlántida", type_="Department"),
+    Subdivision(code="HN-CH", name="Choluteca", type_="Department"),
+    Subdivision(code="HN-CL", name="Colón", type_="Department"),
+    Subdivision(code="HN-CM", name="Comayagua", type_="Department"),
+    Subdivision(code="HN-CP", name="Copán", type_="Department"),
+    Subdivision(code="HN-CR", name="Cortés", type_="Department"),
+    Subdivision(code="HN-EP", name="El Paraíso", type_="Department"),
+    Subdivision(code="HN-FM", name="Francisco Morazán", type_="Department"),
+    Subdivision(code="HN-GD", name="Gracias a Dios", type_="Department"),
+    Subdivision(code="HN-IB", name="Islas de la Bahía", type_="Department"),
+    Subdivision(code="HN-IN", name="Intibucá", type_="Department"),
+    Subdivision(code="HN-LE", name="Lempira", type_="Department"),
+    Subdivision(code="HN-LP", name="La Paz", type_="Department"),
+    Subdivision(code="HN-OC", name="Ocotepeque", type_="Department"),
+    Subdivision(code="HN-OL", name="Olancho", type_="Department"),
+    Subdivision(code="HN-SB", name="Santa Bárbara", type_="Department"),
+    Subdivision(code="HN-VA", name="Valle", type_="Department"),
+    Subdivision(code="HN-YO", name="Yoro", type_="Department"),
 ]

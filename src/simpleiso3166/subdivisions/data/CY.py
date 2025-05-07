@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Cyprus"
+COUNTRY_NAME: Final[str] = "Cyprus"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("CY-01", "Lefkosia"),
-    Subdivision("CY-02", "Lemesos"),
-    Subdivision("CY-03", "Larnaka"),
-    Subdivision("CY-04", "Ammochostos"),
-    Subdivision("CY-05", "Baf"),
-    Subdivision("CY-06", "Girne"),
+    Subdivision(code="CY-01", name="Lefkosia", type_="District"),
+    Subdivision(code="CY-02", name="Lemesos", type_="District"),
+    Subdivision(code="CY-03", name="Larnaka", type_="District"),
+    Subdivision(code="CY-04", name="Ammochostos", type_="District"),
+    Subdivision(code="CY-05", name="Baf", type_="District"),
+    Subdivision(code="CY-06", name="Girne", type_="District"),
 ]

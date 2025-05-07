@@ -5,38 +5,57 @@
 repos:
   # General hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v5.0.0
     hooks:
       - id: check-docstring-first
       - id: check-json
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
       - id: check-yaml
-        args:
-          - "--unsafe"
       - id: check-toml
       - id: check-executables-have-shebangs
       - id: end-of-file-fixer
+        exclude_types:
+          - svg
+          - pofile
         exclude: "(^LICENSE$)"
       - id: mixed-line-ending
         args:
           - "--fix=lf"
       - id: trailing-whitespace
+        exclude_types:
+          - svg
       - id: check-case-conflict
       - id: detect-private-key
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: 'v3.1.0'
+  # See https://github.com/prettier/prettier/issues/15742 for the fork reason
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: "v3.5.3"
     hooks:
       - id: prettier
         types_or:
           - javascript
           - ts
           - markdown
-          - toml
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        exclude: ^tests
+        additional_dependencies:
+          - tomli
   # Python hooks
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.3.5'
+    rev: v0.11.8
     hooks:
       - id: ruff
-  - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 24.3.0
+        args: [--fix]
+      - id: ruff-format
+  - repo: https://github.com/tox-dev/pyproject-fmt
+    rev: "v2.5.1"
     hooks:
-      - id: black
+      - id: pyproject-fmt
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: 'v1.15.0'
+    hooks:
+      -   id: mypy
+          additional_dependencies: ["httpx", "pytest", "rapidfuzz"]

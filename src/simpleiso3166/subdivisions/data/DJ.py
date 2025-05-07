@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Djibouti"
+COUNTRY_NAME: Final[str] = "Djibouti"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("DJ-AR", "Arta"),
-    Subdivision("DJ-AS", "Ali Sabieh"),
-    Subdivision("DJ-DI", "Dikhil"),
-    Subdivision("DJ-DJ", "Djibouti"),
-    Subdivision("DJ-OB", "Obock"),
-    Subdivision("DJ-TA", "Tadjourah"),
+    Subdivision(code="DJ-AR", name="Arta", type_="Region"),
+    Subdivision(code="DJ-AS", name="Ali Sabieh", type_="Region"),
+    Subdivision(code="DJ-DI", name="Dikhil", type_="Region"),
+    Subdivision(code="DJ-DJ", name="Djibouti", type_="City"),
+    Subdivision(code="DJ-OB", name="Obock", type_="Region"),
+    Subdivision(code="DJ-TA", name="Tadjourah", type_="Region"),
 ]

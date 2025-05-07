@@ -6,19 +6,19 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of the Congo"
+COUNTRY_NAME: Final[str] = "Congo"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("CG-11", "Bouenza"),
-    Subdivision("CG-12", "Pool"),
-    Subdivision("CG-13", "Sangha"),
-    Subdivision("CG-14", "Plateaux"),
-    Subdivision("CG-15", "Cuvette-Ouest"),
-    Subdivision("CG-16", "Pointe-Noire"),
-    Subdivision("CG-2", "Lékoumou"),
-    Subdivision("CG-5", "Kouilou"),
-    Subdivision("CG-7", "Likouala"),
-    Subdivision("CG-8", "Cuvette"),
-    Subdivision("CG-9", "Niari"),
-    Subdivision("CG-BZV", "Brazzaville"),
+    Subdivision(code="CG-11", name="Bouenza", type_="Department"),
+    Subdivision(code="CG-12", name="Pool", type_="Department"),
+    Subdivision(code="CG-13", name="Sangha", type_="Department"),
+    Subdivision(code="CG-14", name="Plateaux", type_="Department"),
+    Subdivision(code="CG-15", name="Cuvette-Ouest", type_="Department"),
+    Subdivision(code="CG-16", name="Pointe-Noire", type_="Department"),
+    Subdivision(code="CG-2", name="Lékoumou", type_="Department"),
+    Subdivision(code="CG-5", name="Kouilou", type_="Department"),
+    Subdivision(code="CG-7", name="Likouala", type_="Department"),
+    Subdivision(code="CG-8", name="Cuvette", type_="Department"),
+    Subdivision(code="CG-9", name="Niari", type_="Department"),
+    Subdivision(code="CG-BZV", name="Brazzaville", type_="Department"),
 ]

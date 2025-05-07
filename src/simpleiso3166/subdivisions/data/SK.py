@@ -6,15 +6,15 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Slovak Republic"
+COUNTRY_NAME: Final[str] = "Slovakia"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SK-BC", "Banskobystrický kraj"),
-    Subdivision("SK-BL", "Bratislavský kraj"),
-    Subdivision("SK-KI", "Košický kraj"),
-    Subdivision("SK-NI", "Nitriansky kraj"),
-    Subdivision("SK-PV", "Prešovský kraj"),
-    Subdivision("SK-TA", "Trnavský kraj"),
-    Subdivision("SK-TC", "Trenčiansky kraj"),
-    Subdivision("SK-ZI", "Žilinský kraj"),
+    Subdivision(code="SK-BC", name="Banskobystrický kraj", type_="Region"),
+    Subdivision(code="SK-BL", name="Bratislavský kraj", type_="Region"),
+    Subdivision(code="SK-KI", name="Košický kraj", type_="Region"),
+    Subdivision(code="SK-NI", name="Nitriansky kraj", type_="Region"),
+    Subdivision(code="SK-PV", name="Prešovský kraj", type_="Region"),
+    Subdivision(code="SK-TA", name="Trnavský kraj", type_="Region"),
+    Subdivision(code="SK-TC", name="Trenčiansky kraj", type_="Region"),
+    Subdivision(code="SK-ZI", name="Žilinský kraj", type_="Region"),
 ]

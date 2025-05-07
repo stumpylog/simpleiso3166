@@ -6,19 +6,19 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of Albania"
+COUNTRY_NAME: Final[str] = "Albania"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("AL-01", "Berat"),
-    Subdivision("AL-02", "Durrës"),
-    Subdivision("AL-03", "Elbasan"),
-    Subdivision("AL-04", "Fier"),
-    Subdivision("AL-05", "Gjirokastër"),
-    Subdivision("AL-06", "Korçë"),
-    Subdivision("AL-07", "Kukës"),
-    Subdivision("AL-08", "Lezhë"),
-    Subdivision("AL-09", "Dibër"),
-    Subdivision("AL-10", "Shkodër"),
-    Subdivision("AL-11", "Tiranë"),
-    Subdivision("AL-12", "Vlorë"),
+    Subdivision(code="AL-01", name="Berat", type_="County"),
+    Subdivision(code="AL-02", name="Durrës", type_="County"),
+    Subdivision(code="AL-03", name="Elbasan", type_="County"),
+    Subdivision(code="AL-04", name="Fier", type_="County"),
+    Subdivision(code="AL-05", name="Gjirokastër", type_="County"),
+    Subdivision(code="AL-06", name="Korçë", type_="County"),
+    Subdivision(code="AL-07", name="Kukës", type_="County"),
+    Subdivision(code="AL-08", name="Lezhë", type_="County"),
+    Subdivision(code="AL-09", name="Dibër", type_="County"),
+    Subdivision(code="AL-10", name="Shkodër", type_="County"),
+    Subdivision(code="AL-11", name="Tiranë", type_="County"),
+    Subdivision(code="AL-12", name="Vlorë", type_="County"),
 ]

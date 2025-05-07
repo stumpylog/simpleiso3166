@@ -6,17 +6,17 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "Republic of South Sudan"
+COUNTRY_NAME: Final[str] = "South Sudan"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("SS-BN", "Northern Bahr el Ghazal"),
-    Subdivision("SS-BW", "Western Bahr el Ghazal"),
-    Subdivision("SS-EC", "Central Equatoria"),
-    Subdivision("SS-EE", "Eastern Equatoria"),
-    Subdivision("SS-EW", "Western Equatoria"),
-    Subdivision("SS-JG", "Jonglei"),
-    Subdivision("SS-LK", "Lakes"),
-    Subdivision("SS-NU", "Upper Nile"),
-    Subdivision("SS-UY", "Unity"),
-    Subdivision("SS-WR", "Warrap"),
+    Subdivision(code="SS-BN", name="Northern Bahr el Ghazal", type_="State"),
+    Subdivision(code="SS-BW", name="Western Bahr el Ghazal", type_="State"),
+    Subdivision(code="SS-EC", name="Central Equatoria", type_="State"),
+    Subdivision(code="SS-EE", name="Eastern Equatoria", type_="State"),
+    Subdivision(code="SS-EW", name="Western Equatoria", type_="State"),
+    Subdivision(code="SS-JG", name="Jonglei", type_="State"),
+    Subdivision(code="SS-LK", name="Lakes", type_="State"),
+    Subdivision(code="SS-NU", name="Upper Nile", type_="State"),
+    Subdivision(code="SS-UY", name="Unity", type_="State"),
+    Subdivision(code="SS-WR", name="Warrap", type_="State"),
 ]

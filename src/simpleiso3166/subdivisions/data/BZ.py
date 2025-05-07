@@ -9,10 +9,10 @@ from simpleiso3166.subdivisions import Subdivision
 COUNTRY_NAME: Final[str] = "Belize"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("BZ-BZ", "Belize"),
-    Subdivision("BZ-CY", "Cayo"),
-    Subdivision("BZ-CZL", "Corozal"),
-    Subdivision("BZ-OW", "Orange Walk"),
-    Subdivision("BZ-SC", "Stann Creek"),
-    Subdivision("BZ-TOL", "Toledo"),
+    Subdivision(code="BZ-BZ", name="Belize", type_="District"),
+    Subdivision(code="BZ-CY", name="Cayo", type_="District"),
+    Subdivision(code="BZ-CZL", name="Corozal", type_="District"),
+    Subdivision(code="BZ-OW", name="Orange Walk", type_="District"),
+    Subdivision(code="BZ-SC", name="Stann Creek", type_="District"),
+    Subdivision(code="BZ-TOL", name="Toledo", type_="District"),
 ]

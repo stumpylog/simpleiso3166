@@ -6,13 +6,13 @@ from typing import Final
 
 from simpleiso3166.subdivisions import Subdivision
 
-COUNTRY_NAME: Final[str] = "State of Israel"
+COUNTRY_NAME: Final[str] = "Israel"
 
 SUBDIVISIONS: Final[list[Subdivision]] = [
-    Subdivision("IL-D", "Al Janūbī"),
-    Subdivision("IL-HA", "H̱efa"),
-    Subdivision("IL-JM", "Al Quds"),
-    Subdivision("IL-M", "Al Awsaţ"),
-    Subdivision("IL-TA", "Tall Abīb"),
-    Subdivision("IL-Z", "Ash Shamālī"),
+    Subdivision(code="IL-D", name="Al Janūbī", type_="District"),
+    Subdivision(code="IL-HA", name="H̱efa", type_="District"),
+    Subdivision(code="IL-JM", name="Al Quds", type_="District"),
+    Subdivision(code="IL-M", name="Al Awsaţ", type_="District"),
+    Subdivision(code="IL-TA", name="Tall Abīb", type_="District"),
+    Subdivision(code="IL-Z", name="Ash Shamālī", type_="District"),
 ]
