@@ -228,7 +228,7 @@ minversion = "8.0"
 testpaths = [ "tests" ]
 
 [tool.coverage.run]
-source_pkgs = [ "src/simpleiso3166/" ]
+source_pkgs = [ "src/simpleiso3166/", "tests" ]
 branch = true
 parallel = true
 omit = [
@@ -236,7 +236,7 @@ omit = [
 ]
 
 [tool.coverage.paths]
-simpleiso3166 = [ "src/simpleiso3166/*" ]
+simpleiso3166 = [ "src/simpleiso3166/*", "tests" ]
 tests = [ "tests", "*/simpleiso3166/tests" ]
 
 [tool.coverage.report]
