@@ -63,7 +63,7 @@ config-path = "none"
 
 [tool.hatch.envs.hatch-test]
 # https://hatch.pypa.io/latest/config/internal/testing/
-parallel = true
+parallel = false
 randomize = true
 extra-dependencies = [
   "pytest-sugar",
@@ -71,7 +71,7 @@ extra-dependencies = [
   "rapidfuzz",
 
 ]
-extra-args = [ "--maxprocesses=8", "--pythonwarnings=all", "--junitxml=junit.xml", "-o", "junit_family=legacy" ]
+extra-args = [ "--pythonwarnings=all", "--junitxml=junit.xml", "-o", "junit_family=legacy" ]
 
 [tool.hatch.envs.hatch-test.scripts]
 run = [
@@ -132,8 +132,7 @@ dependencies = [
 ]
 
 [tool.hatch.envs.generate.scripts]
-generate = [ "python generate.py" ]
-help = "python generate.py --help"
+generate = [ "python generate.py {args}" ]
 
 [tool.ruff]
 target-version = "py39"
@@ -229,7 +228,7 @@ minversion = "8.0"
 testpaths = [ "tests" ]
 
 [tool.coverage.run]
-source_pkgs = [ "src/simpleiso3166", "tests" ]
+source_pkgs = [ "src/simpleiso3166/" ]
 branch = true
 parallel = true
 omit = [

@@ -4,12 +4,13 @@
 # Generated from:
 #  Country Data: d055275324963c9bce5882eaaa93024cf2bf7ed0
 #  Subdivision Data: 4f5658fa63afce8cd121d41444b28c2294e6b513
+import dataclasses
 from typing import Final
 from typing import Literal
 
+from simpleiso3166.base import DATACLASS_BASE_AGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
-from simpleiso3166.generated.types import SubdivisionTypeType
 
 GLSubdivisionCodeType = Literal[
     "GL-AV",  # Avannaata Kommunia
@@ -20,10 +21,9 @@ GLSubdivisionCodeType = Literal[
 ]
 
 
+@dataclasses.dataclass(**DATACLASS_BASE_AGS)
 class GLSubdivision(Subdivision):
     code: GLSubdivisionCodeType
-    name: str
-    type_: SubdivisionTypeType
 
 
 GL: Final[Country] = Country(

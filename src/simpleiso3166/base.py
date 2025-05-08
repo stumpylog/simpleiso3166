@@ -19,14 +19,14 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-dataclass_args = {"frozen": True}
-
 # Add slots=True if the Python version is 3.10 or higher
 if sys.version_info >= (3, 10):
-    dataclass_args["slots"] = True
+    DATACLASS_BASE_AGS: Final[dict[str, bool]] = {"frozen": True, "slots": True}
+else:
+    DATACLASS_BASE_AGS: Final[dict[str, bool]] = {"frozen": True}
 
 
-@dataclass(**dataclass_args)
+@dataclass(**DATACLASS_BASE_AGS)
 class Country:
     """
     Data object containing information about a single country.
@@ -347,7 +347,7 @@ class Country:
                 break
 
 
-@dataclass(**dataclass_args)
+@dataclass(**DATACLASS_BASE_AGS)
 class Subdivision:
     code: str
     name: str
