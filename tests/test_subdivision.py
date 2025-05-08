@@ -1,4 +1,4 @@
-from simpleiso3166.subdivisions import Subdivision
+from simpleiso3166 import Subdivision
 
 
 class TestSubdivisionSearch:

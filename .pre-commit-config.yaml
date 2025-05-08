@@ -58,7 +58,7 @@ repos:
     rev: 'v1.15.0'
     hooks:
       - id: mypy
-        additional_dependencies: ["httpx", "pytest", "rapidfuzz"]
+        additional_dependencies: ["httpx", "pytest", "rapidfuzz", "rich", "typer"]
   - repo: https://github.com/google/yamlfmt
     rev: v0.14.0
     hooks:
