@@ -1,7 +1,7 @@
 import pytest
 
+from simpleiso3166 import Country
 from simpleiso3166.aliases import COUNTRY_ALIAS_TO_CODE
-from simpleiso3166.countries import Country
 
 
 class TestCountrySearching:
