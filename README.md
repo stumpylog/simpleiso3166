@@ -36,9 +36,9 @@ pip install simpleiso3166[search]
 ## Features
 
 - Strongly typed interface to ISO 3166-1 countries and ISO 3166-2 subdivisions (e.g. states, provinces)
-- No JSON parsing at runtime, fully defined in Python
+- No JSON parsing at runtime, fully & statically defined in Python
 - Includes defined types to allow integration with libraries like Pydantic for validation of code validity
-- Lazy loading of subdivision data on demand for reduced memory usage
+  - `from simpleiso3166 import CountryCodeAlpha2Type` for example, provides a Literal of all alpha-2 codes
 - Searching for countries by exact or partial name
 - Searching for subdivisions by exact or partial name
 - Supports Python 3.9+
@@ -62,11 +62,11 @@ If you know the country's code:
 ```python
 country = Country.from_alpha2("US")
 
-assert country.name == "United States of America"
-assert country.common_name == "United States"
+assert country.official_name == "United States of America"
+assert country.name == "United States"
 
-# Subdivision data isn't loaded until the first ask for it
-assert len(list(country.subdivisions)) == 57
+# ISO-3166 includes things like districts and territories
+assert len(country.subdivisions) == 57
 ```
 
 If you need to search for the country:
@@ -103,7 +103,7 @@ assert subdivision.name == "Baden-Württemberg"
 
 ### Subdivision Based Interface
 
-Search for a subdivision by name. This will have to load ALL subdivision data though:
+Search for a subdivision by name:
 
 ```python
 results = list(Subdivision.search_by_name("Connecticut"))
@@ -116,7 +116,7 @@ assert results[0] == "US-CT"
 
 ### Improved Searching
 
-This is partly implemented, but more aliases would be helpful
+This is partly implemented, but more would be helpful
 
 - Search using common aliases for countries (e.g. "USA" for "United States of America")
 - Extended searching for subdivisions by common aliases (eg "DC" for "Washington DC")
