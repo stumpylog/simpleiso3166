@@ -73,7 +73,7 @@ jobs:
         run: |
           hatch test --show --python ${{ matrix.python-version }}
       - name: Run tests
-        run: hatch test --cover --memray
+        run: hatch test --cover --memray --most-allocations=0
       - name: Upload coverage to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/codecov-action@v5
