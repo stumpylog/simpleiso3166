@@ -209,18 +209,17 @@ lint.ignore = [
   "TD002",
   "TD003",
 ]
-# These are loaded dynamically anyway
-lint.per-file-ignores."src/simpleiso3166/subdivisions/data/*" = [ "N999", "RUF001" ]
-# No, the names are right Ruff
-lint.per-file-ignores."src/simpleiso3166/subdivisions/types.py" = [ "RUF003" ]
-# Tests can use magic values, assertions, and relative imports
+# No, the names and comments with names are using the correct accents
+lint.per-file-ignores."src/simpleiso3166/generated/*" = [ "RUF001", "RUF003" ]
+# Tests can use assertions, and relative imports
 lint.per-file-ignores."tests/**/*" = [ "PLR2004", "S101", "TID252" ]
 lint.flake8-tidy-imports.ban-relative-imports = "all"
 lint.isort.force-single-line = true
 lint.isort.known-first-party = [ "simpleiso3166" ]
 
 [tool.codespell]
-skip = "src/simpleiso3166/aliases.py,src/simpleiso3166/subdivisions/data/*,src/simpleiso3166/subdivisions/types.py,src/simpleiso3166/countries/data/*"
+# The generated files are correct against their source
+skip = "src/simpleiso3166/generated/*,src/simpleiso3166/aliases.py"
 
 [tool.pyproject-fmt]
 max_supported_python = "3.13"
@@ -260,12 +259,3 @@ warn_redundant_casts = true
 warn_unused_ignores = true
 warn_unreachable = true
 warn_unused_configs = true
-
-[[tool.mypy.overrides]]
-# TODO: This is crazy slow unless on a beastly machine.  30+ minutes
-module = "simpleiso3166.subdivisions"
-ignore_errors = true
-
-[[tool.mypy.overrides]]
-module = "generate"
-ignore_errors = true

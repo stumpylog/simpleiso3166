@@ -1,4 +1,4 @@
-from simpleiso3166.countries import Country
+from simpleiso3166 import Country
 
 
 class TestCountryBasic:
@@ -78,7 +78,7 @@ class TestCountrySubdivision:
         assert subdivision is not None
         assert subdivision == "Kanem"
 
-        subdivision = country.get_subdivision_name("TD-XX")  # type: ignore[arg-type]
+        subdivision = country.get_subdivision_name("TD-XX")
         assert subdivision is None
 
     def test_double_subdivisions_load(self) -> None:
