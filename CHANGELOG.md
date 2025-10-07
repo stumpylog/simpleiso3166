@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated development dependencies
 - Bumps actions/checkout from 4 to 5
+- Bumps actions/download-artifact from 4 to 5
 
 ## [0.2.2] - 2025-05-10
 
