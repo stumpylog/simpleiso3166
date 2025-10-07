@@ -18,7 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bumps actions/download-artifact from 4 to 5
 - Bumps actions/setup-python from 5 to 6
 - Bumps pypa/gh-action-pypi-publish from 1.12.4 to 1.13.0
-- Upgraded default `uv` version to 0.8.x
+- Upgrades default `uv` version to 0.8.x
+- Bumps github/codeql-action from 3 to 4
 
 ## [0.2.2] - 2025-05-10
 
