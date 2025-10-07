@@ -85,7 +85,7 @@ class Country:
         """
         Constructs a Country object from an alpha-2 code, if the code is valid.
         """
-        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES  # noqa: PLC0415
 
         return ALPHA2_CODE_TO_COUNTRIES.get(alpha2)
 
@@ -94,7 +94,7 @@ class Country:
         """
         Constructs a Country object from an alpha-2 code, if the code is valid.
         """
-        from simpleiso3166.generated.mapping import ALPHA3_CODE_TO_COUNTRIES
+        from simpleiso3166.generated.mapping import ALPHA3_CODE_TO_COUNTRIES  # noqa: PLC0415
 
         return ALPHA3_CODE_TO_COUNTRIES.get(alpha3)
 
@@ -103,7 +103,7 @@ class Country:
         """
         Constructs a Country object from an name, if the name is valid.
         """
-        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES  # noqa: PLC0415
 
         for country in ALPHA2_CODE_TO_COUNTRIES.values():
             if (
@@ -116,8 +116,8 @@ class Country:
 
     @staticmethod
     def is_valid_code(code: str) -> bool:
-        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES
-        from simpleiso3166.generated.mapping import ALPHA3_CODE_TO_COUNTRIES
+        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES  # noqa: PLC0415
+        from simpleiso3166.generated.mapping import ALPHA3_CODE_TO_COUNTRIES  # noqa: PLC0415
 
         return code in ALPHA2_CODE_TO_COUNTRIES or code in ALPHA3_CODE_TO_COUNTRIES
 
@@ -150,14 +150,14 @@ class Country:
         Returns:
             Generator yielding Country objects in descending order of match quality
         """
-        import re
-        import unicodedata
+        import re  # noqa: PLC0415
+        import unicodedata  # noqa: PLC0415
 
-        from rapidfuzz import fuzz
-        from rapidfuzz import utils
+        from rapidfuzz import fuzz  # noqa: PLC0415
+        from rapidfuzz import utils  # noqa: PLC0415
 
-        from simpleiso3166.aliases import COUNTRY_ALIAS_TO_CODE
-        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.aliases import COUNTRY_ALIAS_TO_CODE  # noqa: PLC0415
+        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES  # noqa: PLC0415
 
         # Empty input handling
         if not country_name or not country_name.strip():
@@ -365,11 +365,11 @@ class Subdivision:
         ratio: float | int | None = 80.0,
         limit: int = 10,
     ) -> Generator[Subdivision, None, None]:
-        from rapidfuzz import fuzz
-        from rapidfuzz import process
-        from rapidfuzz.utils import default_process
+        from rapidfuzz import fuzz  # noqa: PLC0415
+        from rapidfuzz import process  # noqa: PLC0415
+        from rapidfuzz.utils import default_process  # noqa: PLC0415
 
-        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES
+        from simpleiso3166.generated.mapping import ALPHA2_CODE_TO_COUNTRIES  # noqa: PLC0415
 
         def _all_subdivisions() -> Generator[Subdivision, None, None]:
             for country in ALPHA2_CODE_TO_COUNTRIES.values():
