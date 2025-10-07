@@ -11,8 +11,8 @@ concurrency:
 env:
   PYTHONUNBUFFERED: "1"
   FORCE_COLOR: "1"
-  DEFAULT_PYTHON_VERSION: "3.11"
-  DEFAULT_UV_VERSION: "0.7.x"
+  DEFAULT_PYTHON_VERSION: "3.12"
+  DEFAULT_UV_VERSION: "0.8.x"
 jobs:
   lint:
     name: Lint
@@ -20,10 +20,10 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python 3.11
+      - uses: actions/checkout@v5
+      - name: Set up Python ${{ env.DEFAULT_PYTHON_VERSION }}
         id: setup-python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Install uv
@@ -58,9 +58,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.9', '3.10', '3.11', '3.12']
+        python-version: ['3.9', '3.10', '3.11', '3.12', "3.13", "3.14"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
@@ -94,10 +94,10 @@ jobs:
     needs:
       - lint
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Set up Python ${{ env.DEFAULT_PYTHON_VERSION }}
         id: setup-python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ env.DEFAULT_PYTHON_VERSION }}
       - name: Install uv
@@ -127,8 +127,8 @@ jobs:
       - build
       - test
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/checkout@v5
+      - uses: actions/download-artifact@v5
         with:
           name: artifacts
           path: dist
@@ -157,9 +157,9 @@ jobs:
       - build
       - test
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: artifacts
           path: dist
       - name: Publish build to PyPI
-        uses: pypa/gh-action-pypi-publish@v1.12.4
+        uses: pypa/gh-action-pypi-publish@v1.13.0

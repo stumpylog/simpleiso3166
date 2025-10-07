@@ -29,6 +29,7 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
@@ -58,7 +59,7 @@ installer = "uv"
 
 [tool.hatch.envs.hatch-static-analysis]
 # https://hatch.pypa.io/latest/config/internal/static-analysis/
-dependencies = [ "ruff ~= 0.11" ]
+dependencies = [ "ruff ~= 0.13" ]
 config-path = "none"
 
 [tool.hatch.envs.hatch-test]
@@ -92,7 +93,7 @@ cov-report = [
 ]
 
 [[tool.hatch.envs.hatch-test.matrix]]
-python = [ "3.9", "3.10", "3.11", "3.12", "3.13", "pypy3.8", "pypy3.9", "pypy3.10" ]
+python = [ "3.9", "3.10", "3.11", "3.12", "3.13", "3.14", "pypy3.8", "pypy3.9", "pypy3.10" ]
 
 #
 # Custom Environments
@@ -100,7 +101,7 @@ python = [ "3.9", "3.10", "3.11", "3.12", "3.13", "pypy3.8", "pypy3.9", "pypy3.1
 [tool.hatch.envs.typing]
 detached = true
 dependencies = [
-  "mypy ~= 1.13",
+  "mypy ~= 1.18",
   "rapidfuzz",
 ]
 
@@ -221,7 +222,7 @@ lint.isort.known-first-party = [ "simpleiso3166" ]
 skip = "src/simpleiso3166/generated/*,src/simpleiso3166/aliases.py"
 
 [tool.pyproject-fmt]
-max_supported_python = "3.13"
+max_supported_python = "3.14"
 
 [tool.pytest.ini_options]
 minversion = "8.0"

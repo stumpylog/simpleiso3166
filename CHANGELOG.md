@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2025-10-07
+
+## Added
+
+- Testing and classification for Python 3.14
+
+### Changed
+
+- Updated development dependencies
+- Bumps actions/checkout from 4 to 5
+- Bumps actions/download-artifact from 4 to 5
+- Bumps actions/setup-python from 5 to 6
+- Bumps pypa/gh-action-pypi-publish from 1.12.4 to 1.13.0
+- Upgraded default `uv` version to 0.8.x
+
 ## [0.2.2] - 2025-05-10
 
 ### Fixed
