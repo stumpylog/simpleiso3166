@@ -58,7 +58,7 @@ installer = "uv"
 
 [tool.hatch.envs.hatch-static-analysis]
 # https://hatch.pypa.io/latest/config/internal/static-analysis/
-dependencies = [ "ruff ~= 0.11" ]
+dependencies = [ "ruff ~= 0.13" ]
 config-path = "none"
 
 [tool.hatch.envs.hatch-test]
@@ -100,7 +100,7 @@ python = [ "3.9", "3.10", "3.11", "3.12", "3.13", "pypy3.8", "pypy3.9", "pypy3.1
 [tool.hatch.envs.typing]
 detached = true
 dependencies = [
-  "mypy ~= 1.13",
+  "mypy ~= 1.18",
   "rapidfuzz",
 ]
 
