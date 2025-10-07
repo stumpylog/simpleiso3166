@@ -11,7 +11,7 @@ concurrency:
 env:
   PYTHONUNBUFFERED: "1"
   FORCE_COLOR: "1"
-  DEFAULT_PYTHON_VERSION: "3.11"
+  DEFAULT_PYTHON_VERSION: "3.12"
   DEFAULT_UV_VERSION: "0.7.x"
 jobs:
   lint:
@@ -21,7 +21,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v5
-      - name: Set up Python 3.11
+      - name: Set up Python ${{ env.DEFAULT_PYTHON_VERSION }}
         id: setup-python
         uses: actions/setup-python@v6
         with:
@@ -58,7 +58,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.9', '3.10', '3.11', '3.12']
+        python-version: ['3.9', '3.10', '3.11', '3.12', "3.13", "3.14"]
     steps:
       - uses: actions/checkout@v5
       - name: Install uv
