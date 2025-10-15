@@ -48,6 +48,12 @@ jobs:
       - name: Check files with pre-commit
         run: |
           pre-commit run --all-files --show-diff-on-failure --color=always
+      - name: Validate the changelog
+        id: query-release-info
+        uses: release-flow/keep-a-changelog-action@v3
+        with:
+          command: query
+          version: latest-or-unreleased
   test:
     name: Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
