@@ -8,15 +8,15 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 LBSubdivisionCodeType = Literal[
-    "LB-AK",  # Aakkâr
+    "LB-AK",  # ‘Akkār
     "LB-AS",  # Ash Shimāl
     "LB-BA",  # Bayrūt
-    "LB-BH",  # Baalbek-Hermel
+    "LB-BH",  # B‘alabak-Al Hirmil
     "LB-BI",  # Al Biqā‘
     "LB-JA",  # Al Janūb
     "LB-JL",  # Jabal Lubnān
@@ -24,7 +24,7 @@ LBSubdivisionCodeType = Literal[
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class LBSubdivision(Subdivision):
     code: LBSubdivisionCodeType
 
@@ -36,10 +36,10 @@ LB: Final[Country] = Country(
     common_name=None,
     official_name="Lebanese Republic",
     subdivisions=[
-        LBSubdivision(code="LB-AK", name="Aakkâr", type_="Governorate"),
+        LBSubdivision(code="LB-AK", name="‘Akkār", type_="Governorate"),
         LBSubdivision(code="LB-AS", name="Ash Shimāl", type_="Governorate"),
         LBSubdivision(code="LB-BA", name="Bayrūt", type_="Governorate"),
-        LBSubdivision(code="LB-BH", name="Baalbek-Hermel", type_="Governorate"),
+        LBSubdivision(code="LB-BH", name="B‘alabak-Al Hirmil", type_="Governorate"),
         LBSubdivision(code="LB-BI", name="Al Biqā‘", type_="Governorate"),
         LBSubdivision(code="LB-JA", name="Al Janūb", type_="Governorate"),
         LBSubdivision(code="LB-JL", name="Jabal Lubnān", type_="Governorate"),

@@ -8,13 +8,13 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 ILSubdivisionCodeType = Literal[
     "IL-D",  # Al Janūbī
-    "IL-HA",  # H̱efa
+    "IL-HA",  # Ḩayfā
     "IL-JM",  # Al Quds
     "IL-M",  # Al Awsaţ
     "IL-TA",  # Tall Abīb
@@ -22,7 +22,7 @@ ILSubdivisionCodeType = Literal[
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class ILSubdivision(Subdivision):
     code: ILSubdivisionCodeType
 
@@ -35,7 +35,7 @@ IL: Final[Country] = Country(
     official_name="State of Israel",
     subdivisions=[
         ILSubdivision(code="IL-D", name="Al Janūbī", type_="District"),
-        ILSubdivision(code="IL-HA", name="H̱efa", type_="District"),
+        ILSubdivision(code="IL-HA", name="Ḩayfā", type_="District"),
         ILSubdivision(code="IL-JM", name="Al Quds", type_="District"),
         ILSubdivision(code="IL-M", name="Al Awsaţ", type_="District"),
         ILSubdivision(code="IL-TA", name="Tall Abīb", type_="District"),

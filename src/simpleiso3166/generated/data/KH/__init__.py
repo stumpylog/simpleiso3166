@@ -8,7 +8,7 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
@@ -23,7 +23,7 @@ KHSubdivisionCodeType = Literal[
     "KH-16",  # Rotanak Kiri
     "KH-17",  # Siem Reab
     "KH-18",  # Preah Sihanouk
-    "KH-19",  # Stoĕng Trêng
+    "KH-19",  # Stueng Traeng
     "KH-2",  # Baat Dambang
     "KH-20",  # Svaay Rieng
     "KH-21",  # Taakaev
@@ -41,7 +41,7 @@ KHSubdivisionCodeType = Literal[
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class KHSubdivision(Subdivision):
     code: KHSubdivisionCodeType
 
@@ -63,7 +63,7 @@ KH: Final[Country] = Country(
         KHSubdivision(code="KH-16", name="Rotanak Kiri", type_="Province"),
         KHSubdivision(code="KH-17", name="Siem Reab", type_="Province"),
         KHSubdivision(code="KH-18", name="Preah Sihanouk", type_="Province"),
-        KHSubdivision(code="KH-19", name="Stoĕng Trêng", type_="Province"),
+        KHSubdivision(code="KH-19", name="Stueng Traeng", type_="Province"),
         KHSubdivision(code="KH-2", name="Baat Dambang", type_="Province"),
         KHSubdivision(code="KH-20", name="Svaay Rieng", type_="Province"),
         KHSubdivision(code="KH-21", name="Taakaev", type_="Province"),

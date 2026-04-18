@@ -21,12 +21,12 @@ logger = logging.getLogger(__name__)
 
 # Add slots=True if the Python version is 3.10 or higher
 if sys.version_info >= (3, 10):
-    DATACLASS_BASE_AGS: Final[dict[str, bool]] = {"frozen": True, "slots": True}
+    DATACLASS_BASE_ARGS: Final[dict[str, bool]] = {"frozen": True, "slots": True}
 else:
-    DATACLASS_BASE_AGS: Final[dict[str, bool]] = {"frozen": True}
+    DATACLASS_BASE_ARGS: Final[dict[str, bool]] = {"frozen": True}
 
 
-@dataclass(**DATACLASS_BASE_AGS)
+@dataclass(**DATACLASS_BASE_ARGS)
 class Country:
     """
     Data object containing information about a single country.
@@ -92,7 +92,7 @@ class Country:
     @staticmethod
     def from_alpha3(alpha3: CountryCodeAlpha3Type) -> Country | None:
         """
-        Constructs a Country object from an alpha-2 code, if the code is valid.
+        Constructs a Country object from an alpha-3 code, if the code is valid.
         """
         from simpleiso3166.generated.mapping import ALPHA3_CODE_TO_COUNTRIES  # noqa: PLC0415
 
@@ -347,7 +347,7 @@ class Country:
                 break
 
 
-@dataclass(**DATACLASS_BASE_AGS)
+@dataclass(**DATACLASS_BASE_ARGS)
 class Subdivision:
     code: str
     name: str

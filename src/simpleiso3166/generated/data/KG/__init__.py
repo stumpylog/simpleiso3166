@@ -8,24 +8,24 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 KGSubdivisionCodeType = Literal[
     "KG-B",  # Batken
-    "KG-C",  # Chuyskaya oblast'
+    "KG-C",  # Chüy
     "KG-GB",  # Bishkek Shaary
-    "KG-GO",  # Gorod Osh
-    "KG-J",  # Dzhalal-Abadskaya oblast'
+    "KG-GO",  # Osh Shaary
+    "KG-J",  # Jalal-Abad
     "KG-N",  # Naryn
     "KG-O",  # Osh
     "KG-T",  # Talas
-    "KG-Y",  # Issyk-Kul'skaja oblast'
+    "KG-Y",  # Ysyk-Köl
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class KGSubdivision(Subdivision):
     code: KGSubdivisionCodeType
 
@@ -38,13 +38,13 @@ KG: Final[Country] = Country(
     official_name="Kyrgyz Republic",
     subdivisions=[
         KGSubdivision(code="KG-B", name="Batken", type_="Region"),
-        KGSubdivision(code="KG-C", name="Chuyskaya oblast'", type_="Region"),
+        KGSubdivision(code="KG-C", name="Chüy", type_="Region"),
         KGSubdivision(code="KG-GB", name="Bishkek Shaary", type_="City"),
-        KGSubdivision(code="KG-GO", name="Gorod Osh", type_="City"),
-        KGSubdivision(code="KG-J", name="Dzhalal-Abadskaya oblast'", type_="Region"),
+        KGSubdivision(code="KG-GO", name="Osh Shaary", type_="City"),
+        KGSubdivision(code="KG-J", name="Jalal-Abad", type_="Region"),
         KGSubdivision(code="KG-N", name="Naryn", type_="Region"),
         KGSubdivision(code="KG-O", name="Osh", type_="Region"),
         KGSubdivision(code="KG-T", name="Talas", type_="Region"),
-        KGSubdivision(code="KG-Y", name="Issyk-Kul'skaja oblast'", type_="Region"),
+        KGSubdivision(code="KG-Y", name="Ysyk-Köl", type_="Region"),
     ],
 )

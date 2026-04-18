@@ -8,22 +8,22 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 BYSubdivisionCodeType = Literal[
     "BY-BR",  # Bresckaja voblasć
-    "BY-HM",  # Gorod Minsk
-    "BY-HO",  # Gomel'skaja oblast'
-    "BY-HR",  # Grodnenskaja oblast'
+    "BY-HM",  # Horad Minsk
+    "BY-HO",  # Homieĺskaja voblasć
+    "BY-HR",  # Hrodzienskaja voblasć
     "BY-MA",  # Mahilioŭskaja voblasć
-    "BY-MI",  # Minskaja oblast'
+    "BY-MI",  # Minskaja voblasć
     "BY-VI",  # Viciebskaja voblasć
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class BYSubdivision(Subdivision):
     code: BYSubdivisionCodeType
 
@@ -36,11 +36,11 @@ BY: Final[Country] = Country(
     official_name="Republic of Belarus",
     subdivisions=[
         BYSubdivision(code="BY-BR", name="Bresckaja voblasć", type_="Oblast"),
-        BYSubdivision(code="BY-HM", name="Gorod Minsk", type_="City"),
-        BYSubdivision(code="BY-HO", name="Gomel'skaja oblast'", type_="Oblast"),
-        BYSubdivision(code="BY-HR", name="Grodnenskaja oblast'", type_="Oblast"),
+        BYSubdivision(code="BY-HM", name="Horad Minsk", type_="City"),
+        BYSubdivision(code="BY-HO", name="Homieĺskaja voblasć", type_="Oblast"),
+        BYSubdivision(code="BY-HR", name="Hrodzienskaja voblasć", type_="Oblast"),
         BYSubdivision(code="BY-MA", name="Mahilioŭskaja voblasć", type_="Oblast"),
-        BYSubdivision(code="BY-MI", name="Minskaja oblast'", type_="Oblast"),
+        BYSubdivision(code="BY-MI", name="Minskaja voblasć", type_="Oblast"),
         BYSubdivision(code="BY-VI", name="Viciebskaja voblasć", type_="Oblast"),
     ],
 )

@@ -8,13 +8,13 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 ITSubdivisionCodeType = Literal[
     "IT-21",  # Piemonte
-    "IT-23",  # Val d'Aoste
+    "IT-23",  # Valle d'Aosta
     "IT-25",  # Lombardia
     "IT-32",  # Trentino-Alto Adige
     "IT-34",  # Veneto
@@ -142,7 +142,7 @@ ITSubdivisionCodeType = Literal[
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class ITSubdivision(Subdivision):
     code: ITSubdivisionCodeType
 
@@ -155,7 +155,7 @@ IT: Final[Country] = Country(
     official_name="Italian Republic",
     subdivisions=[
         ITSubdivision(code="IT-21", name="Piemonte", type_="Region"),
-        ITSubdivision(code="IT-23", name="Val d'Aoste", type_="Autonomous region"),
+        ITSubdivision(code="IT-23", name="Valle d'Aosta", type_="Autonomous region"),
         ITSubdivision(code="IT-25", name="Lombardia", type_="Region"),
         ITSubdivision(code="IT-32", name="Trentino-Alto Adige", type_="Autonomous region"),
         ITSubdivision(code="IT-34", name="Veneto", type_="Region"),

@@ -8,7 +8,7 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
@@ -17,12 +17,12 @@ CYSubdivisionCodeType = Literal[
     "CY-02",  # Lemesos
     "CY-03",  # Larnaka
     "CY-04",  # Ammochostos
-    "CY-05",  # Baf
-    "CY-06",  # Girne
+    "CY-05",  # Pafos
+    "CY-06",  # Keryneia
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class CYSubdivision(Subdivision):
     code: CYSubdivisionCodeType
 
@@ -38,7 +38,7 @@ CY: Final[Country] = Country(
         CYSubdivision(code="CY-02", name="Lemesos", type_="District"),
         CYSubdivision(code="CY-03", name="Larnaka", type_="District"),
         CYSubdivision(code="CY-04", name="Ammochostos", type_="District"),
-        CYSubdivision(code="CY-05", name="Baf", type_="District"),
-        CYSubdivision(code="CY-06", name="Girne", type_="District"),
+        CYSubdivision(code="CY-05", name="Pafos", type_="District"),
+        CYSubdivision(code="CY-06", name="Keryneia", type_="District"),
     ],
 )

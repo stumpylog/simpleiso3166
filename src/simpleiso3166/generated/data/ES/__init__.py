@@ -8,12 +8,12 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 ESSubdivisionCodeType = Literal[
-    "ES-A",  # Alacant*
+    "ES-A",  # Alicante
     "ES-AB",  # Albacete
     "ES-AL",  # Almería
     "ES-AN",  # Andalucía
@@ -34,7 +34,7 @@ ESSubdivisionCodeType = Literal[
     "ES-CN",  # Canarias
     "ES-CO",  # Córdoba
     "ES-CR",  # Ciudad Real
-    "ES-CS",  # Castelló*
+    "ES-CS",  # Castellón
     "ES-CT",  # Catalunya [Cataluña]
     "ES-CU",  # Cuenca
     "ES-EX",  # Extremadura
@@ -57,14 +57,14 @@ ESSubdivisionCodeType = Literal[
     "ES-MD",  # Madrid, Comunidad de
     "ES-ML",  # Melilla
     "ES-MU",  # Murcia
-    "ES-NA",  # Nafarroa*
-    "ES-NC",  # Nafarroako Foru Komunitatea*
+    "ES-NA",  # Navarra
+    "ES-NC",  # Navarra, Comunidad Foral de
     "ES-O",  # Asturias
     "ES-OR",  # Ourense [Orense]
     "ES-P",  # Palencia
     "ES-PM",  # Illes Balears [Islas Baleares]
     "ES-PO",  # Pontevedra [Pontevedra]
-    "ES-PV",  # Euskal Herria
+    "ES-PV",  # País Vasco
     "ES-RI",  # La Rioja
     "ES-S",  # Cantabria
     "ES-SA",  # Salamanca
@@ -79,13 +79,13 @@ ESSubdivisionCodeType = Literal[
     "ES-V",  # Valencia
     "ES-VA",  # Valladolid
     "ES-VC",  # Valenciana, Comunidad
-    "ES-VI",  # Araba*
+    "ES-VI",  # Álava
     "ES-Z",  # Zaragoza
     "ES-ZA",  # Zamora
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class ESSubdivision(Subdivision):
     code: ESSubdivisionCodeType
 
@@ -97,7 +97,7 @@ ES: Final[Country] = Country(
     common_name=None,
     official_name="Kingdom of Spain",
     subdivisions=[
-        ESSubdivision(code="ES-A", name="Alacant*", type_="Province"),
+        ESSubdivision(code="ES-A", name="Alicante", type_="Province"),
         ESSubdivision(code="ES-AB", name="Albacete", type_="Province"),
         ESSubdivision(code="ES-AL", name="Almería", type_="Province"),
         ESSubdivision(code="ES-AN", name="Andalucía", type_="Autonomous community"),
@@ -118,7 +118,7 @@ ES: Final[Country] = Country(
         ESSubdivision(code="ES-CN", name="Canarias", type_="Autonomous community"),
         ESSubdivision(code="ES-CO", name="Córdoba", type_="Province"),
         ESSubdivision(code="ES-CR", name="Ciudad Real", type_="Province"),
-        ESSubdivision(code="ES-CS", name="Castelló*", type_="Province"),
+        ESSubdivision(code="ES-CS", name="Castellón", type_="Province"),
         ESSubdivision(code="ES-CT", name="Catalunya [Cataluña]", type_="Autonomous community"),
         ESSubdivision(code="ES-CU", name="Cuenca", type_="Province"),
         ESSubdivision(code="ES-EX", name="Extremadura", type_="Autonomous community"),
@@ -141,14 +141,14 @@ ES: Final[Country] = Country(
         ESSubdivision(code="ES-MD", name="Madrid, Comunidad de", type_="Autonomous community"),
         ESSubdivision(code="ES-ML", name="Melilla", type_="Autonomous city in north africa"),
         ESSubdivision(code="ES-MU", name="Murcia", type_="Province"),
-        ESSubdivision(code="ES-NA", name="Nafarroa*", type_="Province"),
-        ESSubdivision(code="ES-NC", name="Nafarroako Foru Komunitatea*", type_="Autonomous community"),
+        ESSubdivision(code="ES-NA", name="Navarra", type_="Province"),
+        ESSubdivision(code="ES-NC", name="Navarra, Comunidad Foral de", type_="Autonomous community"),
         ESSubdivision(code="ES-O", name="Asturias", type_="Province"),
         ESSubdivision(code="ES-OR", name="Ourense [Orense]", type_="Province"),
         ESSubdivision(code="ES-P", name="Palencia", type_="Province"),
         ESSubdivision(code="ES-PM", name="Illes Balears [Islas Baleares]", type_="Province"),
         ESSubdivision(code="ES-PO", name="Pontevedra [Pontevedra]", type_="Province"),
-        ESSubdivision(code="ES-PV", name="Euskal Herria", type_="Autonomous community"),
+        ESSubdivision(code="ES-PV", name="País Vasco", type_="Autonomous community"),
         ESSubdivision(code="ES-RI", name="La Rioja", type_="Autonomous community"),
         ESSubdivision(code="ES-S", name="Cantabria", type_="Province"),
         ESSubdivision(code="ES-SA", name="Salamanca", type_="Province"),
@@ -163,7 +163,7 @@ ES: Final[Country] = Country(
         ESSubdivision(code="ES-V", name="Valencia", type_="Province"),
         ESSubdivision(code="ES-VA", name="Valladolid", type_="Province"),
         ESSubdivision(code="ES-VC", name="Valenciana, Comunidad", type_="Autonomous community"),
-        ESSubdivision(code="ES-VI", name="Araba*", type_="Province"),
+        ESSubdivision(code="ES-VI", name="Álava", type_="Province"),
         ESSubdivision(code="ES-Z", name="Zaragoza", type_="Province"),
         ESSubdivision(code="ES-ZA", name="Zamora", type_="Province"),
     ],

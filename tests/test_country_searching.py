@@ -20,7 +20,7 @@ class TestCountrySearching:
             ("america", "US"),
             ("UK", "GB"),
             ("holland", "NL"),
-            ("Persia", "IR"),  # alias in DIRECT_MATCHES
+            ("Persia", "IR"),  # alias in COUNTRY_ALIAS_TO_CODE
             ("down under", "AU"),  # alias phrase
         ],
     )

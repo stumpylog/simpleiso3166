@@ -41,7 +41,7 @@ ISO_3166_1_KEY: Final[str] = "3166-1"
 ISO_3166_2_KEY: Final[str] = "3166-2"
 
 
-class Iso3116TypeOneEntry(TypedDict):
+class Iso3166TypeOneEntry(TypedDict):
     alpha_2: str
     alpha_3: str
     flag: str
@@ -51,7 +51,7 @@ class Iso3116TypeOneEntry(TypedDict):
     numeric: NotRequired[str]
 
 
-class Iso3116TypeTwoEntry(TypedDict):
+class Iso3166TypeTwoEntry(TypedDict):
     code: str
     name: str
     type: str
@@ -63,7 +63,7 @@ class CombinedData(TypedDict):
     official_name: str | None
     alpha_2: str
     alpha_3: str
-    subdivisions: list[Iso3116TypeTwoEntry]
+    subdivisions: list[Iso3166TypeTwoEntry]
 
 
 def common_header(f: TextIOWrapper) -> None:
@@ -315,7 +315,7 @@ def generate_country_module(data_module: Path, country_code: str, country_data: 
             # Add imports needed only if subdivisions exist
             standard_imports.insert(0, "import dataclasses")
             standard_imports.append("from typing import Literal")
-            local_imports.insert(0, "from simpleiso3166.base import DATACLASS_BASE_AGS")
+            local_imports.insert(0, "from simpleiso3166.base import DATACLASS_BASE_ARGS")
             local_imports.append("from simpleiso3166.base import Subdivision")
 
             subdivision_data_lines = ["[\n"]  # Start of subdivisions list
@@ -327,7 +327,7 @@ def generate_country_module(data_module: Path, country_code: str, country_data: 
 
             # Generate the subclass definition
             subdivision_class_lines = [
-                "@dataclasses.dataclass(**DATACLASS_BASE_AGS)\n",  # Apply decorator using imported args
+                "@dataclasses.dataclass(**DATACLASS_BASE_ARGS)\n",  # Apply decorator using imported args
                 f"class {country_code.upper()}Subdivision(Subdivision):\n",
                 f"    code: {country_code.upper()}SubdivisionCodeType\n\n\n",
             ]
@@ -457,10 +457,10 @@ def main(
                 sys.exit(1)  # Exit if data fetching fails
 
     try:
-        subdivision_data: list[Iso3116TypeTwoEntry] = json.loads(
+        subdivision_data: list[Iso3166TypeTwoEntry] = json.loads(
             subdivision_json.read_text(encoding="utf-8"),
         )[ISO_3166_2_KEY]  # type: ignore[misc]
-        country_data: list[Iso3116TypeOneEntry] = json.loads(country_json.read_text(encoding="utf-8"))[ISO_3166_1_KEY]  # type: ignore[misc]
+        country_data: list[Iso3166TypeOneEntry] = json.loads(country_json.read_text(encoding="utf-8"))[ISO_3166_1_KEY]  # type: ignore[misc]
     except (FileNotFoundError, json.JSONDecodeError, KeyError) as e:
         # Use typer.secho for data loading/parsing errors
         typer.secho(f"Error loading or parsing data files: {e}", fg=typer.colors.RED, bold=True, err=True)
@@ -470,11 +470,11 @@ def main(
         typer.secho(f"An unexpected error occurred while loading data: {e}", fg=typer.colors.RED, bold=True, err=True)
         sys.exit(1)
 
-    country_code_to_subdivision: dict[str, list[Iso3116TypeTwoEntry]] = defaultdict(list)
+    country_code_to_subdivision: dict[str, list[Iso3166TypeTwoEntry]] = defaultdict(list)
 
     for subdivision in subdivision_data:
         subdivision_code: str = subdivision["code"]
-        country_alpha_2 = subdivision_code.split("-")[0]
+        country_alpha_2 = subdivision_code.split("-", maxsplit=1)[0]
         country_code_to_subdivision[country_alpha_2].append(subdivision)
 
     combined_data: dict[str, CombinedData] = {}

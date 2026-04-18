@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Validate the changelog format during linting
 
+### Fixed
+
+- Correct `from_alpha3` docstring (said "alpha-2" instead of "alpha-3")
+- Rename `DATACLASS_BASE_AGS` to `DATACLASS_BASE_ARGS` (typo)
+- Rename `Iso3116` TypedDict classes to `Iso3166` in `generate.py` (typo)
+- Move `Turkmenistan` and `Uzbekistan` out of the "Common misspellings" alias group
+
 ## [0.3.0] - 2025-10-07
 
 ### Added

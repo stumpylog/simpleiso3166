@@ -8,21 +8,21 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
 ERSubdivisionCodeType = Literal[
     "ER-AN",  # Ansabā
-    "ER-DK",  # Debubawi K’eyyĭḥ Baḥri
+    "ER-DK",  # Janūbī al Baḩrī al Aḩmar
     "ER-DU",  # Al Janūbī
-    "ER-GB",  # Gash-Barka
+    "ER-GB",  # Qāsh-Barkah
     "ER-MA",  # Al Awsaţ
-    "ER-SK",  # Semienawi K’eyyĭḥ Baḥri
+    "ER-SK",  # Shimālī al Baḩrī al Aḩmar
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class ERSubdivision(Subdivision):
     code: ERSubdivisionCodeType
 
@@ -35,10 +35,10 @@ ER: Final[Country] = Country(
     official_name="the State of Eritrea",
     subdivisions=[
         ERSubdivision(code="ER-AN", name="Ansabā", type_="Region"),
-        ERSubdivision(code="ER-DK", name="Debubawi K’eyyĭḥ Baḥri", type_="Region"),
+        ERSubdivision(code="ER-DK", name="Janūbī al Baḩrī al Aḩmar", type_="Region"),
         ERSubdivision(code="ER-DU", name="Al Janūbī", type_="Region"),
-        ERSubdivision(code="ER-GB", name="Gash-Barka", type_="Region"),
+        ERSubdivision(code="ER-GB", name="Qāsh-Barkah", type_="Region"),
         ERSubdivision(code="ER-MA", name="Al Awsaţ", type_="Region"),
-        ERSubdivision(code="ER-SK", name="Semienawi K’eyyĭḥ Baḥri", type_="Region"),
+        ERSubdivision(code="ER-SK", name="Shimālī al Baḩrī al Aḩmar", type_="Region"),
     ],
 )

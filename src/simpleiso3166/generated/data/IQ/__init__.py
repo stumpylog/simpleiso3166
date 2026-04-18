@@ -8,7 +8,7 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
@@ -23,7 +23,7 @@ IQSubdivisionCodeType = Literal[
     "IQ-DQ",  # Dhī Qār
     "IQ-KA",  # Karbalā’
     "IQ-KI",  # Kirkūk
-    "IQ-KR",  # Herêm-î Kurdistan
+    "IQ-KR",  # Iqlīm Kūrdistān
     "IQ-MA",  # Maysān
     "IQ-MU",  # Al Muthanná
     "IQ-NA",  # An Najaf
@@ -35,7 +35,7 @@ IQSubdivisionCodeType = Literal[
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class IQSubdivision(Subdivision):
     code: IQSubdivisionCodeType
 
@@ -57,7 +57,7 @@ IQ: Final[Country] = Country(
         IQSubdivision(code="IQ-DQ", name="Dhī Qār", type_="Governorate"),
         IQSubdivision(code="IQ-KA", name="Karbalā’", type_="Governorate"),
         IQSubdivision(code="IQ-KI", name="Kirkūk", type_="Governorate"),
-        IQSubdivision(code="IQ-KR", name="Herêm-î Kurdistan", type_="Region"),
+        IQSubdivision(code="IQ-KR", name="Iqlīm Kūrdistān", type_="Region"),
         IQSubdivision(code="IQ-MA", name="Maysān", type_="Governorate"),
         IQSubdivision(code="IQ-MU", name="Al Muthanná", type_="Governorate"),
         IQSubdivision(code="IQ-NA", name="An Najaf", type_="Governorate"),

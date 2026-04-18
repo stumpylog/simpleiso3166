@@ -150,13 +150,14 @@ COUNTRY_ALIAS_TO_CODE: Final[dict[str, CountryCodeAlpha2Type]] = {
     "The United Arab Emirates": "AE",
     "The Dominican Republic": "DO",
     "The Congo": "CD",
+    # Central Asian countries
+    "Turkmenistan": "TM",
+    "Uzbekistan": "UZ",
     # Common misspellings
     "Philipines": "PH",
     "Columbia": "CO",
     "Lybia": "LY",
     "Kazakstan": "KZ",
-    "Turkmenistan": "TM",
-    "Uzbekistan": "UZ",
     "Kyrgystan": "KG",
     "Tajikistan": "TJ",
     "Azerbajan": "AZ",

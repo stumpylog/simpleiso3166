@@ -8,7 +8,7 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
@@ -24,12 +24,12 @@ NOSubdivisionCodeType = Literal[
     "NO-38",  # Vestfold og Telemark
     "NO-42",  # Agder
     "NO-46",  # Vestland
-    "NO-50",  # Trööndelage
-    "NO-54",  # Romssa ja Finnmárkku
+    "NO-50",  # Trøndelag
+    "NO-54",  # Troms og Finnmark
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class NOSubdivision(Subdivision):
     code: NOSubdivisionCodeType
 
@@ -52,7 +52,7 @@ NO: Final[Country] = Country(
         NOSubdivision(code="NO-38", name="Vestfold og Telemark", type_="County"),
         NOSubdivision(code="NO-42", name="Agder", type_="County"),
         NOSubdivision(code="NO-46", name="Vestland", type_="County"),
-        NOSubdivision(code="NO-50", name="Trööndelage", type_="County"),
-        NOSubdivision(code="NO-54", name="Romssa ja Finnmárkku", type_="County"),
+        NOSubdivision(code="NO-50", name="Trøndelag", type_="County"),
+        NOSubdivision(code="NO-54", name="Troms og Finnmark", type_="County"),
     ],
 )

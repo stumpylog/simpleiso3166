@@ -8,7 +8,7 @@ import dataclasses
 from typing import Final
 from typing import Literal
 
-from simpleiso3166.base import DATACLASS_BASE_AGS
+from simpleiso3166.base import DATACLASS_BASE_ARGS
 from simpleiso3166.base import Country
 from simpleiso3166.base import Subdivision
 
@@ -20,16 +20,16 @@ TLSubdivisionCodeType = Literal[
     "TL-CO",  # Cova Lima
     "TL-DI",  # Díli
     "TL-ER",  # Ermera
-    "TL-LA",  # Lautein
-    "TL-LI",  # Likisá
+    "TL-LA",  # Lautém
+    "TL-LI",  # Liquiça
     "TL-MF",  # Manufahi
     "TL-MT",  # Manatuto
-    "TL-OE",  # Oekusi-Ambenu
-    "TL-VI",  # Vikeke
+    "TL-OE",  # Oé-Cusse Ambeno
+    "TL-VI",  # Viqueque
 ]
 
 
-@dataclasses.dataclass(**DATACLASS_BASE_AGS)
+@dataclasses.dataclass(**DATACLASS_BASE_ARGS)
 class TLSubdivision(Subdivision):
     code: TLSubdivisionCodeType
 
@@ -48,11 +48,11 @@ TL: Final[Country] = Country(
         TLSubdivision(code="TL-CO", name="Cova Lima", type_="Municipality"),
         TLSubdivision(code="TL-DI", name="Díli", type_="Municipality"),
         TLSubdivision(code="TL-ER", name="Ermera", type_="Municipality"),
-        TLSubdivision(code="TL-LA", name="Lautein", type_="Municipality"),
-        TLSubdivision(code="TL-LI", name="Likisá", type_="Municipality"),
+        TLSubdivision(code="TL-LA", name="Lautém", type_="Municipality"),
+        TLSubdivision(code="TL-LI", name="Liquiça", type_="Municipality"),
         TLSubdivision(code="TL-MF", name="Manufahi", type_="Municipality"),
         TLSubdivision(code="TL-MT", name="Manatuto", type_="Municipality"),
-        TLSubdivision(code="TL-OE", name="Oekusi-Ambenu", type_="Special administrative region"),
-        TLSubdivision(code="TL-VI", name="Vikeke", type_="Municipality"),
+        TLSubdivision(code="TL-OE", name="Oé-Cusse Ambeno", type_="Special administrative region"),
+        TLSubdivision(code="TL-VI", name="Viqueque", type_="Municipality"),
     ],
 )
