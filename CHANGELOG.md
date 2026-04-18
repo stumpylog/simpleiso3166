@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Export `BaseSimpleIsoError` and `NoCountryBestNameError` from the public API
 - Correct `from_alpha3` docstring (said "alpha-2" instead of "alpha-3")
 - Rename `DATACLASS_BASE_AGS` to `DATACLASS_BASE_ARGS` (typo)
 - Rename `Iso3116` TypedDict classes to `Iso3166` in `generate.py` (typo)
