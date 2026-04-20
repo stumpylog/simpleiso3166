@@ -41,7 +41,7 @@ jobs:
       - name: Check project typing
         run: |
           hatch run typing:run
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: ~/.cache/pre-commit
           key: pre-commit-3|${{ env.pythonLocation }}|${{ hashFiles('.pre-commit-config.yaml') }}
@@ -117,7 +117,7 @@ jobs:
       - name: Build
         run: |
           hatch build --clean
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: artifacts
           path: dist/*
@@ -134,7 +134,7 @@ jobs:
       - test
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: artifacts
           path: dist
@@ -163,7 +163,7 @@ jobs:
       - build
       - test
     steps:
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: artifacts
           path: dist
